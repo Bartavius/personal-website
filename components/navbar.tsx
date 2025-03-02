@@ -12,7 +12,6 @@ export default function Navbar({
   modal: boolean;
 }) {
   const tabs = ["home", "skills", "projects", "education"];
-  const [activeTab, setActiveTab] = useState<string>("home");
   const router = useRouter();
   return (
     <div className="navbar">
@@ -23,10 +22,8 @@ export default function Navbar({
             className="nav-text"
             onClick={() => {
               if (tab === "skills") setSkills(!modal);
-              else {
-                setActiveTab(tab);
-                router.push(`#${tab}`);
-              }
+              else router.push(`#${tab}`);
+              
             }}
           >
             {tab.charAt(0).toUpperCase() + tab.slice(1)}

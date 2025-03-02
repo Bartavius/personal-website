@@ -43,7 +43,7 @@
 
 .name {
   display: inline-block;
-  color: #fff;
+  color: white;
   text-align: right;
   font-family: Outfit;
   font-size: 3.75rem;
@@ -52,20 +52,9 @@
   line-height: 3.75rem; /* 150 */
 }
 
-.title {
-  display: inline-block;
-  color: #a6b1e1;
-  text-align: right;
-  font-family: Outfit;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 3.75rem; /* 150% */
-}
-
 .location {
   display: block;
-  color: #a6b1e1;
+  color: var(--color-accent2);
   text-align: right;
   font-family: Roboto;
   font-size: 1.5rem;

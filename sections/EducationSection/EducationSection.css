@@ -1,0 +1,38 @@
+.degree-section {
+    display: flex;
+}
+.university-logo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3dvh;
+    width: 40dvh;
+    overflow: hidden;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 5px;
+    border-color: white;
+    border-style: solid;
+}
+
+.logo {
+    width: 30dvh;
+    height: auto;
+}
+
+.degree-title {
+    font-family: Outfit;
+    font-weight: 800;
+    color: var(--color-accent3);
+}
+
+.degree-body {
+    font-family: Roboto;
+    font-weight: 400;
+    color: var(--color-accent3);
+}
+
+.degree-description {
+    margin-left: 2rem;
+}

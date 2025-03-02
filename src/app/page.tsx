@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import Darkmode from "../../components/darkmode";
 import Navbar from "../../components/navbar";
-import EducationSection from "../../sections/EducationSection";
+import EducationSection from "../../sections/EducationSection/EducationSection";
 import HeroSection from "../../sections/HeroSection/HeroSection";
-import ProjectSection from "../../sections/ProjectSection";
+import ProjectSection from "../../sections/ProjectSection/ProjectSection";
 import { useRouter } from "next/router";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
 
       <hr />
       <div id="home">
-        <HeroSection />
+        <HeroSection setSkills={setIsModalOpen} modal={isModalOpen}/>
       </div>
 
       <div id="projects">

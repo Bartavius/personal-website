@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosPin } from "react-icons/io";
 import "./HeroSection.css";
 
-export default function ProfileInformation() {
+export default function ProfileInformation({setSkills, modal} : {setSkills: (val: boolean) => void, modal: boolean}) {
   return (
     <div className="hero-profile">
       <div className="hero-details">
@@ -42,11 +42,9 @@ export default function ProfileInformation() {
             </a>
           </div>
           <div className="additional-links">
-            <a href="/#skills">
-              <button className="btn-secondary">
+              <button className="btn-secondary" onClick={() => setSkills(!modal)}>
                 <span className="text-secondary">Skills</span>
               </button>
-            </a>
             <a
               href="files/Jirath-Lojanarungsiri-Web-Developer-Resume.pdf"
               target="_blank"

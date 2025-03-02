@@ -131,6 +131,32 @@ button:active {
   line-height: 1.875rem; 
 }
 
+.title {
+  display: inline-block;
+  color: var(--color-accent2);
+  text-align: right;
+  font-family: Outfit;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.75rem; /* 150% */
+}
+
+.sub-heading {
+    font-family: Outfit;
+    font-weight: 800;
+    color: var(--color-accent3);
+    font-size: 3rem;
+}
+
+.section-divider {
+  background-color: var(--color-accent3);
+  height: 0.75dvh;
+  width: 100dvw;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+}
+
 .modal {
   position: fixed;
   top: 0;
