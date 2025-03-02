@@ -1,0 +1,28 @@
+.switch-container {
+    background-color: var(--color-accent2);
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 50rem;
+    padding: 0.2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.switch-container-active {
+    justify-content: left;
+}
+
+.toggle-dark-btn {
+    border-radius: 50rem;
+    background-color: var(--color-accent3);
+    padding: 1rem;
+    overflow: hidden;
+    justify-content: right;
+}
+
+.dark-mode-icon {
+    width: 100%;
+    height: 100;
+}
