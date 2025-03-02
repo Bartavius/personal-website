@@ -37,6 +37,6 @@
 }
 
 .tab-element-selected {
-  background-color: var(--background);
-  color: var(--color-accent3);
+  background-color: var(--color-accent1);
+  color: var(--background);
 }

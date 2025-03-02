@@ -50,6 +50,10 @@ button:active {
   background: none;
 }
 
+.container {
+  padding: 5%;
+}
+
 .btn-primary {
   display: flex;
   width: 11.875rem;

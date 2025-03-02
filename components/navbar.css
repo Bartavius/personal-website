@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   position: fixed;
+  gap: 20px;
+  width: 100%;
 }
 
 .navbar-container {
@@ -16,6 +17,9 @@
   border-radius: 50px;
   opacity: 1;
   z-index: 4;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0px 5px var(--color-accent1);
 }
 
 .nav-text {
@@ -30,4 +34,28 @@
 
 .nav-text:hover {
   color: var(--color-accent1);
+}
+
+.hamburger {
+    background-color: var(--color-accent2);
+    padding: 12px;
+    color: var(--background);
+    border-radius: 50px;
+    width: auto;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 5px var(--color-accent1);
+}
+
+.hamburger:hover {
+    color: var(--color-accent1);
+}
+
+.hamburger:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px var(--color-accent1);;
+}
+
+.hamburger-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
 }

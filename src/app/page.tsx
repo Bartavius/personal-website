@@ -1,11 +1,10 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Darkmode from "../../components/darkmode";
 import Navbar from "../../components/navbar";
 import EducationSection from "../../sections/EducationSection/EducationSection";
 import HeroSection from "../../sections/HeroSection/HeroSection";
 import ProjectSection from "../../sections/ProjectSection/ProjectSection";
-import { useRouter } from "next/router";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,11 +18,8 @@ export default function Home() {
     {/* //   <div className="workmode">
     //   <HeroSection />
     //   </div> */}
-      <hr />
+      {/* <Darkmode /> */}
       <Navbar setSkills={setIsModalOpen} modal={isModalOpen}/>
-      <Darkmode />
-
-      <hr />
       <div id="home">
         <HeroSection setSkills={setIsModalOpen} modal={isModalOpen}/>
       </div>
