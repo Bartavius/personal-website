@@ -3,15 +3,20 @@
     height: 100dvh;
 }
 
+.education-toggle {
+    margin-top: 5dvh;
+}
+
 .degree-section {
     display: flex;
+    margin-top: 5dvh;
 }
 .university-logo {
     display: flex;
     justify-content: right;
-    align-items: center;
+    align-items: top;
+    max-width: 40dvw;
     padding-right: 3dvh;
-    width: 40dvh;
     overflow: hidden;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -22,12 +27,12 @@
 }
 
 .logo {
-    width: 30dvh;
-    height: auto;
+    max-width: 20dvw;
+    max-height: 10dvh;
 }
 
 .degree-title {
-    font-family: Outfit;
+    font-family: Roboto;
     font-weight: 800;
     color: var(--color-accent3);
 }
@@ -40,4 +45,5 @@
 
 .degree-description {
     margin-left: 2rem;
+    max-width: 50dvh;
 }

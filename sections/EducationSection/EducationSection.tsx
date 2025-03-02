@@ -106,12 +106,15 @@ export default function EducationSection() {
           <div className="degree-body">
             <b>Honors:</b> Dean's List Fall 2023, Spring 2024, Fall 2024
           </div>
+          
         </div>
+        
       </div>
-
       <div className="education-toggle">
         <ToggleTimeline tree={tabs} />
         </div>
+
+      
     </div>
   );
 }

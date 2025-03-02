@@ -1,5 +1,4 @@
 'use client';
-import React from "react";
 import "./TimelineTree.css";
 
 export default function TimelineTree({tree} : {tree: any}) {

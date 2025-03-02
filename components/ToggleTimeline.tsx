@@ -13,7 +13,7 @@ export default function ToggleTimeline({ tree }: { tree: any }) {
           <button
             key={index}
             className={`tab-element ${
-              selectedTab === tab.name ? "tab-element-selected" : ""
+              selectedTab.name === tab.name ? "tab-element-selected" : ""
             }`}
             onClick={(e) => setToggled(tab.name)}
           >
