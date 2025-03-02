@@ -11,7 +11,7 @@ export default function Navbar({
   setSkills: (val: boolean) => void;
   modal: boolean;
 }) {
-  const tabs = ["home", "skills", "projects", "education"];
+  const tabs = ["home", "skills", "projects", "education", "contacts"];
   const router = useRouter();
   return (
     <div className="navbar">

@@ -1,3 +1,8 @@
+.education-section {
+    width: 100dvw;
+    height: 100dvh;
+}
+
 .degree-section {
     display: flex;
 }

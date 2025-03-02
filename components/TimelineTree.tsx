@@ -1,24 +1,30 @@
 'use client';
-
-import React from 'react';
-import './TimelineTree.css';
+import React from "react";
+import "./TimelineTree.css";
 
 export default function TimelineTree({tree} : {tree: any}) {
   return (
-    <div className="timeline-tree">
-      {tree.timeline.map((entry: any, index: number) => (
-        <div key={index} className="timeline-entry">
-          <div className="timeline-marker" />
-          <div className="timeline-content">
-            <div className="timeline-time">{entry.time}</div>
-            <ul className="timeline-lines">
-              {entry.lines.map((line: string, idx: number) => (
-                <li key={idx} className="timeline-item">{line}</li>
-              ))}
-            </ul>
+    <div className="timeline-container">
+      <div className="timeline">
+        {tree.timeline.map((entry: any, index: number) => (
+          <div key={index} className="timeline-item">
+            {/* Left side: Time section with border and circle */}
+            <div className="timeline-time">
+              <span className="timeline-circle" />
+              {entry.time}
+            </div>
+            
+            {/* Right side: Content section with border and items */}
+            <div className="timeline-content">
+              <ul className="timeline-list">
+                {entry.lines.map((line: string, idx: number) => (
+                  <li key={idx}>{line}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
