@@ -1,11 +1,11 @@
 'use client';
 import { useState } from "react";
-import Darkmode from "../../components/darkmode";
-import Navbar from "../../components/navbar";
-import EducationSection from "../../sections/EducationSection/EducationSection";
-import HeroSection from "../../sections/HeroSection/HeroSection";
-import ProjectSection from "../../sections/ProjectSection/ProjectSection";
-import Skills from "../../components/SkillsModal";
+import Darkmode from "../components/darkmode";
+import Navbar from "../components/navbar";
+import EducationSection from "../sections/EducationSection/EducationSection";
+import HeroSection from "../sections/HeroSection/HeroSection";
+import ProjectSection from "../sections/ProjectSection/ProjectSection";
+import Skills from "../components/SkillsModal";
 
 
 export default function Home() {

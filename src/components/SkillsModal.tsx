@@ -19,12 +19,13 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { DiPostgresql } from "react-icons/di";
 import "./SkillsModal.css";
 
 const languages = [
-  { name: "Python", icon: <FaPython /> },
-  { name: "Java", icon: <FaJava /> },
-  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "Python", icon: <img src="/logo/python.png"/> },
+  { name: "Java", icon: <img src="/logo/java.png"/> },
+  { name: "TypeScript", icon: <img src="/logo/typescript.png"/> },
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "Kotlin", icon: <SiKotlin /> },
   { name: "Dr. Racket", icon: <SiRacket /> },
@@ -33,17 +34,24 @@ const languages = [
   { name: "CSS", icon: <FaCss3Alt /> },
 ];
 
-const techStack = [
-  { name: "React", icon: <FaReact /> },
+const backend = [
   { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "Next.js", icon: <RiNextjsFill /> },
-  { name: "Bootstrap", icon: <FaBootstrap /> },
-  { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
   { name: "Django", icon: <SiDjango /> },
   { name: "Flask", icon: <FaFlask /> },
   { name: "Express.js", icon: <SiExpress /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
 ];
+
+const database = [
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "PostgreSQL", icon: <DiPostgresql />}
+]
+
+const frontend = [
+    { name: "React", icon: <FaReact /> },
+    { name: "Next.js", icon: <RiNextjsFill /> },
+    { name: "Bootstrap", icon: <FaBootstrap /> },
+    { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+]
 
 export default function Skills({
   closeModal,
@@ -54,6 +62,7 @@ export default function Skills({
     <div className="skills-modal">
       <h1 className="sub-heading">Skills & Technologies</h1>
       <div className="icons">
+      <h1 className="text-secondary">Languages</h1>
         <div className="languages">
           {languages.map((lang) => (
             <div key={lang.name} className="language">
@@ -66,8 +75,34 @@ export default function Skills({
           ))}
         </div>
 
+        
+        <h1 className="text-secondary">Frontend Technologies</h1>
         <div className="techstack">
-          {techStack.map((tech) => (
+          {frontend.map((tech) => (
+            <div key={tech.name} className="tech">
+              <div className="icon-container">
+                <span className="icon">
+                  {tech.icon} {tech.name}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <h1 className="text-secondary">Backend Technologies</h1>
+        <div className="techstack">
+          {backend.map((tech) => (
+            <div key={tech.name} className="tech">
+              <div className="icon-container">
+                <span className="icon">
+                  {tech.icon} {tech.name}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <h1 className="text-secondary">Databases</h1>
+        <div className="techstack">
+          {database.map((tech) => (
             <div key={tech.name} className="tech">
               <div className="icon-container">
                 <span className="icon">
@@ -78,7 +113,7 @@ export default function Skills({
           ))}
         </div>
       </div>
-      <div className="section-divider"></div>
+      <div className="smaller-section-divider"></div>
       <div className="modal-footer">
         <button
           className="btn-secondary text-secondary"

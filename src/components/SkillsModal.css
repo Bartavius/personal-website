@@ -1,0 +1,61 @@
+.skills-modal {
+  background-color: var(--background);
+  padding: 2%;
+  overflow-wrap: normal;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 40dvh;
+  overflow: auto;
+  gap: 1rem;
+  padding-bottom: 3%;
+}
+
+.languages,
+.techstack {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.icon-container {
+  background-color: var(--background);
+  border-radius: 7px;
+  border-color: var(--color-accent2);
+  padding: 9px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 1rem;
+  text-align: center;
+}
+
+.icon {
+  color: var(--color-accent3);
+  font-family: Outfit;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.icon img {
+    width: 25px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
