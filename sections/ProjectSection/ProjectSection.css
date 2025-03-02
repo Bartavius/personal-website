@@ -19,6 +19,7 @@
 
 .project-card:hover {
   transform: scale(1.05); /* maybe play animation here */
+  cursor: pointer;
 }
 
 .project-thumbnail {

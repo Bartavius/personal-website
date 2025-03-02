@@ -51,7 +51,8 @@ button:active {
 }
 
 .container {
-  padding: 5%;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .btn-primary {
@@ -156,7 +157,7 @@ button:active {
 .section-divider {
   background-color: var(--color-accent3);
   height: 0.75dvh;
-  width: 100dvw;
+  width: 100%;
   border-radius: 50px;
   margin-bottom: 2rem;
 }
@@ -174,9 +175,8 @@ button:active {
 }
 
 .modal-content {
-  background: white;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  min-width: 300px;
+  min-width: 70dvw;
 }

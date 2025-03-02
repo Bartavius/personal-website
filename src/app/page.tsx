@@ -5,19 +5,14 @@ import Navbar from "../../components/navbar";
 import EducationSection from "../../sections/EducationSection/EducationSection";
 import HeroSection from "../../sections/HeroSection/HeroSection";
 import ProjectSection from "../../sections/ProjectSection/ProjectSection";
+import Skills from "../../components/SkillsModal";
+
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
-    <div>
-    {/* //   <div className="workmode">
-    //   <HeroSection />
-    //   </div> */}
+    <div className="container">
       {/* <Darkmode /> */}
       <Navbar setSkills={setIsModalOpen} modal={isModalOpen}/>
       <div id="home">
@@ -34,9 +29,7 @@ export default function Home() {
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
-            <h3>Skills Modal</h3>
-            <p>This is the modal content.</p>
-            <button onClick={closeModal}>Close</button>
+            <Skills closeModal={() => setIsModalOpen(false)}/>
           </div>
         </div>
       )}
