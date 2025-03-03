@@ -33,13 +33,13 @@ export default function ProjectModal({
               <h1 className="text-secondary">Languages</h1>
               <div className="languages">
                 {languages.map((lang) => (
-                  <IconContainer name={lang.name} icon={lang.icon} />
+                  <IconContainer name={lang.name} icon={lang.icon} key={lang.name} />
                 ))}
               </div>
               <h1 className="text-secondary">Tech Stack</h1>
               <div className="techstack">
                 {techstack.map((tech) => (
-                  <IconContainer name={tech.name} icon={tech.icon} />
+                  <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
                 ))}
               </div>
             </div>

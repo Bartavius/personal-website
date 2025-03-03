@@ -5,6 +5,7 @@
   position: fixed;
   gap: 20px;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar-container {

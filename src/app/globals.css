@@ -221,3 +221,16 @@ button:active {
   text-align: center;
   min-width: 70dvw;
 }
+
+#home {
+  height: 100dvh;
+}
+
+#projects {
+  height: 100dvh;
+}
+
+.about-section {
+  margin-top: 3rem;
+  padding-bottom: 30dvh;
+}
