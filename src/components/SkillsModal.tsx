@@ -1,37 +1,11 @@
 import IconContainer from "./iconContainer";
+import languages from "../database/skills/languages.json"
+import frontend from "../database/skills/frontend.json";
+import backend from "../database/skills/backend.json";
+import database from "../database/skills/database.json";
 import "./SkillsModal.css";
 
-const languages = [
-  { name: "Python", icon: <img src="/logo/python.png" /> },
-  { name: "Java", icon: <img src="/logo/java.png" /> },
-  { name: "TypeScript", icon: <img src="/logo/typescript.png" /> },
-  { name: "JavaScript", icon: <img src="/logo/javascript.png" /> },
-  { name: "Kotlin", icon: <img src="/logo/kotlin.png" /> },
-  { name: "Dr. Racket", icon: <img src="/logo/racket.png" /> },
-  { name: "C++", icon: <img src="/logo/cplusplus.png" /> },
-  { name: "HTML5", icon: <img src="/logo/html5.png" /> },
-  { name: "CSS", icon: <img src="/logo/css.png" /> },
-];
 
-const backend = [
-  { name: "Node.js", icon: <img src="/logo/nodejs.png" /> },
-  { name: "Django", icon: <img src="/logo/django.png" /> },
-  { name: "Flask", icon: <img src="/logo/flask.png" /> },
-  { name: "Express.js", icon: <img src="/logo/express.png" /> },
-];
-
-const database = [
-  { name: "MongoDB", icon: <img src="/logo/mongodb.png" /> },
-  { name: "PostgreSQL", icon: <img src="/logo/postgresql.png" /> },
-];
-
-const frontend = [
-  { name: "React", icon: <img src="/logo/react.png" /> },
-  { name: "Next.js", icon: <img src="/logo/next.png" /> },
-  { name: "Bootstrap", icon: <img src="/logo/bootstrap.png" /> },
-  { name: "Tailwind CSS", icon: <img src="/logo/tailwind.png" /> },
-  { name: "Figma", icon: <img src="/logo/figma.png" />}
-];
 
 export default function Skills({
   closeModal,

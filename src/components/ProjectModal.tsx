@@ -1,6 +1,8 @@
 "use client";
+import { useState } from "react";
 import IconContainer from "./iconContainer";
 import "./ProjectModal.css";
+
 export default function ProjectModal({
   name,
   description,
@@ -20,15 +22,32 @@ export default function ProjectModal({
   techstack: any[];
   setModal: (val: boolean | null) => void;
 }) {
+  const [expanded, setExpanded] = useState(false);
+
+  // Define truncation length
+  const maxLength = 150;
+  const shouldTruncate = description.length > maxLength;
+  const displayText = expanded ? description : description.slice(0, maxLength) + (shouldTruncate ? "..." : "");
+
   return (
     <div id={`project-${name}`} className="modal">
       <div className="modal-content">
         <div className="project-modal">
           <div className="project-content">
-            <div className="project-thumbnail">{<img src={thumbnail} />}</div>
+            <div className="project-thumbnail">
+              <img src={thumbnail} alt={`${name} thumbnail`} />
+            </div>
             <div className="project-name">{name}</div>
 
-            <div className="project-description">{description}</div>
+            <div className="project-description">
+              {displayText}
+              {shouldTruncate && (
+                <button className="read-more-btn" onClick={() => setExpanded(!expanded)}>
+                  {expanded ? " Show Less" : " Read More"}
+                </button>
+              )}
+            </div>
+
             <div className="project-icons">
               <h1 className="text-secondary">Languages</h1>
               <div className="languages">
@@ -55,26 +74,16 @@ export default function ProjectModal({
 
           <div className="smaller-section-divider"></div>
           <div className="project-footer">
-            <button
-              className="btn-secondary text-secondary"
-              onClick={() => setModal(null)}
-            >
+            <button className="btn-secondary text-secondary" onClick={() => setModal(null)}>
               Close
             </button>
             {link === "" ? (
-              <button
-                className="btn-primary text-primary"
-                disabled={link === ""}
-              >
+              <button className="btn-primary text-primary" disabled>
                 {linkName}
               </button>
             ) : (
               <a href={link} target="_blank">
-                <button
-                  className="btn-primary text-primary"
-                >
-                  {linkName}
-                </button>
+                <button className="btn-primary text-primary">{linkName}</button>
               </a>
             )}
           </div>

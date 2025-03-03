@@ -1,0 +1,12 @@
+[
+    { "name": "Python", "icon": "/logo/python.png" },
+    { "name": "Java", "icon": "/logo/java.png" },
+    { "name": "TypeScript", "icon": "/logo/typescript.png" },
+    { "name": "JavaScript", "icon": "/logo/javascript.png" },
+    { "name": "Kotlin", "icon": "/logo/kotlin.png" },
+    { "name": "Dr. Racket", "icon": "/logo/racket.png" },
+    { "name": "C++", "icon": "/logo/cplusplus.png" },
+    { "name": "HTML5", "icon": "/logo/html5.png" },
+    { "name": "CSS", "icon": "/logo/css.png" }
+]
+  

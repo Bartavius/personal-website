@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
-import images from "./ProfileImages.json";
+import images from "../../database/ProfileImages.json";
 
 export default function ImageSection() {
     const [profile, setProfile] = useState(images[Math.floor(Math.random() * images.length)]);
