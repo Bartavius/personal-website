@@ -6,9 +6,9 @@
   --design-width: 1512;
   --ratio: calc(var(--custom-width) / var(--design-width));
   --background: #424874;
-  --color-accent1: #A6B1E1;
-  --color-accent2: #DCD6F7;
-  --color-accent3: #F4EEFF;
+  --color-accent1: #a6b1e1;
+  --color-accent2: #dcd6f7;
+  --color-accent3: #f4eeff;
 }
 
 html {
@@ -55,6 +55,28 @@ button:active {
   margin-right: 75px;
 }
 
+.accent1 {
+  color: var(--color-accent1);
+}
+.accent2 {
+  color: var(--color-accent2);
+}
+.accent3 {
+  color: var(--color-accent3);
+}
+.pink {
+  color: pink;
+}
+.orange {
+  color: orange;
+}
+.blue {
+  color: rgb(65, 225, 220);
+}
+.yellow {
+  color: gold
+}
+
 .btn-primary {
   display: flex;
   width: 11.875rem;
@@ -93,7 +115,7 @@ button:active {
   border-style: solid;
   border-color: var(--color-accent2);
   box-shadow: 0px 5px var(--color-accent1);
-  transition: 0.1s ease-in-out
+  transition: 0.1s ease-in-out;
 }
 
 .btn-secondary:hover {
@@ -124,7 +146,7 @@ button:active {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 1.875rem; 
+  line-height: 1.875rem;
 }
 
 .text-secondary {
@@ -135,7 +157,17 @@ button:active {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 1.875rem; 
+  line-height: 1.875rem;
+}
+
+.text-description {
+  color: var(--color-accent2);
+  text-align: left;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: auto;
 }
 
 .title {
@@ -150,10 +182,10 @@ button:active {
 }
 
 .sub-heading {
-    font-family: Outfit;
-    font-weight: 800;
-    color: var(--color-accent3);
-    font-size: 3rem;
+  font-family: Outfit;
+  font-weight: 800;
+  color: var(--color-accent3);
+  font-size: 3rem;
 }
 
 .smaller-section-divider {

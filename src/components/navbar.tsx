@@ -30,7 +30,7 @@ export default function Navbar({
               className="nav-text"
               onClick={() => {
                 if (tab === "skills") setSkills(!skillModal);
-                if (tab === "contacts") setContacts(!contactsModal);
+                else if (tab === "contacts") setContacts(!contactsModal);
                 else router.push(`#${tab}`);
               }}
             >

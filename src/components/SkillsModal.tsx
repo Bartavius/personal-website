@@ -30,6 +30,7 @@ const frontend = [
   { name: "Next.js", icon: <img src="/logo/next.png" /> },
   { name: "Bootstrap", icon: <img src="/logo/bootstrap.png" /> },
   { name: "Tailwind CSS", icon: <img src="/logo/tailwind.png" /> },
+  { name: "Figma", icon: <img src="/logo/figma.png" />}
 ];
 
 export default function Skills({

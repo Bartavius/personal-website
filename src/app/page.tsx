@@ -7,6 +7,7 @@ import HeroSection from "../sections/HeroSection/HeroSection";
 import ProjectSection from "../sections/ProjectSection/ProjectSection";
 import Skills from "../components/SkillsModal";
 import Contacts from "@/components/Contacts";
+import AboutSection from "@/sections/AboutSection/AboutSection";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
@@ -30,6 +31,9 @@ export default function Home() {
       </div>
       <div id="education">
         <EducationSection />
+      </div>
+      <div className="about-site">
+        <AboutSection />
       </div>
 
       {isSkillModalOpen && (
