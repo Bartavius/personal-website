@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./ProjectSection.css";
 import ProjectModal from "@/components/ProjectModal";
-import projects from "./Projects.json"
+import projectsjson from "./Projects.json"
 
 export default function ProjectSection() {
-
+  const projects = projectsjson.map((project: any) => ({...project, icon: <img src={project.icon} alt="" />}))
   const [activeProject, setActiveProject] = useState<typeof projects[0] | null>(null);
 
   return (

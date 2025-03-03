@@ -6,17 +6,17 @@
       "link": "https://plonkstars.vercel.app",
       "thumbnail": "/projects/plonkstars.png",
       "languages": [
-        {"name": "TypeScript", "icon": "logo/typescript.png"},
-        {"name": "Python", "icon": "logo/python.png"},
-        {"name": "HTML", "icon": "logo/html5.png"},
-        {"name": "CSS", "icon": "logo/css.png"}
+        {"name": "TypeScript", "icon": "/logo/typescript.png"},
+        {"name": "Python", "icon": "/logo/python.png"},
+        {"name": "HTML", "icon": "/logo/html5.png"},
+        {"name": "CSS", "icon": "/logo/css.png"}
       ],
       "techstack": [
-        {"name": "React", "icon": "logo/react.png"},
-        {"name": "NextJS", "icon": "logo/next.png"},
-        {"name": "Flask", "icon": "logo/flask.png"},
-        {"name": "PostgreSQL", "icon": "logo/postgresql.png"},
-        {"name": "TailwindCSS", "icon": "logo/tailwind.png"},
+        {"name": "React", "icon": "/logo/react.png"},
+        {"name": "NextJS", "icon": "/logo/next.png"},
+        {"name": "Flask", "icon": "/logo/flask.png"},
+        {"name": "PostgreSQL", "icon": "/logo/postgresql.png"},
+        {"name": "TailwindCSS", "icon": "/logo/tailwind.png"},
         {"name": "Axios", "icon": ""},
         {"name": "Redux", "icon": ""}
       ]
@@ -28,16 +28,16 @@
       "link": "https://devpost.com/software/j-a-z-a-just-a-zip-away",
       "thumbnail": "/projects/JAZA.png",
       "languages": [
-        {"name": "TypeScript", "icon": "logo/typescript.png"},
-        {"name": "Python", "icon": "logo/python.png"},
-        {"name": "HTML", "icon": "logo/html5.png"},
-        {"name": "CSS", "icon": "logo/css.png"}
+        {"name": "TypeScript", "icon": "/logo/typescript.png"},
+        {"name": "Python", "icon": "/logo/python.png"},
+        {"name": "HTML", "icon": "/logo/html5.png"},
+        {"name": "CSS", "icon": "/logo/css.png"}
       ],
       "techstack": [
-        {"name": "React", "icon": "logo/react.png"},
-        {"name": "NextJS", "icon": "logo/next.png"},
-        {"name": "Django", "icon": "logo/django.png"},
-        {"name": "TailwindCSS", "icon": "logo/tailwind.png"},
+        {"name": "React", "icon": "/logo/react.png"},
+        {"name": "NextJS", "icon": "/logo/next.png"},
+        {"name": "Django", "icon": "/logo/django.png"},
+        {"name": "TailwindCSS", "icon": "/logo/tailwind.png"},
         {"name": "Axios", "icon": ""},
         {"name": "Redux", "icon": ""}
       ]
@@ -49,18 +49,18 @@
       "link": "https://devpost.com/software/high-card",
       "thumbnail": "/projects/HighCard.png",
       "languages": [
-        {"name": "TypeScript", "icon": "logo/typescript.png"},
-        {"name": "JavaScript", "icon": "logo/javascript.png"},
-        {"name": "Python", "icon": "logo/python.png"},
-        {"name": "HTML", "icon": "logo/html5.png"},
-        {"name": "CSS", "icon": "logo/css.png"}
+        {"name": "TypeScript", "icon": "/logo/typescript.png"},
+        {"name": "JavaScript", "icon": "/logo/javascript.png"},
+        {"name": "Python", "icon": "/logo/python.png"},
+        {"name": "HTML", "icon": "/logo/html5.png"},
+        {"name": "CSS", "icon": "/logo/css.png"}
       ],
       "techstack": [
-        {"name": "React", "icon": "logo/react.png"},
-        {"name": "NextJS", "icon": "logo/next.png"},
-        {"name": "NodeJS", "icon": "logo/nodejs.png"},
-        {"name": "MongoDB", "icon": "logo/mongodb.png"},
-        {"name": "TailwindCSS", "icon": "logo/tailwind.png"}
+        {"name": "React", "icon": "/logo/react.png"},
+        {"name": "NextJS", "icon": "/logo/next.png"},
+        {"name": "NodeJS", "icon": "/logo/nodejs.png"},
+        {"name": "MongoDB", "icon": "/logo/mongodb.png"},
+        {"name": "TailwindCSS", "icon": "/logo/tailwind.png"}
       ]
     },
     {
@@ -70,17 +70,17 @@
       "link": "https://kanbas-mern.netlify.app",
       "thumbnail": "/projects/kanbas.png",
       "languages": [
-        {"name": "TypeScript", "icon": "logo/typescript.png"},
-        {"name": "JavaScript", "icon": "logo/javascript.png"},
-        {"name": "HTML", "icon": "logo/html5.png"},
-        {"name": "CSS", "icon": "logo/css.png"}
+        {"name": "TypeScript", "icon": "/logo/typescript.png"},
+        {"name": "JavaScript", "icon": "/logo/javascript.png"},
+        {"name": "HTML", "icon": "/logo/html5.png"},
+        {"name": "CSS", "icon": "/logo/css.png"}
       ],
       "techstack": [
-        {"name": "React", "icon": "logo/react.png"},
-        {"name": "NodeJS", "icon": "logo/nodejs.png"},
-        {"name": "MongoDB", "icon": "logo/mongodb.png"},
-        {"name": "ExpressJS", "icon": "logo/express.png"},
-        {"name": "BootstrapCSS", "icon": "logo/bootstrap.png"},
+        {"name": "React", "icon": "/logo/react.png"},
+        {"name": "NodeJS", "icon": "/logo/nodejs.png"},
+        {"name": "MongoDB", "icon": "/logo/mongodb.png"},
+        {"name": "ExpressJS", "icon": "/logo/express.png"},
+        {"name": "BootstrapCSS", "icon": "/logo/bootstrap.png"},
         {"name": "Axios", "icon": ""},
         {"name": "Redux", "icon": ""}
       ]
@@ -92,7 +92,7 @@
       "link": "",
       "thumbnail": "/pig.webp",
       "languages": [
-        {"name": "Java", "icon": "logo/java.png"}
+        {"name": "Java", "icon": "/logo/java.png"}
       ],
       "techstack": [
         {"name": "JUnit", "icon": ""},
