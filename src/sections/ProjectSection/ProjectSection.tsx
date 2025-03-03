@@ -2,10 +2,10 @@ import "./ProjectSection.css";
 
 export default function ProjectSection() {
   const projects = [
-    { name: "PLONKSTARS", thumbnail: "/pig.webp" }, // IMAGES / VIDEOS TO BE ADDED
-    { name: "JAZA", thumbnail: "/pig.webp" },
-    { name: "HIGH CARD", thumbnail: "/pig.webp" },
-    { name: "KANBAS", thumbnail: "/pig.webp" },
+    { name: "PLONKSTARS", thumbnail: "/projects/plonkstars.png" }, // IMAGES / VIDEOS TO BE ADDED
+    { name: "JAZA", thumbnail: "/projects/JAZA.png" },
+    { name: "HIGH CARD", thumbnail: "/projects/HighCard.png" },
+    { name: "KANBAS", thumbnail: "/projects/kanbas.png" },
     { name: "STOCK PORTFOLIO", thumbnail: "/pig.webp" },
   ];
   return (

@@ -1,3 +1,4 @@
+import IconContainer from "./iconContainer";
 import "./SkillsModal.css";
 
 const languages = [
@@ -25,11 +26,11 @@ const database = [
 ];
 
 const frontend = [
-    { name: "React", icon: <img src="/logo/react.png" /> },
-    { name: "Next.js", icon: <img src="/logo/next.png" /> },
-    { name: "Bootstrap", icon: <img src="/logo/bootstrap.png" /> },
-    { name: "Tailwind CSS", icon: <img src="/logo/tailwind.png" /> },
-]
+  { name: "React", icon: <img src="/logo/react.png" /> },
+  { name: "Next.js", icon: <img src="/logo/next.png" /> },
+  { name: "Bootstrap", icon: <img src="/logo/bootstrap.png" /> },
+  { name: "Tailwind CSS", icon: <img src="/logo/tailwind.png" /> },
+];
 
 export default function Skills({
   closeModal,
@@ -40,54 +41,29 @@ export default function Skills({
     <div className="skills-modal">
       <h1 className="sub-heading">Skills & Technologies</h1>
       <div className="icons">
-      <h1 className="skill-subheading">Languages</h1>
+        <h1 className="skill-subheading">Languages</h1>
         <div className="languages">
-          {languages.map((lang) => (
-            <div key={lang.name} className="language">
-              <div className="icon-container">
-                <span className="icon">
-                  {lang.icon} {lang.name}
-                </span>
-              </div>
-            </div>
+          {languages.map((tech) => (
+            <IconContainer name={tech.name} icon={tech.icon} />
           ))}
         </div>
 
-        
         <h1 className="skill-subheading">Frontend Technologies</h1>
         <div className="techstack">
           {frontend.map((tech) => (
-            <div key={tech.name} className="tech">
-              <div className="icon-container">
-                <span className="icon">
-                  {tech.icon} {tech.name}
-                </span>
-              </div>
-            </div>
+            <IconContainer name={tech.name} icon={tech.icon} />
           ))}
         </div>
         <h1 className="skill-subheading">Backend Technologies</h1>
         <div className="techstack">
           {backend.map((tech) => (
-            <div key={tech.name} className="tech">
-              <div className="icon-container">
-                <span className="icon">
-                  {tech.icon} {tech.name}
-                </span>
-              </div>
-            </div>
+            <IconContainer name={tech.name} icon={tech.icon} />
           ))}
         </div>
         <h1 className="skill-subheading">Databases</h1>
         <div className="techstack">
           {database.map((tech) => (
-            <div key={tech.name} className="tech">
-              <div className="icon-container">
-                <span className="icon">
-                  {tech.icon} {tech.name}
-                </span>
-              </div>
-            </div>
+            <IconContainer name={tech.name} icon={tech.icon} />
           ))}
         </div>
       </div>

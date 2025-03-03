@@ -6,10 +6,10 @@
 
 .timeline {
   top: -10px;
-  z-index: -1;
   position: relative;
   width: 100%;
   max-width: 100%;
+  z-index: -1;
 }
 
 .timeline-item {
@@ -24,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:20%;
+  width: 20%;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-right: 3%;
