@@ -1,8 +1,17 @@
 'use client';
+import { useEffect, useState } from "react";
 import images from "./ProfileImages.json";
 
 export default function ImageSection() {
-    const profile = images[Math.floor(Math.random() * images.length)];
+    const [profile, setProfile] = useState(images[Math.floor(Math.random() * images.length)]);
+    useEffect(() => {
+        const interval = setInterval(() => {
+          const randomIndex = Math.floor(Math.random() * images.length);
+          setProfile(images[randomIndex]);
+        }, 7000);
+    
+        return () => clearInterval(interval);
+      }, []);
 return (
     <div className="image-section">
         <div className="circles">
