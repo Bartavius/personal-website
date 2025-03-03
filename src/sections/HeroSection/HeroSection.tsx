@@ -1,5 +1,3 @@
-import Darkmode from "../../components/darkmode";
-import Navbar from "../../components/navbar";
 import "./HeroSection.css";
 import ImageSection from "./ImageSection";
 import ProfileInformation from "./ProfileInformation";

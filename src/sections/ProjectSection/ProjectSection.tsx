@@ -2,12 +2,13 @@ import "./ProjectSection.css";
 
 export default function ProjectSection() {
   const projects = [
-    { name: "PLONKSTARS", thumbnail: "/projects/plonkstars.png" }, // IMAGES / VIDEOS TO BE ADDED
+    { name: "PLONKSTARS", description: "", link: "", thumbnail: "/projects/plonkstars.png" }, // IMAGES / VIDEOS TO BE ADDED
     { name: "JAZA", thumbnail: "/projects/JAZA.png" },
     { name: "HIGH CARD", thumbnail: "/projects/HighCard.png" },
     { name: "KANBAS", thumbnail: "/projects/kanbas.png" },
     { name: "STOCK PORTFOLIO", thumbnail: "/pig.webp" },
   ];
+
   return (
     <div className="project-section">
       <div className="sub-heading">Projects</div>
@@ -23,6 +24,8 @@ export default function ProjectSection() {
               />
             </div>
             <div className="project-title">{project.name}</div>
+
+            {/* PROJECT MODAL HERE */}
           </div>
         ))}
       </div>

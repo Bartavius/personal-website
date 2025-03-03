@@ -7,10 +7,14 @@ import { FaHamburger } from "react-icons/fa";
 
 export default function Navbar({
   setSkills,
-  modal,
+  setContacts,
+  skillModal,
+  contactsModal
 }: {
   setSkills: (val: boolean) => void;
-  modal: boolean;
+  setContacts: (val: boolean) => void;
+  skillModal: boolean;
+  contactsModal: boolean;
 }) {
   const tabs = ["home", "skills", "projects", "education", "contacts"];
   const [hamburger, setHamburger] = useState(true);
@@ -25,7 +29,8 @@ export default function Navbar({
               key={tab}
               className="nav-text"
               onClick={() => {
-                if (tab === "skills") setSkills(!modal);
+                if (tab === "skills") setSkills(!skillModal);
+                if (tab === "contacts") setContacts(!contactsModal);
                 else router.push(`#${tab}`);
               }}
             >

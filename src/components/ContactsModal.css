@@ -1,0 +1,30 @@
+.contacts-modal {
+  background-color: var(--background);
+  padding: 2%;
+  overflow-wrap: normal;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+}
+
+.contacts-subheading {
+  color: white;
+  font-family: Outfit;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: left;
+  margin: 2% 5%;
+  overflow: auto;
+}
+
+.contacts-subheading a {
+    text-decoration: none;
+    color: var(--color-accent1)
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

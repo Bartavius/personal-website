@@ -44,26 +44,26 @@ export default function Skills({
         <h1 className="skill-subheading">Languages</h1>
         <div className="languages">
           {languages.map((tech) => (
-            <IconContainer name={tech.name} icon={tech.icon} />
+            <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
 
         <h1 className="skill-subheading">Frontend Technologies</h1>
         <div className="techstack">
           {frontend.map((tech) => (
-            <IconContainer name={tech.name} icon={tech.icon} />
+            <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
         <h1 className="skill-subheading">Backend Technologies</h1>
         <div className="techstack">
           {backend.map((tech) => (
-            <IconContainer name={tech.name} icon={tech.icon} />
+            <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
         <h1 className="skill-subheading">Databases</h1>
         <div className="techstack">
           {database.map((tech) => (
-            <IconContainer name={tech.name} icon={tech.icon} />
+            <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
       </div>

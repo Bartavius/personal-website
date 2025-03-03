@@ -19,8 +19,8 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    max-width: 40dvw;
-    padding-right: 3dvh;
+    max-width: 40%;
+    padding-right: 3%;
     overflow: hidden;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -31,8 +31,8 @@
 }
 
 .logo {
-    max-width: 20dvw;
-    max-height: 10dvh;
+    max-width: 300px;
+    max-height: 200px;
 }
 
 .degree-title {
@@ -51,6 +51,6 @@
 
 .degree-description {
     margin-left: 2rem;
-    max-width: 100%;
+    max-width: 50%;
     padding: 3rem 2rem;
 }
