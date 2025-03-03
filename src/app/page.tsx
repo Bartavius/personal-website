@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       )}
 
-{isContactsModalOpen && (
+      {isContactsModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <Contacts closeModal={() => setIsContactsModalOpen(false)} />
