@@ -8,7 +8,7 @@ export default function ImageSection() {
         const interval = setInterval(() => {
           const randomIndex = Math.floor(Math.random() * images.length);
           setProfile(images[randomIndex]);
-        }, 7000);
+        }, 5000);
     
         return () => clearInterval(interval);
       }, []);
