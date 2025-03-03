@@ -13,6 +13,7 @@
   padding-right: 2rem;
   border-style: solid;
   border-color: var(--color-accent3);
+  display: flex;
 }
 
 .hero-details {

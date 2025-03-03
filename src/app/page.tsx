@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Darkmode from "../components/darkmode";
 import Navbar from "../components/navbar";
 import EducationSection from "../sections/EducationSection/EducationSection";
@@ -12,6 +12,27 @@ import AboutSection from "@/sections/AboutSection/AboutSection";
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
   const [isContactsModalOpen, setIsContactsModalOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      setIsMobile(width < 806);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <div className="workmode">
+        <h1>Please open this page on a desktop.</h1>
+        <p>This page is not optimized for mobile screens with a width of less than 806px</p>
+      </div>
+    );
+  }
 
   return (
     <div className="container">

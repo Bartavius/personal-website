@@ -33,13 +33,21 @@ export default function ProjectModal({
               <h1 className="text-secondary">Languages</h1>
               <div className="languages">
                 {languages.map((lang) => (
-                  <IconContainer name={lang.name} icon={lang.icon} key={lang.name} />
+                  <IconContainer
+                    name={lang.name}
+                    icon={lang.icon}
+                    key={lang.name}
+                  />
                 ))}
               </div>
               <h1 className="text-secondary">Tech Stack</h1>
               <div className="techstack">
                 {techstack.map((tech) => (
-                  <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
+                  <IconContainer
+                    name={tech.name}
+                    icon={tech.icon}
+                    key={tech.name}
+                  />
                 ))}
               </div>
             </div>
@@ -53,9 +61,22 @@ export default function ProjectModal({
             >
               Close
             </button>
-            <a href={link} target="_blank">
-              <button className="btn-primary text-primary">{linkName}</button>
-            </a>
+            {link === "" ? (
+              <button
+                className="btn-primary text-primary"
+                disabled={link === ""}
+              >
+                {linkName}
+              </button>
+            ) : (
+              <a href={link} target="_blank">
+                <button
+                  className="btn-primary text-primary"
+                >
+                  {linkName}
+                </button>
+              </a>
+            )}
           </div>
         </div>
       </div>

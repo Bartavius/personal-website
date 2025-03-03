@@ -102,6 +102,18 @@ button:active {
   transform: translateY(5px);
 }
 
+.btn-primary:disabled:active {
+  box-shadow: 0px 0px var(--color-accent1);
+  transform: translateY(5px);
+}
+
+.btn-primary:disabled {
+  background-color: grey;
+  box-shadow: 0px 10px rgb(97, 96, 96);
+  color: white;
+  cursor: not-allowed;
+}
+
 .btn-secondary {
   display: flex;
   width: 11.875rem;

@@ -90,7 +90,7 @@ export default function ProjectSection() {
     { name: "STOCK PORTFOLIO", 
       description: "Written in pure Java, this project simulates stock market trades and allows the user to create (and maintain) stock portfolios with fixed percentages. It adopts an MVC architecture and has a 100% test coverage. The code is available upon request.",
       linkName: "Unavailable",
-      link: "/",
+      link: "",
       thumbnail: "/pig.webp",
       languages: [
         {name: "Java", icon: <img src="logo/java.png" />},
