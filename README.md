@@ -1,2 +1,1 @@
-things to be done:
-- activate darkmode button to be to actually function
+# This is my personal website! designed, built, and deployed in roughly a day :D
