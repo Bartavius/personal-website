@@ -10,7 +10,7 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
           <span className="name">
             Jirath "Bart" Lojanarungsiri
             </span>
-          <span className="title">Full-Stack Developer</span>
+          <span className="title"><span className="typing">Full-Stack Developer</span></span>
           <div className="location-based grid grid-cols-1">
             <span className="location">Boston, USA <IoIosPin /></span>
             <span className="location">Bangkok, Thailand <IoIosPin /></span>
