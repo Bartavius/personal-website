@@ -18,11 +18,12 @@ export default function ProjectModal({
     thumbnail: string,
     languages: any[],
     techstack: any[],
-  setModal: (val: boolean) => void;
+  setModal: (val: boolean | null) => void;
 }) {
 
   return (
   <div id={`project-${name}`}>
+    <div className="project-thumbnail">{<img src={thumbnail} />}</div>
     <div className="project-title">{name}</div>
     <div className="project-description">{description}</div>
     <div className="languages">
@@ -34,8 +35,9 @@ export default function ProjectModal({
         <IconContainer name={tech.name} icon={tech.icon} />
     ))}</div>
     <div className="project-footer">
+        <button className="btn-secondary" onClick={() => setModal(null)}>Close</button>
         <a href={link} target="_blank">
-        <button className="btn-primary">Check it out!</button></a>
+        <button className="btn-primary">{linkName}</button></a>
     </div>
   </div>);
 }
