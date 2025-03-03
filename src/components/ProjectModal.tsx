@@ -25,7 +25,7 @@ export default function ProjectModal({
   const [expanded, setExpanded] = useState(false);
 
   // Define truncation length
-  const maxLength = 150;
+  const maxLength = 250;
   const shouldTruncate = description.length > maxLength;
   const displayText = expanded ? description : description.slice(0, maxLength) + (shouldTruncate ? "..." : "");
 
