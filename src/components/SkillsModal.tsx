@@ -1,56 +1,34 @@
-import {
-  FaPython,
-  FaJava,
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaReact,
-  FaBootstrap,
-  FaFlask,
-} from "react-icons/fa";
-import {
-  SiTypescript,
-  SiJavascript,
-  SiKotlin,
-  SiRacket,
-  SiCplusplus,
-  SiDjango,
-  SiExpress,
-  SiMongodb,
-} from "react-icons/si";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { DiPostgresql } from "react-icons/di";
 import "./SkillsModal.css";
 
 const languages = [
-  { name: "Python", icon: <img src="/logo/python.png"/> },
-  { name: "Java", icon: <img src="/logo/java.png"/> },
-  { name: "TypeScript", icon: <img src="/logo/typescript.png"/> },
-  { name: "JavaScript", icon: <SiJavascript /> },
-  { name: "Kotlin", icon: <SiKotlin /> },
-  { name: "Dr. Racket", icon: <SiRacket /> },
-  { name: "C++", icon: <SiCplusplus /> },
-  { name: "HTML5", icon: <FaHtml5 /> },
-  { name: "CSS", icon: <FaCss3Alt /> },
+  { name: "Python", icon: <img src="/logo/python.png" /> },
+  { name: "Java", icon: <img src="/logo/java.png" /> },
+  { name: "TypeScript", icon: <img src="/logo/typescript.png" /> },
+  { name: "JavaScript", icon: <img src="/logo/javascript.png" /> },
+  { name: "Kotlin", icon: <img src="/logo/kotlin.png" /> },
+  { name: "Dr. Racket", icon: <img src="/logo/racket.png" /> },
+  { name: "C++", icon: <img src="/logo/cplusplus.png" /> },
+  { name: "HTML5", icon: <img src="/logo/html5.png" /> },
+  { name: "CSS", icon: <img src="/logo/css.png" /> },
 ];
 
 const backend = [
-  { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "Django", icon: <SiDjango /> },
-  { name: "Flask", icon: <FaFlask /> },
-  { name: "Express.js", icon: <SiExpress /> },
+  { name: "Node.js", icon: <img src="/logo/nodejs.png" /> },
+  { name: "Django", icon: <img src="/logo/django.png" /> },
+  { name: "Flask", icon: <img src="/logo/flask.png" /> },
+  { name: "Express.js", icon: <img src="/logo/express.png" /> },
 ];
 
 const database = [
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "PostgreSQL", icon: <DiPostgresql />}
-]
+  { name: "MongoDB", icon: <img src="/logo/mongodb.png" /> },
+  { name: "PostgreSQL", icon: <img src="/logo/postgresql.png" /> },
+];
 
 const frontend = [
-    { name: "React", icon: <FaReact /> },
-    { name: "Next.js", icon: <RiNextjsFill /> },
-    { name: "Bootstrap", icon: <FaBootstrap /> },
-    { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+    { name: "React", icon: <img src="/logo/react.png" /> },
+    { name: "Next.js", icon: <img src="/logo/next.png" /> },
+    { name: "Bootstrap", icon: <img src="/logo/bootstrap.png" /> },
+    { name: "Tailwind CSS", icon: <img src="/logo/tailwind.png" /> },
 ]
 
 export default function Skills({
