@@ -13,7 +13,6 @@
   flex-wrap: wrap;
   max-height: 40dvh;
   overflow: auto;
-  gap: 1rem;
   padding-bottom: 3%;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .icon-container {
-  background-color: var(--background);
+  background-color: var(--color-accent2);
   border-radius: 7px;
   border-color: var(--color-accent2);
   padding: 9px;
@@ -37,21 +36,40 @@
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 1rem;
+  height: 2rem;
   text-align: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.icon-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.25);
 }
 
 .icon {
-  color: var(--color-accent3);
+  color: var(--background);
   font-family: Outfit;
   font-size: 1rem;
   font-weight: 800;
-  margin-left: 8px;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon img {
-    width: 25px;
+  height: 25px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.skill-subheading {
+  color: white;
+  font-family: Outfit;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .modal-footer {

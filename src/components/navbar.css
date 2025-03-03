@@ -30,7 +30,7 @@
   flex: 1;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .nav-text:hover {
@@ -48,7 +48,9 @@
 }
 
 .hamburger:hover {
-    color: var(--color-accent1);
+  transform: translateY(-2px);
+  box-shadow: 0px 7px var(--color-accent1);
+  cursor: pointer;
 }
 
 .hamburger:active {

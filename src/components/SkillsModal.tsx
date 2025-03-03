@@ -40,7 +40,7 @@ export default function Skills({
     <div className="skills-modal">
       <h1 className="sub-heading">Skills & Technologies</h1>
       <div className="icons">
-      <h1 className="text-secondary">Languages</h1>
+      <h1 className="skill-subheading">Languages</h1>
         <div className="languages">
           {languages.map((lang) => (
             <div key={lang.name} className="language">
@@ -54,7 +54,7 @@ export default function Skills({
         </div>
 
         
-        <h1 className="text-secondary">Frontend Technologies</h1>
+        <h1 className="skill-subheading">Frontend Technologies</h1>
         <div className="techstack">
           {frontend.map((tech) => (
             <div key={tech.name} className="tech">
@@ -66,7 +66,7 @@ export default function Skills({
             </div>
           ))}
         </div>
-        <h1 className="text-secondary">Backend Technologies</h1>
+        <h1 className="skill-subheading">Backend Technologies</h1>
         <div className="techstack">
           {backend.map((tech) => (
             <div key={tech.name} className="tech">
@@ -78,7 +78,7 @@ export default function Skills({
             </div>
           ))}
         </div>
-        <h1 className="text-secondary">Databases</h1>
+        <h1 className="skill-subheading">Databases</h1>
         <div className="techstack">
           {database.map((tech) => (
             <div key={tech.name} className="tech">

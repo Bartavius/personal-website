@@ -70,7 +70,8 @@ button:active {
 }
 
 .btn-primary:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0px 10px var(--color-accent1);
 }
 
 .btn-primary:active {
@@ -96,7 +97,8 @@ button:active {
 }
 
 .btn-secondary:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0px 10px var(--color-accent1);
 }
 
 .btn-secondary:active {
