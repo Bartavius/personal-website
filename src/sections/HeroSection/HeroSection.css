@@ -165,3 +165,8 @@
 .image-section:hover {
   rotate: -2deg;
 }
+
+.polaroid-date {
+  font-size: 1.5rem;
+  display: block;
+}

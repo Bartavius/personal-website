@@ -35,6 +35,7 @@ export default function Home() {
   }
 
   return (
+    <div>
     <div className="container">
       {/* <Darkmode /> */}
       <Navbar
@@ -56,6 +57,9 @@ export default function Home() {
       <div className="about-site">
         <AboutSection />
       </div>
+    
+    </div>
+    
 
       {isSkillModalOpen && (
         <div className="modal">
@@ -71,7 +75,6 @@ export default function Home() {
             <Contacts closeModal={() => setIsContactsModalOpen(false)} />
           </div>
         </div>
-      )}
-    </div>
+      )}</div>
   );
 }

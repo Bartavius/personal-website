@@ -1,0 +1,47 @@
+[
+    {
+        "image": "/profile1.jpeg",
+        "caption": "Tokyo, Japan",
+        "date": "1 Jan 2024"
+    },
+    {
+        "image": "/profile2.png",
+        "caption": "Tokyo, Japan",
+        "date": "2 Jan 2025"
+    },
+    {
+        "image": "/profile3.png",
+        "caption": "Boston, USA",
+        "date": "10 Nov 2024"
+    },
+    {
+        "image": "/profile4.png",
+        "caption": "NYC, USA",
+        "date": "6 March 2024"
+    },
+    {
+        "image": "/profile5.png",
+        "caption": "San Francisco, USA",
+        "date": "11 February 2024"
+    },
+    {
+        "image": "/profile6.png",
+        "caption": "Marion MA, USA",
+        "date": "2 March 2023"
+    },
+    {
+        "image": "/profile7.png",
+        "caption": "Boston, USA",
+        "date": "22 February 2025"
+    },
+    {
+        "image": "/profile8.png",
+        "caption": "San Francisco, USA",
+        "date": "11 February 2024"
+    },
+    {
+        "image": "/profile9.png",
+        "caption": "Kamakura, Japan",
+        "date": "29 June 2024"
+    }
+]
