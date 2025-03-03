@@ -142,7 +142,7 @@ const projects = [
     languages: [{ name: "Java", icon: <img src="/logo/java.png" /> }],
     techstack: [
       { name: "JUnit", icon: "" },
-      { name: "JPane", icon: "" }
+      { name: "JavaSwing", icon: "" }
     ]
   }
 ]

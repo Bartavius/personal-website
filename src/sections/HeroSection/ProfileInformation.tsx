@@ -7,7 +7,9 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
     <div className="hero-profile">
       <div className="hero-details">
         <div className="grid grid-cols-1">
-          <span className="name">Jirath "Bart" Lojanarungsiri</span>
+          <span className="name">
+            Jirath "Bart" Lojanarungsiri
+            </span>
           <span className="title">Full-Stack Developer</span>
           <div className="location-based grid grid-cols-1">
             <span className="location">Boston, USA <IoIosPin /></span>

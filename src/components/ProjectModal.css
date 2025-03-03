@@ -2,7 +2,7 @@
 .project-modal {
     background-color: var(--background);
     padding: 2%;
-    overflow-wrap: normal;
+    overflow-wrap: wrap;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
