@@ -194,6 +194,12 @@ button:active {
   font-style: normal;
   font-weight: 800;
   line-height: 3.75rem; /* 150% */
+  transition: 0.1s ease-in-out;
+  transform-origin: right;
+}
+
+.title:hover {
+  rotate: -2deg;
 }
 
 .sub-heading {
@@ -238,11 +244,15 @@ button:active {
 }
 
 #home {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 #projects {
-  height: 100dvh;
+  min-height: 100dvh;
+}
+
+#education {
+  min-height: 100dvh;
 }
 
 .about-section {

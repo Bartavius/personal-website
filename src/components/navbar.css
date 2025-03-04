@@ -18,9 +18,9 @@
   border-radius: 50px;
   z-index: 4;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: 0px 5px var(--color-accent1);
-  pointer-events: none;
+  visibility: hidden;
 }
 
 .nav-text {
@@ -61,6 +61,6 @@
 
 .hamburger-active {
     opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-    pointer-events: all;
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
 }

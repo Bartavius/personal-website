@@ -1,7 +1,7 @@
 [
     {
       "name": "PLONKSTARS",
-      "description": "After finding out that Geoguessr required a subscription fee to play, my friends and I decided to recreate the game ourselves with zero production costs. So, introducing Plonkstars, a geolocating game inspired by Geoguessr. Explore through Google Streetview and find out where you are!",
+      "description": "After finding out that Geoguessr required a subscription fee to play, my friends and I decided to recreate the game ourselves with zero production costs. So, introducing Plonkstars, a geolocating game inspired by Geoguessr. Explore through Google Streetview and find out where you are in the world!",
       "linkName": "Play",
       "link": "https://plonkstars.vercel.app",
       "thumbnail": "/projects/plonkstars.png",
