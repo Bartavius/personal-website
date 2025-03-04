@@ -17,7 +17,7 @@ export default function ImageSection() {
     return (
         <div className="image-section" style={{rotate: `${profile.deg}deg`}}>
             <div className="circles">
-                <img src={profile.image} alt="" />
+                <img src={profile.image} alt="" draggable={false}/>
                 <span className="scribble-font">{profile.caption}</span>
                 <span className="scribble-font polaroid-date">{profile.date}</span>
             </div>
