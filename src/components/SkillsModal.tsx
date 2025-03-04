@@ -1,11 +1,10 @@
 import IconContainer from "./iconContainer";
-import languages from "../database/skills/languages.json"
+import languages from "../database/skills/languages.json";
 import frontend from "../database/skills/frontend.json";
 import backend from "../database/skills/backend.json";
 import database from "../database/skills/database.json";
 import "./SkillsModal.css";
-
-
+import { motion } from "framer-motion";
 
 export default function Skills({
   closeModal,
@@ -13,7 +12,14 @@ export default function Skills({
   closeModal: (val: boolean) => void;
 }) {
   return (
-    <div className="skills-modal">
+    <motion.div
+      key="skills-modal"
+      className="skills-modal"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="sub-heading">Skills & Technologies</h1>
       <div className="icons">
         <h1 className="skill-subheading">Languages</h1>
@@ -51,6 +57,6 @@ export default function Skills({
           Close
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }

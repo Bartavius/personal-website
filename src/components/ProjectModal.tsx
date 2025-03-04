@@ -2,6 +2,7 @@
 import { useState } from "react";
 import IconContainer from "./iconContainer";
 import "./ProjectModal.css";
+import { motion } from "framer-motion";
 
 export default function ProjectModal({
   name,
@@ -26,11 +27,22 @@ export default function ProjectModal({
 
   const maxLength = 250;
   const shouldTruncate = description.length > maxLength;
-  const displayText = expanded ? description : description.slice(0, maxLength) + (shouldTruncate ? "..." : "");
+  const displayText = expanded
+    ? description
+    : description.slice(0, maxLength) + (shouldTruncate ? "..." : "");
 
   return (
     <div id={`project-${name}`} className="modal">
-      <div className="modal-content">
+
+    <motion.div
+      
+      key={`project-${name}`}
+      className="modal-content"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      transition={{ duration: 0.5 }}
+    >
         <div className="project-modal">
           <div className="project-content">
             <div className="project-thumbnail">
@@ -41,7 +53,10 @@ export default function ProjectModal({
             <div className="project-description">
               {displayText}
               {shouldTruncate && (
-                <button className="read-more-btn" onClick={() => setExpanded(!expanded)}>
+                <button
+                  className="read-more-btn"
+                  onClick={() => setExpanded(!expanded)}
+                >
                   {expanded ? " Show Less" : " Read More"}
                 </button>
               )}
@@ -73,7 +88,10 @@ export default function ProjectModal({
 
           <div className="smaller-section-divider"></div>
           <div className="project-footer">
-            <button className="btn-secondary text-secondary" onClick={() => setModal(null)}>
+            <button
+              className="btn-secondary text-secondary"
+              onClick={() => setModal(null)}
+            >
               Close
             </button>
             {link === "" ? (
@@ -87,7 +105,7 @@ export default function ProjectModal({
             )}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
