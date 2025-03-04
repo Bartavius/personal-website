@@ -8,6 +8,7 @@ import ProjectSection from "../sections/ProjectSection/ProjectSection";
 import Skills from "../components/SkillsModal";
 import Contacts from "@/components/Contacts";
 import AboutSection from "@/sections/AboutSection/AboutSection";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
@@ -27,10 +28,17 @@ export default function Home() {
 
   if (isMobile) {
     return (
-      <div className="workmode">
+      <motion.div 
+      key={"workmode"}
+      className="workmode"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+  > 
         <h1>Please open this page on a desktop.</h1>
         <p>This page is not optimized for mobile screens with a width of less than 806px</p>
-      </div>
+      </motion.div>
     );
   }
 
@@ -38,25 +46,56 @@ export default function Home() {
     <div>
     <div className="container">
       {/* <Darkmode /> */}
-      <Navbar
+        <Navbar
         setSkills={setIsSkillModalOpen}
         skillModal={isSkillModalOpen}
         setContacts={setIsContactsModalOpen}
         contactsModal={isContactsModalOpen}
       />
-      <div id="home">
+      
+      <motion.div 
+            key={"home"}
+            className="home"
+            id="home"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+        >
         <HeroSection setSkills={setIsSkillModalOpen} modal={isSkillModalOpen} />
-      </div>
+      </motion.div>
 
-      <div id="projects">
+      <motion.div 
+            key={"projects"}
+            className="projects"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+       id="projects">
         <ProjectSection />
-      </div>
-      <div id="education">
+      </motion.div>
+
+      <motion.div 
+            key={"education"}
+            className="education"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+         id="education">
         <EducationSection />
-      </div>
-      <div className="about-site">
+      </motion.div>
+      <motion.div 
+            key={"about"}
+            className="about-site"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+        >
         <AboutSection />
-      </div>
+      </motion.div>
     
     </div>
     
