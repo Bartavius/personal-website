@@ -14,7 +14,7 @@
 .project-card {
   background: var(--color-accent2);
   height: auto;
-  width: 30%;
+  width: 33.3%;
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 10px var(--color-accent1);
   border-radius: 5px;
