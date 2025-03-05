@@ -1,1 +1,1 @@
-# This is my personal website! designed, built, and deployed in roughly a day or two :D
+# This is my personal website! Stop by and look around :D
