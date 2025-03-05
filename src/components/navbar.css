@@ -5,7 +5,7 @@
   position: fixed;
   gap: 20px;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .navbar-container {
@@ -40,7 +40,7 @@
 
 .hamburger {
     background-color: var(--color-accent2);
-    padding: 12px;
+    padding: 12px 16px;
     color: var(--background);
     border-radius: 50px;
     width: auto;

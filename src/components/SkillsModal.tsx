@@ -28,7 +28,6 @@ export default function Skills({
             <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
-
         <h1 className="skill-subheading">Frontend Technologies</h1>
         <div className="techstack">
           {frontend.map((tech) => (
