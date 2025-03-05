@@ -6,7 +6,7 @@ export default function IconContainer({name, icon} : {name: string, icon: any}) 
         <div key={name} className="tech">
               <div className="icon-container">
                 <span className="icon">
-                  <img src={icon} alt="" /> {name}
+                  {icon !== "" && <img src={icon} alt="" />} {name}
                 </span>
               </div>
             </div>
