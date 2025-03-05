@@ -7,17 +7,17 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: left;
 }
 
 .project-card {
   background: var(--color-accent2);
   height: auto;
-  width: 33.3%;
+  max-width: 30.3%;
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 10px var(--color-accent1);
   border-radius: 5px;
+  margin: 1.5% 1.5%;
 }
 
 .project-card:hover {

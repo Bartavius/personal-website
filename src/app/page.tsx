@@ -19,7 +19,7 @@ export default function Home() {
     const checkScreenSize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      setIsMobile(width < 806);
+      setIsMobile(width < 760); //806
     };
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
@@ -37,7 +37,7 @@ export default function Home() {
       transition={{ duration: 0.5 }}
   > 
         <h1>Please open this page on a desktop.</h1>
-        <p>This page is not optimized for mobile screens with a width of less than 806px</p>
+        <p>This page is not optimized for screens with a width of less than 760px</p>
       </motion.div>
     );
   }

@@ -20,6 +20,7 @@
     justify-content: right;
     align-items: center;
     max-width: 40%;
+    min-width: fit-content;
     padding-right: 3%;
     overflow: hidden;
     border-top-width: 0px;
