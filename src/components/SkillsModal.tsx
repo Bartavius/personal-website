@@ -20,7 +20,7 @@ export default function Skills({
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="sub-heading">Skills & Technologies</h1>
+      <span className="sub-heading">Skills & Technologies</span>
       <div className="icons">
         <h1 className="skill-subheading">Languages</h1>
         <div className="languages">

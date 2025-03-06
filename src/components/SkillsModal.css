@@ -11,7 +11,7 @@
 .icons {
   display: flex;
   flex-wrap: wrap;
-  max-height: 40dvh;
+  max-height: 55dvh;
   justify-content: center;
   overflow: auto;
   padding-bottom: 3%;

@@ -28,77 +28,82 @@ export default function Home() {
 
   if (isMobile) {
     return (
-      <motion.div 
-      key={"workmode"}
-      className="workmode"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.5 }}
-  > 
+      <motion.div
+        key={"workmode"}
+        className="workmode"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -50 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1>Please open this page on a desktop.</h1>
-        <p>This page is not optimized for screens with a width of less than 760px</p>
+        <p>
+          This page is not optimized for screens with a width of less than 760px
+        </p>
       </motion.div>
     );
   }
 
   return (
     <div>
-    <div className="container">
-      {/* <Darkmode /> */}
+      <div className="container">
+        {/* <Darkmode /> */}
         <Navbar
-        setSkills={setIsSkillModalOpen}
-        skillModal={isSkillModalOpen}
-        setContacts={setIsContactsModalOpen}
-        contactsModal={isContactsModalOpen}
-      />
-      
-      <motion.div 
-            key={"home"}
-            className="home"
-            id="home"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
-        >
-        <HeroSection setSkills={setIsSkillModalOpen} modal={isSkillModalOpen} />
-      </motion.div>
+          setSkills={setIsSkillModalOpen}
+          skillModal={isSkillModalOpen}
+          setContacts={setIsContactsModalOpen}
+          contactsModal={isContactsModalOpen}
+        />
 
-      <motion.div 
-            key={"projects"}
-            className="projects"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
-       id="projects">
-        <ProjectSection />
-      </motion.div>
-
-      <motion.div 
-            key={"education"}
-            className="education"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
-         id="education">
-        <EducationSection />
-      </motion.div>
-      <motion.div 
-            key={"about"}
-            className="about-site"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
+        <motion.div
+          key={"home"}
+          className="home"
+          id="home"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.5 }}
         >
-        <AboutSection />
-      </motion.div>
-    
-    </div>
-    
+          <HeroSection
+            setSkills={setIsSkillModalOpen}
+            modal={isSkillModalOpen}
+          />
+        </motion.div>
+
+        <motion.div
+          key={"projects"}
+          className="projects"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.5 }}
+          id="projects"
+        >
+          <ProjectSection />
+        </motion.div>
+
+        <motion.div
+          key={"education"}
+          className="education"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.5 }}
+          id="education"
+        >
+          <EducationSection />
+        </motion.div>
+        <motion.div
+          key={"about"}
+          className="about-site"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.5 }}
+        >
+          <AboutSection />
+        </motion.div>
+      </div>
 
       {isSkillModalOpen && (
         <div className="modal">
@@ -114,6 +119,7 @@ export default function Home() {
             <Contacts closeModal={() => setIsContactsModalOpen(false)} />
           </div>
         </div>
-      )}</div>
+      )}
+    </div>
   );
 }
