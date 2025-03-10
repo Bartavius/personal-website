@@ -50,8 +50,10 @@ export default function ProjectModal({
               <div className="project-thumbnail">
                 {videoLink ? (
                   <iframe
-                    src={videoLink}
+                    src={`${videoLink}?autoplay=1&mute=1`}
+                    title={name}
                     allowFullScreen
+                    allow="autoplay; encrypted-media"
                     className="project-video"
                   />
                 ) : (
