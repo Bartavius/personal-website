@@ -23,25 +23,25 @@ export default function Skills({
       <span className="sub-heading">Skills & Technologies</span>
       <div className="icons">
         <h1 className="skill-subheading">Languages</h1>
-        <div className="languages">
+        <div className="skills-languages">
           {languages.map((tech) => (
             <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
         <h1 className="skill-subheading">Frontend Technologies</h1>
-        <div className="techstack">
+        <div className="skills-techstack">
           {frontend.map((tech) => (
             <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
         <h1 className="skill-subheading">Backend Technologies</h1>
-        <div className="techstack">
+        <div className="skills-techstack">
           {backend.map((tech) => (
             <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
         <h1 className="skill-subheading">Databases</h1>
-        <div className="techstack">
+        <div className="skills-techstack">
           {database.map((tech) => (
             <IconContainer name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
