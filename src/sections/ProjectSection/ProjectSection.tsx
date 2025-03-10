@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./ProjectSection.css";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
+import "./ProjectSection.css";
 
 export default function ProjectSection() {
   const [activeProject, setActiveProject] = useState<
@@ -19,7 +19,7 @@ export default function ProjectSection() {
             className="project-card"
             onClick={() => setActiveProject(project)}
           >
-            <div className="project-thumbnail">
+            <div className="project-card-thumbnail">
               <img
                 src={project.thumbnail}
                 alt="thumbnail"

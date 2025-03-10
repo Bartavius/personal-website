@@ -1,34 +1,94 @@
-
-.project-modal {
-    background-color: var(--background);
-    padding: 2%;
-    overflow-wrap: normal;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 70vw;
-    max-height: 80dvh;
-    text-align: left;
+html, body {
+    overflow: hidden;
+    height: 100%;
 }
 
-.project-content {
-    overflow-y: scroll;
+.project-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background);
+    border-radius: 20px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 90dvw;
+    height: 80dvh;
+    text-align: left;
+    overflow: hidden;
+}
+
+.project-subheading {
+    color: white;
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: left;
+    margin: 2% 0%;
+}
+.languages, .techstack {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-icons {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-body {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(80dvh - 4rem);
+}
+
+.project-left {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+    overflow: hidden;
 }
 
 .project-thumbnail {
     width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    max-height: 30dvh;
-}
-
-.languages, .techstack {
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.project-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
     gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
+    justify-content: flex-start;
+    overflow-y: auto;
+    max-height: 60dvh;
+    border: 2px solid var(--color-accent1);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .project-name {
@@ -36,39 +96,13 @@
     color: var(--color-accent3);
     font-size: 3rem;
     font-weight: 800;
+    text-align: center;
 }
 
 .project-description {
     color: var(--color-accent3);
     font-family: Roboto;
     font-size: 1.5rem;
-}
-
-.project-icons {
-    margin-bottom: 2rem;
-}
-
-.project-subheading {
-  color: white;
-  font-family: Outfit;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: left;
-  margin: 2% 5%;
-  overflow: auto;
-}
-
-.project-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-footer a {
-    text-decoration: none;
 }
 
 .read-more-btn {
@@ -79,9 +113,37 @@
     cursor: pointer;
     margin-left: 5px;
     font-size: 1.5rem;
-  }
-  
-  .read-more-btn:hover {
+}
+
+.read-more-btn:hover {
     text-decoration: underline;
+}
+
+.project-footer a {
+    text-decoration: none;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%
   }
-  
+
+  .button-with-icon .icon {
+    margin-left: 0.5rem;  /* Adjust space between text and icon */
+    font-size: 1.25rem; 
+    font-weight: 800;
+  }

@@ -27,6 +27,7 @@
       "linkName": "Devpost",
       "link": "https://devpost.com/software/j-a-z-a-just-a-zip-away",
       "thumbnail": "/projects/JAZA.png",
+      "videoLink": "https://www.youtube.com/embed/UiUuOPtWXCM",
       "languages": [
         {"name": "TypeScript", "icon": "/logo/typescript.png"},
         {"name": "Python", "icon": "/logo/python.png"},
@@ -48,6 +49,7 @@
       "linkName": "Devpost",
       "link": "https://devpost.com/software/high-card",
       "thumbnail": "/projects/HighCard.png",
+      "videoLink": "https://www.youtube.com/embed/2RDkPCOkaNE",
       "languages": [
         {"name": "TypeScript", "icon": "/logo/typescript.png"},
         {"name": "JavaScript", "icon": "/logo/javascript.png"},
