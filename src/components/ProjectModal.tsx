@@ -7,6 +7,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function ProjectModal({
   name,
+  date,
   description,
   linkName,
   link,
@@ -17,6 +18,7 @@ export default function ProjectModal({
   setModal,
 }: {
   name: string;
+  date: string;
   description: string;
   linkName: string;
   link: string;
@@ -47,7 +49,7 @@ export default function ProjectModal({
         <div className="project-modal">
           <div className="project-body">
             <div className="project-left">
-              <div className="project-thumbnail">
+              <div className="project-thumbnail-container">
                 {videoLink ? (
                   <iframe
                     src={`${videoLink}?autoplay=1&mute=1`}
@@ -66,7 +68,8 @@ export default function ProjectModal({
                   </a>
                 )}
               </div>
-              <div className="project-name">{name}</div>
+              <span className="project-name">{name}</span>
+              <span className="project-date">{date}</span>
             </div>
 
             <div className="project-right">

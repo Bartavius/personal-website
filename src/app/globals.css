@@ -113,14 +113,19 @@ button:active {
   transform: translateY(5px);
 }
 
+.btn-primary:disabled:hover {
+  box-shadow: 0px 10px rgb(97, 96, 96);
+  transform: translateY(-5px);
+}
+
 .btn-primary:disabled:active {
-  box-shadow: 0px 0px var(--color-accent1);
+  box-shadow: 0px 0px rgb(97, 96, 96);
   transform: translateY(5px);
 }
 
 .btn-primary:disabled {
   background-color: grey;
-  box-shadow: 0px 10px rgb(97, 96, 96);
+  box-shadow: 0px 5px rgb(97, 96, 96);
   color: white;
   cursor: not-allowed;
 }

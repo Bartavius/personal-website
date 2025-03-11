@@ -48,7 +48,7 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
                 <span className="text-secondary">Skills</span>
               </button>
             <a
-              href="files/Jirath-Lojanarungsiri-Web-Developer-Resume.pdf"
+              href="files/Jirath-Lojanarungsiri-Fullstack-Developer-Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
