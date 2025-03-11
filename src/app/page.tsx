@@ -48,34 +48,36 @@ export default function Home() {
     <div>
       <div className="container">
         {/* <Darkmode /> */}
-        <Navbar
-          setSkills={setIsSkillModalOpen}
-          skillModal={isSkillModalOpen}
-          setContacts={setIsContactsModalOpen}
-          contactsModal={isContactsModalOpen}
-        />
-
         <motion.div
+          initial={{ opacity: 0, y: -50}}
+          animate={{ opacity: 1, y: 0}}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut"}}
+          style={{ position: "fixed", width: "100%", zIndex: 1000 }}
+        >
+          <Navbar
+            setSkills={setIsSkillModalOpen}
+            skillModal={isSkillModalOpen}
+            setContacts={setIsContactsModalOpen}
+            contactsModal={isContactsModalOpen}
+          />
+        </motion.div>
+
+        <div
           key={"home"}
           className="home"
           id="home"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.5 }}
         >
           <HeroSection
             setSkills={setIsSkillModalOpen}
             modal={isSkillModalOpen}
           />
-        </motion.div>
+        </div>
 
         <motion.div
           key={"projects"}
           className="projects"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
           id="projects"
         >
@@ -87,7 +89,6 @@ export default function Home() {
           className="education"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
           id="education"
         >
@@ -98,7 +99,6 @@ export default function Home() {
           className="about-site"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
         >
           <AboutSection />
