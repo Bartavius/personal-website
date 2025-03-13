@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
+import { easeInOut, motion } from "framer-motion";
 
 export default function ProjectSection() {
   const [activeProject, setActiveProject] = useState<
@@ -14,7 +15,15 @@ export default function ProjectSection() {
       <div className="section-divider"></div>
       <div className="project-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {projects.map((project, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{
+              duration: 0.25,
+              delay: +0.25 * (index + 1),
+              ease: "easeInOut",
+            }}
             key={index}
             className="project-card"
             onClick={() => setActiveProject(project)}
@@ -27,7 +36,7 @@ export default function ProjectSection() {
               />
             </div>
             <div className="project-title">{project.name}</div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {activeProject && (

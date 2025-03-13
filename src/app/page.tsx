@@ -8,7 +8,7 @@ import ProjectSection from "../sections/ProjectSection/ProjectSection";
 import Skills from "../components/SkillsModal";
 import Contacts from "@/components/Contacts";
 import AboutSection from "@/sections/AboutSection/AboutSection";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
@@ -76,9 +76,10 @@ export default function Home() {
         <motion.div
           key={"projects"}
           className="projects"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
           id="projects"
         >
           <ProjectSection />
@@ -88,7 +89,8 @@ export default function Home() {
           key={"education"}
           className="education"
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
           id="education"
         >
@@ -98,7 +100,8 @@ export default function Home() {
           key={"about"}
           className="about-site"
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
         >
           <AboutSection />
