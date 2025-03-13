@@ -21,7 +21,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
   box-shadow: 0px 15px var(--color-accent1);
   cursor: pointer;
 }
