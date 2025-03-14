@@ -3,6 +3,7 @@ import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
 import { easeInOut, motion } from "framer-motion";
+import Tooltip from "../../components/Tooltip";
 
 export default function ProjectSection() {
   const [activeProject, setActiveProject] = useState<
@@ -13,8 +14,9 @@ export default function ProjectSection() {
     <div className="project-section">
       <div className="sub-heading">Projects</div>
       <div className="section-divider"></div>
-      <div className="project-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="project-list">
         {projects.map((project, index) => (
+          
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +29,7 @@ export default function ProjectSection() {
             key={index}
             className="project-card"
             onClick={() => setActiveProject(project)}
-          >
+          ><Tooltip text="Click me!">
             <div className="project-card-thumbnail">
               <img
                 src={project.thumbnail}
@@ -36,7 +38,7 @@ export default function ProjectSection() {
               />
             </div>
             <div className="project-title">{project.name}</div>
-          </motion.div>
+          </Tooltip></motion.div>
         ))}
       </div>
       {activeProject && (
