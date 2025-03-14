@@ -10,10 +10,10 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--color-accent2);
-  padding-top: 0.8dvh;
-  padding-bottom: 0.8dvh;
-  padding-left: 0.5dvw;
-  padding-right: 0.5dvw;
+  padding-top: 0.6dvh;
+  padding-bottom: 0.6dvh;
+  padding-left: 0.4dvw;
+  padding-right: 0.4dvw;
   gap: 0.25dvw;
   border-radius: 50px;
   font-family: Roboto;

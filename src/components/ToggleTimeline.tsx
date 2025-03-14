@@ -15,14 +15,15 @@ export default function ToggleTimeline({ tree }: { tree: any }) {
   };
 
   return (
-    <motion.div 
+    <motion.div
       key={"toggled-timeline"}
       className="toggled-timeline"
       initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-    > 
+    >
       <div className="toggled-tabs">
         {tree.map((tab: any, index: number) => (
           <button
