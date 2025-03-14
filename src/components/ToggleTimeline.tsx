@@ -18,10 +18,10 @@ export default function ToggleTimeline({ tree }: { tree: any }) {
     <motion.div
       key={"toggled-timeline"}
       className="toggled-timeline"
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, }}
       viewport={{ once: true, amount: 0.2 }}
-      exit={{ opacity: 0, x: -50 }}
+      exit={{ opacity: 0}}
       transition={{ duration: 0.5 }}
     >
       <div className="toggled-tabs">
