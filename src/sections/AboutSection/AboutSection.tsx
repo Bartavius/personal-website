@@ -12,7 +12,7 @@ export default function AboutSection() {
             </div>
             <br />
             <div className="text-description">
-                - Bart L. | <a href="https://github.com/Bartavius/personal-website" target="_blank" className="text-description">Github Repository</a> | Last Updated: March 13, 2025
+                - Bart L. | <a href="https://github.com/Bartavius/personal-website" target="_blank" className="text-description">Github Repository</a> | Last Updated: March 21, 2025
             </div>
         </div>
     )
