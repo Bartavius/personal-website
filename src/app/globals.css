@@ -258,17 +258,21 @@ button:active {
 
 #home {
   min-height: 100dvh;
+  max-width: 100dvw;
 }
 
 #projects {
   min-height: 100dvh;
+  max-width: 100dvw;
 }
 
 #education {
   min-height: 100dvh;
+  max-width: 100dvw;
 }
 
 .about-section {
   margin: 10% 0px;
   padding-bottom: 10%;
+  max-width: 100dvw;
 }

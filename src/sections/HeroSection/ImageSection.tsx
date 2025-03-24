@@ -36,15 +36,18 @@ export default function ImageSection() {
   }, [currentIndex, shuffledImages]);
 
   return (
-    <div className="image-section" style={{ rotate: `5deg` }}>
+    <div className="image-section">
       <div className="tape-top"></div>
       <div className="tape-bottom"></div>
-      <div
-        className="circles"
-      >
-        <img src={profile.image} alt="" draggable={false} style={{ opacity }}/>
-        <span className="scribble-font" style={{ opacity }}>{profile.caption}</span>
-        <span className="scribble-font polaroid-date" style={{ opacity }}>{profile.date}</span>
+      <div className="circles">
+        <img src={profile.image} alt="" draggable={false} style={{ opacity }} />
+        <span className="scribble-font" style={{ opacity }}>
+          {profile.caption}
+          <span className="scribble-font polaroid-date" style={{ opacity }}>
+          {profile.date}
+        </span>
+        </span>
+        
       </div>
     </div>
   );

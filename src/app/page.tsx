@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Darkmode from "../components/darkmode";
 import Navbar from "../components/navbar";
 import EducationSection from "../sections/EducationSection/EducationSection";
 import HeroSection from "../sections/HeroSection/HeroSection";
@@ -8,7 +7,7 @@ import ProjectSection from "../sections/ProjectSection/ProjectSection";
 import Skills from "../components/SkillsModal";
 import Contacts from "@/components/Contacts";
 import AboutSection from "@/sections/AboutSection/AboutSection";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
@@ -59,6 +58,7 @@ export default function Home() {
             skillModal={isSkillModalOpen}
             setContacts={setIsContactsModalOpen}
             contactsModal={isContactsModalOpen}
+            isMobile={isMobile}
           />
         </motion.div>
 

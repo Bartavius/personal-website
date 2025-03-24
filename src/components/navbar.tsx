@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./navbar.css";
 import { useRouter } from "next/navigation";
 import { FaHamburger } from "react-icons/fa";
@@ -9,21 +9,28 @@ export default function Navbar({
   setSkills,
   setContacts,
   skillModal,
-  contactsModal
+  contactsModal,
+  isMobile,
 }: {
   setSkills: (val: boolean) => void;
   setContacts: (val: boolean) => void;
   skillModal: boolean;
   contactsModal: boolean;
+  isMobile: boolean;
 }) {
   const tabs = ["home", "skills", "projects", "education", "contacts"];
-  const [hamburger, setHamburger] = useState(true);
+  const [hamburgerOpen, setHamburgerOpen] = useState(!isMobile);
   const router = useRouter();
+  useEffect(() => {
+    setHamburgerOpen(!isMobile);
+  }, [isMobile]);
 
   return (
     <div>
       <div className="navbar">
-        <div className={`navbar-container grid grid-cols-3 gap-4 relative ${hamburger && "hamburger-active"}`}>
+        <div
+          className={`navbar-container ${hamburgerOpen && "hamburger-active"}`}
+        >
           {tabs.map((tab) => (
             <span
               key={tab}
@@ -38,10 +45,12 @@ export default function Navbar({
             </span>
           ))}
         </div>
-        <div className="hamburger" onClick={() => setHamburger(!hamburger)}>
-        <FaHamburger />
-      </div>
-        
+        <div
+          className="hamburger"
+          onClick={() => setHamburgerOpen(!hamburgerOpen)}
+        >
+          <FaHamburger />
+        </div>
       </div>
     </div>
   );
