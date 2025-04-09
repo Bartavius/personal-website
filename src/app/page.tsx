@@ -48,9 +48,9 @@ export default function Home() {
       <div className="container">
         {/* <Darkmode /> */}
         <motion.div
-          initial={{ opacity: 0, y: -50}}
-          animate={{ opacity: 1, y: 0}}
-          transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut"}}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
           style={{ position: "fixed", width: "100%", zIndex: 1000 }}
         >
           <Navbar
@@ -62,11 +62,7 @@ export default function Home() {
           />
         </motion.div>
 
-        <div
-          key={"home"}
-          className="home"
-          id="home"
-        >
+        <div key={"home"} className="home" id="home">
           <HeroSection
             setSkills={setIsSkillModalOpen}
             modal={isSkillModalOpen}
@@ -74,24 +70,24 @@ export default function Home() {
         </div>
 
         <motion.div
-          key={"projects"}
-          className="projects"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          key="projects"
+          variants={fadeInUpVariant}
+          initial="hidden"
+          whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          className="projects"
           id="projects"
         >
           <ProjectSection />
         </motion.div>
 
         <motion.div
-          key={"education"}
-          className="education"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          key="education"
+          variants={fadeInUpVariant}
+          initial="hidden"
+          whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.5 }}
+          className="education"
           id="education"
         >
           <EducationSection />
@@ -126,3 +122,15 @@ export default function Home() {
     </div>
   );
 }
+
+const fadeInUpVariant = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};

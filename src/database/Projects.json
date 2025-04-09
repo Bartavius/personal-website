@@ -19,7 +19,8 @@
         {"name": "PostgreSQL", "icon": "/logo/postgresql.png"},
         {"name": "TailwindCSS", "icon": "/logo/tailwind.png"},
         {"name": "Axios", "icon": ""},
-        {"name": "Redux", "icon": ""}
+        {"name": "Redux", "icon": ""},
+        {"name": "JWT", "icon": ""}
       ]
     },
     {
