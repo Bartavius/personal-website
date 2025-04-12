@@ -1,11 +1,5 @@
 [
     {
-        "image": "/profile1.jpeg",
-        "caption": "Tokyo, Japan",
-        "date": "1 Jan 2024",
-        "deg": 5
-    },
-    {
         "image": "/profile2.png",
         "caption": "Tokyo, Japan",
         "date": "2 Jan 2025",

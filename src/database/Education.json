@@ -55,25 +55,31 @@
       "timeline": [
         {
           "time": "Spring 2025",
-          "lines": ["Won FinHacks 2025", "Participated in HackBeanpot 2025"]
+          "lines": [
+            "• Won Best Startup Potential @ FinHacks out of 150+ competitors",
+            "• Developed Just A Zip Away (JAZA) @ HackBeanpot 2025",
+            "• Participated in Big CTF — placed 11th out of 30 teams"
+          ]
         },
         {
           "time": "Fall 2024",
-          "lines": ["Participated in CTF Thyme", "Participated in Versus CTF"]
+          "lines": [
+            "• Participated in CTF Thyme — placed top 10 out of 30 teams",
+            "• Participated in Versus CTF — placed top 10 out of 30 teams"]
         },
         {
           "time": "Spring 2024",
           "lines": [
-            "Vice-President of Asian Student Alliance",
-            "Farm Crew at Northeastern University Oakland"
+            "• [Vice-President] Asian Student Alliance",
+            "• Farm Crew at Northeastern University Oakland"
           ]
         },
         {
           "time": "Fall 2023",
           "lines": [
-            "President of Club Greenovation",
-            "E-Board member of Asian Student Alliance",
-            "Participated in Pawhacks 1.0"
+            "• [President] Club Greenovation",
+            "• [E-Board] Asian Student Alliance",
+            "• Participated in Pawhacks 1.0"
           ]
         }
       ]
