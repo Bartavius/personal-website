@@ -43,6 +43,13 @@
     color: var(--color-accent3);
 }
 
+.degree-subtitle {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size:1.75rem;
+    color: var(--color-accent3);
+}
+
 .degree-body {
     font-family: Roboto;
     font-weight: 400;

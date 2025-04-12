@@ -21,11 +21,12 @@ export default function EducationSection() {
             <div className="degree-title">
               B.S. Computer Science with a Concentration in Software
             </div>
+            <div className="degree-subtitle"><i>Minor in Mathematics</i></div>
             <div className="degree-body">
               <b>GPA:</b> 3.97 / 4.00
             </div>
             <div className="degree-body">
-              <b>Honors:</b> Dean's List Fall 2023, Spring 2024, Fall 2024
+              <b>Awards:</b> Dean's List Fall 2023, Spring 2024, Fall 2024
             </div>
           </div>
         </div>
