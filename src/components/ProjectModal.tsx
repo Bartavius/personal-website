@@ -48,86 +48,89 @@ export default function ProjectModal({
       >
         <div className="project-modal">
           <div className="project-body">
-            <div className="project-left">
-              <div className="project-thumbnail-container">
-                {videoLink ? (
-                  <iframe
-                    src={`${videoLink}?autoplay=1&mute=1`}
-                    title={name}
-                    allowFullScreen
-                    allow="autoplay; encrypted-media"
-                    className="project-video"
-                  />
-                ) : (
-                  <a href={link} target="_blank" title={link}>
-                    <img
-                      src={thumbnail}
-                      alt="thumbnail"
-                      className="project-thumbnail"
+            <div>
+              <div className="project-left">
+                <div className="project-thumbnail-container">
+                  {videoLink ? (
+                    <iframe
+                      src={`${videoLink}?autoplay=1&mute=1`}
+                      title={name}
+                      allowFullScreen
+                      allow="autoplay; encrypted-media"
+                      className="project-video"
                     />
-                  </a>
-                )}
-              </div>
-              <span className="project-name">{name}</span>
-              <span className="project-date">{date}</span>
-            </div>
-
-            <div className="project-right">
-              <div className="project-description">
-                <h2 className="project-subheading">Description</h2>
-                {displayText}
-                {shouldTruncate && (
-                  <button
-                    className="read-more-btn"
-                    onClick={() => setExpanded(!expanded)}
-                  >
-                    {expanded ? " Show Less" : " Read More"}
-                  </button>
-                )}
-              </div>
-              <div className="project-icons">
-                <h2 className="project-subheading">Languages</h2>
-                <div className="languages">
-                  {languages.map((lang) => (
-                    <IconContainer
-                      name={lang.name}
-                      icon={lang.icon}
-                      key={lang.name}
-                    />
-                  ))}
+                  ) : (
+                    <a href={link} target="_blank" title={link}>
+                      <img
+                        src={thumbnail}
+                        alt="thumbnail"
+                        className="project-thumbnail"
+                      />
+                    </a>
+                  )}
                 </div>
-                <h2 className="project-subheading">Tech Stack</h2>
-                <div className="techstack">
-                  {techstack.map((tech) => (
-                    <IconContainer
-                      name={tech.name}
-                      icon={tech.icon}
-                      key={tech.name}
-                    />
-                  ))}
+                <div className="project-headings">
+                  <span className="project-name">{name}</span>
+                  <span className="project-date">{date}</span>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className="project-footer">
-            <button
-              className="btn-secondary text-secondary"
-              onClick={() => setModal(null)}
-            >
-              Close
-            </button>
-            {link === "" ? (
-              <button className="btn-primary text-primary" disabled>
-                {linkName}
+              <div className="project-right">
+                <div className="project-description">
+                  <h2 className="project-subheading">Description</h2>
+                  {displayText}
+                  {shouldTruncate && (
+                    <button
+                      className="read-more-btn"
+                      onClick={() => setExpanded(!expanded)}
+                    >
+                      {expanded ? " Show Less" : " Read More"}
+                    </button>
+                  )}
+                </div>
+                <div className="project-icons">
+                  <h2 className="project-subheading">Languages</h2>
+                  <div className="languages">
+                    {languages.map((lang) => (
+                      <IconContainer
+                        name={lang.name}
+                        icon={lang.icon}
+                        key={lang.name}
+                      />
+                    ))}
+                  </div>
+                  <h2 className="project-subheading">Tech Stack</h2>
+                  <div className="techstack">
+                    {techstack.map((tech) => (
+                      <IconContainer
+                        name={tech.name}
+                        icon={tech.icon}
+                        key={tech.name}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="project-footer">
+              <button
+                className="btn-secondary text-secondary"
+                onClick={() => setModal(null)}
+              >
+                Close
               </button>
-            ) : (
-              <a href={link} target="_blank">
-                <button className="btn-primary text-primary button-with-icon">
-                  {linkName} <FaArrowUpRightFromSquare className="icon" />
+              {link === "" ? (
+                <button className="btn-primary text-primary" disabled>
+                  {linkName}
                 </button>
-              </a>
-            )}
+              ) : (
+                <a href={link} target="_blank">
+                  <button className="btn-primary text-primary button-with-icon">
+                    {linkName} <FaArrowUpRightFromSquare className="icon" />
+                  </button>
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </motion.div>
