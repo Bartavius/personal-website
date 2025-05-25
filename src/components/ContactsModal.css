@@ -1,7 +1,6 @@
 .contacts-modal {
   background-color: var(--background);
   padding: 2%;
-  overflow-wrap: normal;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -29,4 +28,23 @@
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 760px) {
+.contacts-modal {
+  width: 90vw;
+  max-width: 90vw;
+  max-width: 90dvw;
+  height: auto;
+}
+.sub-heading {
+  font-size: 1.5rem;
+}
+  .contacts-subheading {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .socials {
+    margin-bottom: 1rem;
+  }
 }

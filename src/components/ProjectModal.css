@@ -189,4 +189,7 @@
   .project-description {
     font-size: 1.4rem;
   }
+  .project-footer {
+    margin-bottom: 1rem;
+  }
 }
