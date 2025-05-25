@@ -94,10 +94,10 @@
 
 @media (max-width: 760px) {
   .timeline-content {
-   font-size: 1rem;
+   font-size: clamp(1rem, 4dvw, 1.25rem);
   }
   .timeline-time {
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 4dvw, 1.5rem);
     width: 30%;
   }
 }
