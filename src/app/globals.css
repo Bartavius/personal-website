@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --image-0: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAVCAYAAABYHP4bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGOSURBVHgBtVXLUcMwEH1a8b25AgZ1EDowDQC+MBM4JFQQqCChAtIBuUCOZoYCoAPowJmhAHKDiyVWTgJGEzlSGN6Mx7Z2racnvV0DkbjLi9Y4L1JEghAJktTTRCkiEU1kDFIB9BCJKKLx41vKt32+ktjti1NkdGfxKKSMUiVCE2/zItkmeq8NTXe1VlmmpiHfByvaAk6coeRDUheBCCYiKTvumIA4RiCqrePaGAiiPv4BRuvr80wNvs+IXbRviJ4wc9WfIYR4RlletDM1qd7dhPu8uGTCPgcSrAHDJhGs4ixTw1/Ey5Jn6jDgk+kgAq6KlUQ1wi63m5tV6qwKEuKqfbQ38uU0uo5XNmKSlXViV7tTlg9NOY1E7MYuwsyRfAItrEvEbSa4TiBlfy0iawhu1W43mLCjDvlS9rkeMMakObcp33wbvoBG9Tv4mWheeLUh5Rb6vCUNl83n3zqiqjtby1oFDkmFquJr6ppakreO2NYvywrPh0Whb/LWnmbq1Y37FKWk9UEoiYXNtd/44l9CMo3NldxNTAAAAABJRU5ErkJggg==);
-  --custom-width: 100vw;
-  --design-width: 1512;
-  --ratio: calc(var(--custom-width) / var(--design-width));
+  
   --background: #424874;
   --color-accent1: #a6b1e1;
   --color-accent2: #dcd6f7;
@@ -38,7 +36,7 @@ body {
   width: 100vw;
   width: 100svw;
   height: 100vh;
-  height: 100=svh;
+  height: 100svh;
   background: black;
   color: white;
   font-family: Outfit;
@@ -62,8 +60,8 @@ button:active {
 }
 
 .container {
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .accent1 {
@@ -256,23 +254,26 @@ button:active {
   min-width: 70dvw;
 }
 
-#home {
-  min-height: 100dvh;
-  max-width: 100dvw;
-}
+@media (max-width: 760px) {
+  .btn-primary {
+    height: 4rem;
+  }
+  
+  .text-primary {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1rem;
+  }
 
-#projects {
-  min-height: 100dvh;
-  max-width: 100dvw;
-}
+  .btn-secondary {
+    height: 4rem;
+  }
 
-#education {
-  min-height: 100dvh;
-  max-width: 100dvw;
-}
-
-.about-section {
-  margin: 10% 0px;
-  padding-bottom: 10%;
-  max-width: 100dvw;
+  .text-secondary {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1rem;
+  }
 }

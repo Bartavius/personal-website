@@ -25,23 +25,23 @@ export default function Home() {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  if (isMobile) {
-    return (
-      <motion.div
-        key={"workmode"}
-        className="workmode"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -50 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h1>Please open this page on a desktop.</h1>
-        <p>
-          This page is not optimized for screens with a width of less than 760px
-        </p>
-      </motion.div>
-    );
-  }
+  // if (isMobile) {
+  //   return (
+  //     <motion.div
+  //       key={"workmode"}
+  //       className="workmode"
+  //       initial={{ opacity: 0, x: 50 }}
+  //       animate={{ opacity: 1, x: 0 }}
+  //       exit={{ opacity: 0, x: -50 }}
+  //       transition={{ duration: 0.5 }}
+  //     >
+  //       <h1>Please open this page on a desktop.</h1>
+  //       <p>
+  //         This page is not optimized for screens with a width of less than 760px
+  //       </p>
+  //     </motion.div>
+  //   );
+  // }
 
   return (
     <div>
@@ -93,10 +93,11 @@ export default function Home() {
           <EducationSection />
         </motion.div>
         <motion.div
-          key={"about"}
+          key="about"
           className="about-site"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={fadeInUpVariant}
+          initial="hidden"
+          whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
         >
@@ -119,7 +120,7 @@ export default function Home() {
           </div>
         </div>
       )}
-    </div> 
+    </div>
   );
 }
 
