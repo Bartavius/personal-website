@@ -179,7 +179,10 @@
     margin-bottom: 1rem;
   }
   .project-thumbnail-container {
-    min-width: fit-content;
+    width: 100%;
+  }
+  .project-video {
+    width: 100%;
   }
   .project-modal {
     padding: 3%;
