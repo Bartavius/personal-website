@@ -21,6 +21,7 @@ export default function Skills({
       transition={{ duration: 0.5 }}
     >
       <span className="sub-heading">Skills & Technologies</span>
+       <div className="smaller-section-divider"></div>
       <div className="icons">
         <h1 className="skill-subheading">Languages</h1>
         <div className="skills-languages">
