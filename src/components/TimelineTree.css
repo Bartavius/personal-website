@@ -36,7 +36,6 @@
   position: relative;
 }
 
-/* Add the timeline circle and the vertical line using ::before */
 .timeline-time::before {
   content: "";
   width: 12px;
@@ -97,7 +96,7 @@
    font-size: clamp(1rem, 4dvw, 1.25rem);
   }
   .timeline-time {
-    font-size: clamp(1.1rem, 4dvw, 1.5rem);
+    font-size: clamp(1rem, 4dvw, 1.5rem);
     width: 30%;
   }
 }
