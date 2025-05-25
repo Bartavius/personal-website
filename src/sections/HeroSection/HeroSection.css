@@ -289,4 +289,7 @@
   .text-secondary {
     font-size: 1.3rem;
   }
+  .scribble-font {
+    font-family: roboto;
+  }
 }
