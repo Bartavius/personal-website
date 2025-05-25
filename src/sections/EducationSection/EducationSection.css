@@ -13,7 +13,7 @@
 
 .degree-section {
     display: flex;
-    margin-top: 5dvh;
+    margin-top: 5%;
 }
 .university-logo {
     display: flex;
@@ -39,26 +39,68 @@
 .degree-title {
     font-family: Roboto;
     font-weight: 800;
-    font-size:2rem;
+    font-size: clamp(1.25rem, 4vw, 2rem);
     color: var(--color-accent3);
+    display: flex;
 }
 
 .degree-subtitle {
     font-family: Roboto;
     font-weight: 400;
-    font-size:1.75rem;
+    font-size: clamp(1rem, 3vw, 1.7rem);
     color: var(--color-accent3);
+    display: flex;
 }
 
 .degree-body {
     font-family: Roboto;
     font-weight: 400;
-    font-size:1.5rem;
+    font-size: clamp(1rem, 2.7vw, 1.5rem);;
     color: var(--color-accent3);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
 }
 
 .degree-description {
     margin-left: 2rem;
     max-width: 50%;
-    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-toggle {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    .degree-section {
+        flex-direction: column;
+    }
+    .logo {
+        max-width: 100%;
+        max-height: auto;
+    }
+    .university-logo {
+        border: none;
+        display: flex;
+        justify-content: center !important;
+        width: 100%;
+    }
+    .degree-description {
+        margin-left: 0;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        max-width: 100%;
+    }
+    .degree-title {
+        font-size: clamp(1.5rem, 5vw, 2rem) ;
+    }
+    .degree-subtitle {
+        font-size: clamp(1.4rem, 4vw, 1.75rem);
+    }
+    .degree-body {
+        font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+    }
 }

@@ -1,9 +1,12 @@
+import "./AboutSection.css";
 
 export default function AboutSection() {
     return (
-        <div className="about-section">
+        <div className="about">
             <div className="sub-heading">About this site</div>
-            <div className="section-divider"></div>
+            <div className="section-divider" />
+        <div className="about-section">
+            
             <div className="text-description">
                 This website was designed in <span className="pink"><b>Figma</b></span> and recreated using 
                 <span className="blue"><b> React</b></span>, <span className="orange"><b>Next.js</b></span>, and pure <span className="yellow"><b>CSS</b></span>. You see, I
@@ -14,6 +17,6 @@ export default function AboutSection() {
             <div className="text-description">
                 - Bart L. | <a href="https://github.com/Bartavius/personal-website" target="_blank" className="text-description">Github Repository</a> | Last Updated: April 9th, 2025
             </div>
-        </div>
+        </div></div>
     )
 }

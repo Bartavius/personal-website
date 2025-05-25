@@ -176,6 +176,7 @@
   }
   .project-left {
     padding: 3px;
+    margin-bottom: 1rem;
   }
   .project-thumbnail-container {
     min-width: fit-content;
@@ -185,9 +186,6 @@
   }
   .project-subheading {
     font-size: 1.5rem;
-  }
-  .project-description {
-    font-size: 1.4rem;
   }
   .project-footer {
     margin-bottom: 1rem;
