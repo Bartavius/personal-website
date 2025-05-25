@@ -59,3 +59,20 @@
 .thumbnail {
   max-width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .project-card {
+    max-width: 47%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 760px) {
+  .project-card {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+  .project-title {
+    font-size: 2rem;
+  }
+}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Tooltip from "../../components/Tooltip";
 
 export default function ProjectSection() {
@@ -23,7 +23,7 @@ export default function ProjectSection() {
             viewport={{ once: true, amount: 0.1 }}
             transition={{
               duration: 0.25,
-              delay: +0.25 * (index + 1),
+              delay: +0.1 * (index + 1),
               ease: "easeInOut",
             }}
             key={index}
