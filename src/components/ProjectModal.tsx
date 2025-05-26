@@ -48,7 +48,7 @@ export default function ProjectModal({
       >
         <div className="project-modal">
           <div className="project-body">
-            <div>
+            
               <div className="project-left">
                 <div className="project-thumbnail-container">
                   {videoLink ? (
@@ -111,8 +111,9 @@ export default function ProjectModal({
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="project-footer">
+            
+            
+          </div><div className="project-footer">
               <button
                 className="btn-secondary text-secondary"
                 onClick={() => setModal(null)}
@@ -131,7 +132,6 @@ export default function ProjectModal({
                 </a>
               )}
             </div>
-          </div>
         </div>
       </motion.div>
     </div>

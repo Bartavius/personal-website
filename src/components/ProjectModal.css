@@ -52,6 +52,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  max-width: 50dvw;
 }
 
 .project-headings {
@@ -63,7 +64,7 @@
 }
 
 .project-thumbnail-container {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -84,7 +85,7 @@
 }
 
 .project-right {
-  height: fit-content;
+  height: auto;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -94,6 +95,7 @@
   border: 2px solid var(--color-accent1);
   border-radius: 1rem;
   padding: 1rem;
+  padding-bottom: 0rem;
 }
 
 .project-name {
@@ -177,6 +179,7 @@
   .project-left {
     padding: 3px;
     margin-bottom: 1rem;
+    max-width: 100dvw;
   }
   .project-thumbnail-container {
     width: 100%;

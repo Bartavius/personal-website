@@ -60,6 +60,15 @@
   max-width: 100%;
 }
 
+.showmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 @media (max-width: 1024px) {
   .project-card {
     max-width: 47%;
@@ -74,5 +83,10 @@
   }
   .project-title {
     font-size: 2rem;
+  }
+
+  .showmore button {
+    height: 3.75rem;
+    width: 100%;
   }
 }
