@@ -24,10 +24,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => setCanRender(true), 500);
-    return () => clearTimeout(timer);
-  }, []);
+    const interval = setInterval(() => {
+      setCanRender(true);
+    }, 500);
 
+    return () => clearInterval(interval);
+  }, []);
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 760);
@@ -37,7 +39,7 @@ export default function Home() {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  if (!canRender) return null; 
+  if (!canRender) return null;
 
   // if (isMobile) {
   //   return (
@@ -62,7 +64,7 @@ export default function Home() {
       <div className="container">
         {/* <Darkmode /> */}
         <motion.div
-          initial={{ opacity: 0}}
+          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
           // style={{ width: "120%", zIndex: 1000 }}
