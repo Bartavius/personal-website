@@ -8,22 +8,36 @@ import Skills from "../components/SkillsModal";
 import Contacts from "@/components/Contacts";
 import AboutSection from "@/sections/AboutSection/AboutSection";
 import { motion } from "framer-motion";
+import images from "../database/ProfileImages.json";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
   const [isContactsModalOpen, setIsContactsModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [canRender, setCanRender] = useState(false);
+
+  useEffect(() => {
+    images.forEach((img) => {
+      const image = new Image();
+      image.src = img.image;
+    });
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setCanRender(true), 500);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const checkScreenSize = () => {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-      setIsMobile(width < 760); //806
+      setIsMobile(window.innerWidth < 760);
     };
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
+
+  if (!canRender) return null; 
 
   // if (isMobile) {
   //   return (
@@ -48,10 +62,10 @@ export default function Home() {
       <div className="container">
         {/* <Darkmode /> */}
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-          style={{ position: "fixed", width: "100%", zIndex: 1000 }}
+          // style={{ width: "120%", zIndex: 1000 }}
         >
           <Navbar
             setSkills={setIsSkillModalOpen}
