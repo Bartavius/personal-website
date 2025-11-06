@@ -26,7 +26,7 @@ export default function EducationSection() {
             </span>
             <span className="degree-body">
               <span>
-                <b>GPA:</b> 3.93 / 4.00
+                <b>GPA:</b> 3.84 / 4.00
               </span>
               <span>
                 <b>Awards:</b> Dean's List Fall 2023, Spring 2024, Fall 2024,
