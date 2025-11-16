@@ -24,6 +24,30 @@
       ]
     },
     {
+      "name": "GEOGUESSR AI",
+      "date": "November 2025 - Present",
+      "description": "I needed AI integration into my other project Plonkstars. So, let's build a CNN to play the game! For scoping purposes, the AI can only make guesses to locations within the United States.",
+      "linkName": "GitHub",
+      "link": "https://plonkstars.vercel.app",
+      "thumbnail": "pig.webp",
+      "languages": [
+        {"name": "Python", "icon": "/logo/python.png"}
+      ],
+      "techstack": []
+    },
+    {
+      "name": "ESCAPE THE CASTLE AI",
+      "date": "OCTOBER 2025",
+      "description": "As part of the AI course, we implemented a machine learning agent using Q-learning to win the Escape the Castle Game",
+      "linkName": "GitHub",
+      "link": "https://plonkstars.vercel.app",
+      "thumbnail": "pig.webp",
+      "languages": [
+        {"name": "Python", "icon": "/logo/python.png"}
+      ],
+      "techstack": []
+    },
+    {
       "name": "JAZA", 
       "date": "February 2025",
       "description": "J.A.Z.A. - Just A Zip Away is a web application where companies are able to place vehicle relocation bounties for roadtrip enthusiasts to take. Companies with their own vehicles will sometimes require to pay their workers or independent contractors to relocate their vehicles from one hub to another (especially car rental and trucking companies). These workers are paid large sums of more than 50$ / hr, and so we thought: if the companies could place relocation bounties that just covers for food and shelter, the companies would be able to save up on costs, and roadtrip enthusiasts would be able to take a vacation for free and not worry about the ride back.",
@@ -106,5 +130,41 @@
         {"name": "JUnit", "icon": ""},
         {"name": "JavaSwing", "icon": ""}
       ]
+    },
+    {
+      "name": "WORM", 
+      "date": "OCTOBER 2022",
+      "description": "Absolutely NOT a Snake rip-off!",
+      "linkName": "Unavailable",
+      "link": "",
+      "thumbnail": "pig.webp",
+      "languages": [
+        {"name": "Python", "icon": "/logo/python.png"}
+      ],
+      "techstack": []
+    },
+    {
+      "name": "SUPER PONG", 
+      "date": "NOVEMBER 2022",
+      "description": "Pong, but with special power-up buffs.",
+      "linkName": "Unavailable",
+      "link": "",
+      "thumbnail": "pig.webp",
+      "languages": [
+        {"name": "Python", "icon": "/logo/python.png"}
+      ],
+      "techstack": []
+    },
+    {
+      "name": "MASTERMIND", 
+      "date": "SEPTEMBER 2021",
+      "description": "A recreation of the classic game MASTERMIND using Python's Turtle library. Man this was actually one of the first things I've ever coded...?",
+      "linkName": "Unavailable",
+      "link": "",
+      "thumbnail": "pig.webp",
+      "languages": [
+        {"name": "Python", "icon": "/logo/python.png"}
+      ],
+      "techstack": []
     }
 ]

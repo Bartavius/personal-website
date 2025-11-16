@@ -91,6 +91,22 @@
   margin-bottom: 5px;
 }
 
+.timeline-logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.timeline-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 @media (max-width: 760px) {
   .timeline-content {
    font-size: clamp(1rem, 4dvw, 1.25rem);
@@ -98,5 +114,12 @@
   .timeline-time {
     font-size: clamp(1rem, 4dvw, 1.5rem);
     width: 30%;
+  }
+  .timeline-logo {
+    width: 40px;
+  }
+  .timeline-logo img {
+    width: 30px;
+    height: 30px;
   }
 }

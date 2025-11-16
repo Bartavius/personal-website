@@ -13,8 +13,14 @@ export default function TimelineTree({ tree }: { tree: any }) {
         <div className="timeline">
           {tree.timeline.map((entry: any, index: number) => (
             <div key={index} className="timeline-item">
-              <div className="timeline-time">
-                {entry.time}
+              <div className="timeline-header">
+                <div className='timeline-logo'>
+                  {entry.logo && <img src={entry.logo} alt={entry.logo} className='w-full object-cover' />}
+                </div>
+                
+                <div className="timeline-time">
+                  {entry.time}
+                </div>
               </div>
 
               <div className="timeline-content">

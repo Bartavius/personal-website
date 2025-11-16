@@ -3,6 +3,15 @@
       "name": "Course Work",
       "timeline": [
         {
+          "time": "Fall 2025",
+          "lines": [
+            "CS 4100: Artificial Intelligence",
+            "CS 4530: Foundations of Software Engineering",
+            "CS 4730: Distributed Systems",
+            "PHIL 1145: Tech and Human Values"
+          ]
+        },
+        {
           "time": "Spring 2025",
           "lines": [
             "CS 4400: Programming Languages",
@@ -46,6 +55,51 @@
             "CS 1800: Discrete Structures",
             "CS 1802: Seminar for CS 1800",
             "COMM 1112: Public Speaking"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Experience",
+      "timeline": [
+        {
+          "time": "January 2024 - April 2024",
+          "company": "Northeastern University",
+          "role": "Farm Crew",
+          "location": "Oakland, CA",
+          "logo": "/logo/NEU.png",
+          "lines": [
+            "• Contributed to production cycle by harvesting and cultivating 20+ crops/flowers, and creating bouquets for farm stand",
+            "• Processed 20+ transactions each week, maintaining transaction accuracy and providing customer service at the farm stand",
+            "• Increased farm revenue by $30+ through ensuring 100% bouquet sell-through rate by collecting customer preferences and redesigning arrangements to match market demand, eliminating end-of-day waste",
+            "• Extended selling hours by 15% after redesigning market layout, optimizing setup during peak customer traffic periods"
+
+          ]
+        },
+        {
+          "time": "June 2024 - August 2024",
+          "company": "What's the Word?",
+          "role": "Full-stack Software Developer",
+          "location": "Remote",
+          "logo": "/logo/WTW.png",
+          "languages": [
+            {"name": "TypeScript", "icon": "/logo/typescript.png"},
+            {"name": "JavaScript", "icon": "/logo/javascript.png"},
+            {"name": "Supabase", "icon": "/logo/supabase.png"},
+            {"name": "Firebase", "icon": "/logo/firebase.png"},
+            {"name": "Flutter", "icon": "logo/flutter.png"},
+            {"name": "PostgreSQL", "icon": "/logo/postgresql.png"},
+            {"name": "React Native", "icon": "/logo/react_native.png"},
+            {"name": "Tailwind CSS", "icon": "/logo/tailwind.png"},
+            {"name": "Stripe API", "icon": "/logo/stripe.png"}
+          ],
+          "lines": [
+            "What's the Word?",
+            "• Launched Stripe integration for 800+ users, enabling ticketing and driving the startup's first revenue stream",
+            "• Boosted app performance by ~70% by optimizing queries, pagination, and implementing smart image loading and caching",
+            "• Migrated the codebase from Flutter to React Native, improving developer velocity and aligning with team expertise",
+            "• Built unit tests that strengthened code reliability, reduced bugs, and improved developer efficiency",
+            "• Collaborated with 2 developers and 3 co-founders, providing technical input, and delegating work in a fast-moving team"
           ]
         }
       ]
