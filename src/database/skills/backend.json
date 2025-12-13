@@ -2,7 +2,13 @@
     { "name": "Node.js", "icon": "/logo/nodejs.png" },
     { "name": "Django", "icon": "/logo/django.png" },
     { "name": "Flask", "icon": "/logo/flask.png" },
-    { "name": "Express.js", "icon": "/logo/express.png" }
+    { "name": "Express.js", "icon": "/logo/express.png" },
+    { "name": "Jest", "icon": "/logo/jest.png" },
+    { "name": "NumPy", "icon": "/logo/numpy.png" },
+    { "name": "Stripe", "icon": "/logo/stripe.png" },
+    { "name": "PyTorch", "icon": "/logo/pytorch.png" },
+    { "name": "Matplotlib", "icon": "/logo/matplotlib.png" },
+    { "name": "Cypress", "icon": "/logo/cypress.svg" }
 ]
   
   

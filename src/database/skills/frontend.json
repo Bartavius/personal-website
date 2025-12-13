@@ -3,5 +3,6 @@
     { "name": "Next.js", "icon": "/logo/next.png" },
     { "name": "Bootstrap", "icon": "/logo/bootstrap.png" },
     { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
-    { "name": "Figma", "icon": "/logo/figma.png" }
+    { "name": "Figma", "icon": "/logo/figma.png" },
+    { "name": "ViteJS", "icon": "/logo/vite.png" }
 ]
