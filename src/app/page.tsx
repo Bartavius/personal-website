@@ -86,6 +86,18 @@ export default function Home() {
         </div>
 
         <motion.div
+          key="education"
+          variants={fadeInUpVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="education"
+          id="education"
+        >
+          <EducationSection />
+        </motion.div>
+
+        <motion.div
           key="projects"
           variants={fadeInUpVariant}
           initial="hidden"
@@ -97,17 +109,6 @@ export default function Home() {
           <ProjectSection />
         </motion.div>
 
-        <motion.div
-          key="education"
-          variants={fadeInUpVariant}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          className="education"
-          id="education"
-        >
-          <EducationSection />
-        </motion.div>
         <motion.div
           key="about"
           className="about-site"

@@ -68,7 +68,7 @@ export default function ProjectSection() {
         <div className="showmore">
           {visibleProjects.length < projects.length && (
             <button className="btn-secondary text-secondary" onClick={showMore}>
-              <span><MdKeyboardDoubleArrowDown/> Show More <MdKeyboardDoubleArrowDown/></span>
+              <span>Show More</span>
             </button>
           )}
           {visibleGroups > 1 && (
@@ -76,7 +76,7 @@ export default function ProjectSection() {
               className="btn-secondary text-secondary"
               onClick={() => setVisibleGroups(1)}
             >
-              <span><MdOutlineKeyboardDoubleArrowUp/> Show Less <MdOutlineKeyboardDoubleArrowUp/></span>
+              <span>Show Less</span>
             </button>
           )}
         </div>

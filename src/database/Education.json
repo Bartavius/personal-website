@@ -1,141 +1,176 @@
 [
-    {
-      "name": "Course Work",
-      "timeline": [
-        {
-          "time": "Fall 2025",
-          "lines": [
-            "CS 4100: Artificial Intelligence",
-            "CS 4530: Foundations of Software Engineering",
-            "CS 4730: Distributed Systems",
-            "PHIL 1145: Tech and Human Values"
-          ]
-        },
-        {
-          "time": "Spring 2025",
-          "lines": [
-            "CS 4400: Programming Languages",
-            "CS 3650: Computer Systems",
-            "CS 2800: Logic and Computation",
-            "MATH 2331: Linear Algebra"
-          ]
-        },
-        {
-          "time": "Fall 2024",
-          "lines": [
-            "CS 4550: Web Development",
-            "CS 3000: Algorithms and Data",
-            "CS 3520: Programming in C++",
-            "MATH 1342: Calculus 2 for Science/Engineering"
-          ]
-        },
-        {
-          "time": "Summer 2024",
-          "lines": [
-            "CS 3500: Object-Oriented Design",
-            "CS 3501: Lab for CS 3500",
-            "CY 2550: Foundations of Cybersecurity"
-          ]
-        },
-        {
-          "time": "Spring 2024",
-          "lines": [
-            "CS 2810: Mathematics of Data Models",
-            "CS 2510: Fundamentals of Computer Science 2",
-            "CS 2511: Lab for CS 2510",
-            "ENGW 1111: First-Year Writing",
-            "MATH 1365: Intro to Math Reasoning"
-          ]
-        },
-        {
-          "time": "Fall 2023",
-          "lines": [
-            "CS 2500: Fundamentals of Computer Science 1",
-            "CS 2501: Lab for CS 2500",
-            "CS 1800: Discrete Structures",
-            "CS 1802: Seminar for CS 1800",
-            "COMM 1112: Public Speaking"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Experience",
-      "timeline": [
-        {
-          "time": "January 2024 - April 2024",
-          "company": "Northeastern University",
-          "role": "Farm Crew",
-          "location": "Oakland, CA",
-          "logo": "/logo/NEU.png",
-          "lines": [
-            "• Contributed to production cycle by harvesting and cultivating 20+ crops/flowers, and creating bouquets for farm stand",
-            "• Processed 20+ transactions each week, maintaining transaction accuracy and providing customer service at the farm stand",
-            "• Increased farm revenue by $30+ through ensuring 100% bouquet sell-through rate by collecting customer preferences and redesigning arrangements to match market demand, eliminating end-of-day waste",
-            "• Extended selling hours by 15% after redesigning market layout, optimizing setup during peak customer traffic periods"
-
-          ]
-        },
-        {
-          "time": "June 2024 - August 2024",
-          "company": "What's the Word?",
-          "role": "Full-stack Software Developer",
-          "location": "Remote",
-          "logo": "/logo/WTW.png",
-          "languages": [
-            {"name": "TypeScript", "icon": "/logo/typescript.png"},
-            {"name": "JavaScript", "icon": "/logo/javascript.png"},
-            {"name": "Supabase", "icon": "/logo/supabase.png"},
-            {"name": "Firebase", "icon": "/logo/firebase.png"},
-            {"name": "Flutter", "icon": "logo/flutter.png"},
-            {"name": "PostgreSQL", "icon": "/logo/postgresql.png"},
-            {"name": "React Native", "icon": "/logo/react_native.png"},
-            {"name": "Tailwind CSS", "icon": "/logo/tailwind.png"},
-            {"name": "Stripe API", "icon": "/logo/stripe.png"}
-          ],
-          "lines": [
-            "What's the Word?",
-            "• Launched Stripe integration for 800+ users, enabling ticketing and driving the startup's first revenue stream",
-            "• Boosted app performance by ~70% by optimizing queries, pagination, and implementing smart image loading and caching",
-            "• Migrated the codebase from Flutter to React Native, improving developer velocity and aligning with team expertise",
-            "• Built unit tests that strengthened code reliability, reduced bugs, and improved developer efficiency",
-            "• Collaborated with 2 developers and 3 co-founders, providing technical input, and delegating work in a fast-moving team"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Activities",
-      "timeline": [
-        {
-          "time": "Spring 2025",
-          "lines": [
-            "• Won Best Startup Potential @ FinHacks out of 150+ competitors",
-            "• Developed Just A Zip Away (JAZA) @ HackBeanpot 2025",
-            "• Participated in Big CTF — placed 11th out of 30 teams"
-          ]
-        },
-        {
-          "time": "Fall 2024",
-          "lines": [
-            "• Participated in CTF Thyme — placed top 10 out of 30 teams",
-            "• Participated in Versus CTF — placed top 10 out of 30 teams"]
-        },
-        {
-          "time": "Spring 2024",
-          "lines": [
-            "• [Vice-President] Asian Student Alliance",
-            "• Farm Crew at Northeastern University Oakland"
-          ]
-        },
-        {
-          "time": "Fall 2023",
-          "lines": [
-            "• [President] Club Greenovation",
-            "• [E-Board] Asian Student Alliance",
-            "• Participated in Pawhacks 1.0"
-          ]
-        }
-      ]
-    }
-  ]
+  {
+    "name": "Experience",
+    "timeline": [
+      {
+        "time": "Jan - Jun 2026",
+        "company": "Flexcar",
+        "role": "Full Stack Engineer Co-op",
+        "location": "Remote",
+        "logo": "/logo/flexcar.png",
+        "app": true,
+        "languages": [
+          { "name": "TypeScript", "icon": "/logo/typescript.png" },
+          { "name": "JavaScript", "icon": "/logo/javascript.png" },
+          { "name": "React Native", "icon": "/logo/react.png" },
+          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
+          { "name": "Ruby on Rails", "icon": "/logo/rails.png" }
+        ],
+        "lines": ["Incoming Co-op for January 2026"]
+      },
+      {
+        "time": "Jun - Aug 2025",
+        "company": "What's the Word?",
+        "role": "Software Developer",
+        "location": "Remote",
+        "logo": "/logo/WTW.png",
+        "app": true,
+        "languages": [
+          { "name": "TypeScript", "icon": "/logo/typescript.png" },
+          { "name": "JavaScript", "icon": "/logo/javascript.png" },
+          { "name": "Supabase", "icon": "/logo/supabase.png" },
+          { "name": "Firebase", "icon": "/logo/firebase.png" },
+          { "name": "Flutter", "icon": "logo/flutter.png" },
+          { "name": "PostgreSQL", "icon": "/logo/postgresql.png" },
+          { "name": "React Native", "icon": "/logo/react.png" },
+          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
+          { "name": "Stripe API", "icon": "/logo/stripe.png" }
+        ],
+        "lines": [
+          "Implemented Ticketing through Stripe integration for 800+ users",
+          "Boosted performance by 70% through query optimization and efficient state management",
+          "Migrated the codebase from Flutter to React Native",
+          "Consulted with 2 developers for non-technical co-founders"
+        ]
+      },
+      {
+        "time": "Jan - Apr 2024",
+        "company": "Northeastern University",
+        "role": "Farm Crew",
+        "location": "Oakland, CA",
+        "logo": "/logo/NEU.png",
+        "app": true,
+        "languages": [],
+        "lines": [
+          "Cultivated 20+ crops and flowers",
+          "Created high-demand flower bouquets for farm stand (100% sell-through rate)",
+          "Ran the farm stand, processing 20+ transactions weekly",
+          "Aided with setup and dismantle of farm stand"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Course Work",
+    "timeline": [
+      {
+        "time": "Fall 2025",
+        "lines": [
+          "(A) CS 4100: Artificial Intelligence",
+          "(A) CS 4530: Foundations of Software Engineering",
+          "(A-)  CS 4730: Distributed Systems",
+          "(B) PHIL 1145: Tech and Human Values"
+        ]
+      },
+      {
+        "time": "Summer 2025",
+        "lines": ["(C+) CS 3800: Theory of Computation"]
+      },
+      {
+        "time": "Spring 2025",
+        "lines": [
+          "(A-) CS 4400: Programming Languages",
+          "(A) CS 3650: Computer Systems",
+          "(A) CS 2800: Logic and Computation",
+          "(B+) MATH 2331: Linear Algebra"
+        ]
+      },
+      {
+        "time": "Fall 2024",
+        "lines": [
+          "(A) CS 4550: Web Development",
+          "(A) CS 3000: Algorithms and Data",
+          "(A) CS 3520: Programming in C++",
+          "(A) MATH 1342: Calculus 2 for Science/Engineering"
+        ]
+      },
+      {
+        "time": "Summer 2024",
+        "lines": [
+          "(A-) CS 3500: Object-Oriented Design",
+          "(A-) CS 3501: Lab for CS 3500",
+          "(A) CY 2550: Foundations of Cybersecurity"
+        ]
+      },
+      {
+        "time": "Spring 2024",
+        "lines": [
+          "(A) CS 2810: Mathematics of Data Models",
+          "(A) CS 2510: Fundamentals of Computer Science 2",
+          "(A) CS 2511: Lab for CS 2510",
+          "(A) ENGW 1111: First-Year Writing",
+          "(A) MATH 1365: Intro to Math Reasoning"
+        ]
+      },
+      {
+        "time": "Fall 2023",
+        "lines": [
+          "(A) CS 2500: Fundamentals of Computer Science 1",
+          "(A) CS 2501: Lab for CS 2500",
+          "(A) CS 1800: Discrete Structures",
+          "(A) CS 1802: Seminar for CS 1800",
+          "(A) COMM 1112: Public Speaking"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Activities",
+    "timeline": [
+      {
+        "time": "Fall 2025",
+        "lines": [
+          "Finished my first official 10k road race with sis",
+          "Finished my first official 5k road race with sis",
+          "Took my first solo trip to NYC",
+          "Went to ANYC and cosplayed for the first time",
+          "Hit 500+ connections on LinkedIn"
+        ]
+      },
+      {
+        "time": "Spring 2025",
+        "lines": [
+          "Won Best Startup Potential @ FinHacks 2025",
+          "Developed JAZA @ HackBeanpot 2025",
+          "Participated in Big CTF — 11th",
+          "Took my second solo trip to Japan",
+          "Got featured in Khoury News for FinHacks win",
+          "Completed my first perfect omurice"
+        ]
+      },
+      {
+        "time": "Fall 2024",
+        "lines": [
+          "Participated in CTF Thyme — 7th",
+          "Participated in Versus CTF — 8th",
+          "Took my first solo trip to Japan"
+        ]
+      },
+      {
+        "time": "Spring 2024",
+        "lines": [
+          "Vice-President @ Asian Student Alliance",
+          "President @ Club Greenovation"
+        ]
+      },
+      {
+        "time": "Fall 2023",
+        "lines": [
+          "President @ Club Greenovation",
+          "Eboard @ Asian Student Alliance",
+          "Participated in Pawhacks 1.0"
+        ]
+      }
+    ]
+  }
+]

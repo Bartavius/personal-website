@@ -70,6 +70,7 @@
   width: 100%;
   text-align: center;
   margin-top: 2rem;
+  gap: 2rem;
 }
 
 @media (max-width: 1024px) {

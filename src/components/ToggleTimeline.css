@@ -3,22 +3,26 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .toggled-tabs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-accent2);
-  padding: 0.5% 0.5%;
-  gap: 0.25dvw;
+  padding: 0.5rem;
+  gap: 0.5rem;
   border-radius: 50px;
-  font-family: Roboto;
+  font-family: Roboto, system-ui, -apple-system, sans-serif;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
   width: 100%;
-  max-width: 70dvw;
-  height: 100%;
+  max-width: 700px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tab-element {
@@ -26,22 +30,111 @@
   text-align: center;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.3s ease;
   border: none;
-  background: var(--color-accent2);
+  background: transparent;
   color: var(--background);
-  padding: 0.75% 0.75%;
+  padding: 1rem 1.75rem;
+  font-size: clamp(1.3rem, 2.8vw, 1.6rem);
+  white-space: nowrap;
+  position: relative;
+  outline: none;
+}
+
+.tab-element:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.tab-element:focus-visible {
+  outline: 3px solid var(--color-accent1);
+  outline-offset: 2px;
+}
+
+.tab-element:active {
+  transform: translateY(0);
 }
 
 .tab-element-selected {
   background-color: var(--color-accent1);
   color: var(--background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tab-element-selected:hover {
+  background-color: var(--color-accent1);
+  opacity: 0.95;
+}
+
+.timeline-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .toggled-timeline {
+    padding: 1.5rem 1rem;
+  }
+
+  .toggled-tabs {
+    max-width: 600px;
+    font-size: clamp(1.4rem, 2.8vw, 1.6rem);
+    margin-bottom: 2.5rem;
+    padding: 0.6rem;
+  }
+
+  .tab-element {
+    padding: 0.9rem 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  }
 }
 
 @media (max-width: 760px) {
+  .toggled-timeline {
+    padding: 1rem 0.5rem;
+  }
+
   .toggled-tabs {
-    font-size: clamp(1.25rem, 3dvw, 2rem);
-    padding: 2% 2%;
+    max-width: 95%;
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+    padding: 0.6rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .tab-element {
+    padding: 0.9rem 1.4rem;
+    font-size: clamp(1.2rem, 3.8vw, 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .toggled-tabs {
+    flex-direction: row;
+    border-radius: 50px;
+    padding: 0.6rem;
+    gap: 0.6rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .toggled-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-element {
+    flex: 0 0 auto;
+    min-width: fit-content;
+    padding: 1rem 2rem;
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+    white-space: nowrap;
+  }
+
+  .tab-element:hover {
+    transform: none;
   }
 }
