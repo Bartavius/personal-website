@@ -103,38 +103,44 @@
   }
 
   .tab-element {
-    padding: 0.9rem 1.4rem;
-    font-size: clamp(1.2rem, 3.8vw, 1.5rem);
+    padding: 0.9rem 0.8rem;
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
   }
 }
 
 @media (max-width: 480px) {
   .toggled-tabs {
     flex-direction: row;
+    flex-wrap: nowrap;
     border-radius: 50px;
-    padding: 0.6rem;
-    gap: 0.6rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    justify-content: flex-start;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .toggled-tabs::-webkit-scrollbar {
-    display: none;
+    padding: 0.5rem;
+    gap: 0.4rem;
+    max-width: 100%;
   }
 
   .tab-element {
-    flex: 0 0 auto;
-    min-width: fit-content;
-    padding: 1rem 2rem;
-    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
-    white-space: nowrap;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.85rem 0.5rem;
+    font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.3;
   }
 
   .tab-element:hover {
     transform: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .toggled-tabs {
+    padding: 0.4rem;
+    gap: 0.3rem;
+  }
+
+  .tab-element {
+    padding: 0.75rem 0.4rem;
+    font-size: clamp(0.75rem, 3.2vw, 0.95rem);
   }
 }

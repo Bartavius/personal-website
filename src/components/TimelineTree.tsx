@@ -46,8 +46,7 @@ export default function TimelineTree({ tree }: { tree: any }) {
                   <IconContainer
                     name={lang.name}
                     icon={lang.icon}
-                    className="bg-low"
-                    key={lang.name}
+                    key={idx}
                   />
                 ))}
               </div>
