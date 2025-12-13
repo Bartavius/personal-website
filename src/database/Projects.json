@@ -148,41 +148,5 @@
         {"name": "JUnit", "icon": ""},
         {"name": "JavaSwing", "icon": ""}
       ]
-    },
-    {
-      "name": "WORM", 
-      "date": "OCTOBER 2022",
-      "description": "Absolutely NOT a Snake rip-off!",
-      "linkName": "Unavailable",
-      "link": "",
-      "thumbnail": "pig.webp",
-      "languages": [
-        {"name": "Python", "icon": "/logo/python.png"}
-      ],
-      "techstack": []
-    },
-    {
-      "name": "SUPER PONG", 
-      "date": "NOVEMBER 2022",
-      "description": "Pong, but with special power-up buffs.",
-      "linkName": "Unavailable",
-      "link": "",
-      "thumbnail": "pig.webp",
-      "languages": [
-        {"name": "Python", "icon": "/logo/python.png"}
-      ],
-      "techstack": []
-    },
-    {
-      "name": "MASTERMIND", 
-      "date": "SEPTEMBER 2021",
-      "description": "A recreation of the classic game MASTERMIND using Python's Turtle library. Man this was actually one of the first things I've ever coded...?",
-      "linkName": "Unavailable",
-      "link": "",
-      "thumbnail": "pig.webp",
-      "languages": [
-        {"name": "Python", "icon": "/logo/python.png"}
-      ],
-      "techstack": []
     }
 ]
