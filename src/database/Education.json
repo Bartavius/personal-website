@@ -1,66 +1,5 @@
 [
   {
-    "name": "Experience",
-    "timeline": [
-      {
-        "time": "Jan - Jun 2026",
-        "company": "Flexcar",
-        "role": "Full Stack Engineer Co-op",
-        "location": "Remote",
-        "logo": "/logo/flexcar.png",
-        "app": true,
-        "languages": [
-          { "name": "TypeScript", "icon": "/logo/typescript.png" },
-          { "name": "JavaScript", "icon": "/logo/javascript.png" },
-          { "name": "React Native", "icon": "/logo/react.png" },
-          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
-          { "name": "Ruby on Rails", "icon": "/logo/rails.png" }
-        ],
-        "lines": ["Incoming Co-op for January 2026"]
-      },
-      {
-        "time": "Jun - Aug 2025",
-        "company": "What's the Word?",
-        "role": "Software Developer",
-        "location": "Remote",
-        "logo": "/logo/WTW.png",
-        "app": true,
-        "languages": [
-          { "name": "TypeScript", "icon": "/logo/typescript.png" },
-          { "name": "JavaScript", "icon": "/logo/javascript.png" },
-          { "name": "Supabase", "icon": "/logo/supabase.png" },
-          { "name": "Firebase", "icon": "/logo/firebase.png" },
-          { "name": "Flutter", "icon": "logo/flutter.png" },
-          { "name": "PostgreSQL", "icon": "/logo/postgresql.png" },
-          { "name": "React Native", "icon": "/logo/react.png" },
-          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
-          { "name": "Stripe API", "icon": "/logo/stripe.png" }
-        ],
-        "lines": [
-          "Implemented Ticketing through Stripe integration for 800+ users",
-          "Boosted performance by 70% through query optimization and efficient state management",
-          "Migrated the codebase from Flutter to React Native",
-          "Consulted with 2 developers for non-technical co-founders"
-        ]
-      },
-      {
-        "time": "Jan - Apr 2024",
-        "company": "Northeastern University",
-        "role": "Farm Crew",
-        "location": "Oakland, CA",
-        "logo": "/logo/NEU.png",
-        "app": true,
-        "languages": [],
-        "lines": [
-          "Cultivated 20+ crops and flowers",
-          "Created high-demand flower bouquets for farm stand (100% sell-through rate)",
-          "Ran the farm stand, processing 20+ transactions weekly",
-          "Aided with setup and dismantle of farm stand"
-        ]
-      }
-    ]
-  },
-  {
     "name": "Course Work",
     "timeline": [
       {
@@ -120,6 +59,67 @@
           "(A) CS 1800: Discrete Structures",
           "(A) CS 1802: Seminar for CS 1800",
           "(A) COMM 1112: Public Speaking"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Experience",
+    "timeline": [
+      {
+        "time": "Jan - Jun 2026",
+        "company": "Flexcar",
+        "role": "Full Stack Engineer Co-op",
+        "location": "Remote",
+        "logo": "/logo/flexcar.png",
+        "app": true,
+        "languages": [
+          { "name": "TypeScript", "icon": "/logo/typescript.png" },
+          { "name": "JavaScript", "icon": "/logo/javascript.png" },
+          { "name": "React Native", "icon": "/logo/react.png" },
+          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
+          { "name": "Ruby on Rails", "icon": "/logo/rails.png" }
+        ],
+        "lines": ["Incoming Co-op for January 2026"]
+      },
+      {
+        "time": "Jun - Aug 2025",
+        "company": "What's the Word?",
+        "role": "Software Developer",
+        "location": "Remote",
+        "logo": "/logo/WTW.png",
+        "app": true,
+        "languages": [
+          { "name": "TypeScript", "icon": "/logo/typescript.png" },
+          { "name": "JavaScript", "icon": "/logo/javascript.png" },
+          { "name": "Supabase", "icon": "/logo/supabase.png" },
+          { "name": "Firebase", "icon": "/logo/firebase.png" },
+          { "name": "Flutter", "icon": "logo/flutter.png" },
+          { "name": "PostgreSQL", "icon": "/logo/postgresql.png" },
+          { "name": "React Native", "icon": "/logo/react.png" },
+          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
+          { "name": "Stripe API", "icon": "/logo/stripe.png" }
+        ],
+        "lines": [
+          "Implemented Ticketing through Stripe integration for 800+ users",
+          "Boosted performance by 70% through query optimization and efficient state management",
+          "Migrated the codebase from Flutter to React Native",
+          "Consulted with 2 developers for non-technical co-founders"
+        ]
+      },
+      {
+        "time": "Jan - Apr 2024",
+        "company": "Northeastern University",
+        "role": "Farm Crew",
+        "location": "Oakland, CA",
+        "logo": "/logo/NEU.png",
+        "app": true,
+        "languages": [],
+        "lines": [
+          "Cultivated 20+ crops and flowers",
+          "Created high-demand flower bouquets for farm stand (100% sell-through rate)",
+          "Ran the farm stand, processing 20+ transactions weekly",
+          "Aided with setup and dismantle of farm stand"
         ]
       }
     ]

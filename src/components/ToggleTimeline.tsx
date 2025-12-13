@@ -6,7 +6,7 @@ import { useState } from "react";
 
 
 export default function ToggleTimeline({ tree }: { tree: any[] }) {
-  const [toggled, setToggled] = useState<string>(tree[0]?.name || "");
+  const [toggled, setToggled] = useState<string>(tree[1]?.name || "");
   const [key, setKey] = useState<number>(Date.now());
   
   const selectedTab = tree.find((tab: any) => tab.name === toggled);
