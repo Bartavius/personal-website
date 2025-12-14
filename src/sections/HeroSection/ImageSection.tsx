@@ -2,19 +2,9 @@
 import { useEffect, useState } from "react";
 import images from "../../database/ProfileImages.json";
 
-const shuffleArray = (array: any[]) => {
-  const shuffledArray = [...array];
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
-const shuffledImages = shuffleArray(images);
-
 export default function ImageSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [profile, setProfile] = useState(shuffledImages[currentIndex]);
+  const [profile, setProfile] = useState(images[currentIndex]);
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
@@ -24,8 +14,8 @@ export default function ImageSection() {
 
       setTimeout(() => {
         // Change image after fade-out is complete
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % shuffledImages.length);
-        setProfile(shuffledImages[(currentIndex + 1) % shuffledImages.length]);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setProfile(images[(currentIndex + 1) % images.length]);
 
         // Fade in after small delay
         setOpacity(1);
@@ -33,7 +23,7 @@ export default function ImageSection() {
     }, 6000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, shuffledImages]);
+  }, [currentIndex, images]);
 
   return (
     <div className="image-section">
