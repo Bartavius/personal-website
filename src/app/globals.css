@@ -9,17 +9,23 @@
   --color-accent3: #f4eeff;
 }
 
+/* * {
+  outline: 1px solid red !important;
+} */
+
 html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--background);
   scroll-behavior: smooth;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -33,8 +39,7 @@ body {
   justify-items: center;
   align-items: center;
   text-align: center;
-  width: 100vw;
-  width: 100svw;
+  width: 100%;
   height: 100vh;
   height: 100svh;
   background: black;
