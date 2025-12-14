@@ -14,6 +14,7 @@ export default function TimelineTree({ tree }: { tree: any }) {
                 </div>
               )}
               <div className="timeline-time">{entry.time}</div>
+              <div className="timeline-time">{entry.location}</div>
             </div>
 
             <div className="timeline-center">
@@ -35,6 +36,7 @@ export default function TimelineTree({ tree }: { tree: any }) {
               )}
               <h2 className="timeline-company">{entry.company}</h2>
               <h3 className="timeline-role">{entry.role}</h3>
+              <div className="timeline-location-mobile">{entry.location}</div>
               <div className="timeline-time-mobile">{entry.time}</div>
               <ul className="timeline-list">
                 {entry.lines.map((line: string, idx: number) => (

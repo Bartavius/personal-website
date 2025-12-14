@@ -76,6 +76,11 @@
   display: none;
 }
 
+.timeline-location-mobile {
+  display: none;
+}
+
+
 .timeline-center {
   display: flex;
   flex-direction: column;
@@ -165,7 +170,7 @@
 }
 
 .timeline-company {
-  font-family: Roboto, system-ui, -apple-system, sans-serif;
+  font-family: Outfit, Roboto, system-ui, -apple-system, sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--color-accent3);
@@ -173,7 +178,7 @@
 }
 
 .timeline-role {
-  font-family: Roboto, system-ui, -apple-system, sans-serif;
+  font-family: Outfit, Roboto, system-ui, -apple-system, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--color-accent2);
@@ -307,6 +312,15 @@
     font-weight: 700;
     color: var(--color-accent2);
     margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .timeline-location-mobile {
+    display: block;
+    font-family: Roboto, system-ui, -apple-system, sans-serif;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: 700;
+    color: var(--color-accent2);
     opacity: 0.8;
   }
 

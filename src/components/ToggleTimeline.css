@@ -16,7 +16,7 @@
   padding: 0.5rem;
   gap: 0.5rem;
   border-radius: 50px;
-  font-family: Roboto, system-ui, -apple-system, sans-serif;
+  font-family: Outfit, Roboto, system-ui, -apple-system, sans-serif;
   font-weight: 800;
   font-size: clamp(1.5rem, 3vw, 1.8rem);
   width: 100%;
