@@ -143,6 +143,7 @@
   position: relative;
   padding-left: 1.5rem;
   transition: transform 0.2s ease;
+  line-height: 1.4;
 }
 
 .timeline-list li:hover {

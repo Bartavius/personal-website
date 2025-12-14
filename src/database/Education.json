@@ -101,7 +101,7 @@
           { "name": "Stripe API", "icon": "/logo/stripe.png" }
         ],
         "lines": [
-          "Implemented Ticketing through Stripe integration for 800+ users",
+          "Implemented ticketing through Stripe integration for 800+ users",
           "Boosted performance by 70% through query optimization and efficient state management",
           "Migrated the codebase from Flutter to React Native",
           "Consulted with 2 developers for non-technical co-founders"
