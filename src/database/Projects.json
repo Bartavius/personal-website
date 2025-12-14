@@ -1,5 +1,21 @@
 [
     {
+      "name": "GEOGUESSR AI",
+      "date": "November 2025 - Present",
+      "description": "For the final project of CS4100: Artificial Intelligence, myself and 3 others built an CNN AI model that plays GeoGuessr to predict the location based on visual cues from Google Streetview images.",
+      "linkName": "Paper",
+      "link": "files/GeoGuessrAI_Report.pdf",
+      "thumbnail": "projects/geoguessrai4.png",
+      "languages": [
+        {"name": "Python", "icon": "/logo/python.png"}
+      ],
+      "techstack": [
+        {"name": "PyTorch", "icon": "/logo/pytorch.png"},
+        {"name": "Matplotlib", "icon": "/logo/matplotlib.png"},
+        {"name": "NumPy", "icon": "/logo/numpy.png"}
+      ]
+    },
+    {
       "name": "PLONKSTARS",
       "date": "February 2025 - May 2025",
       "description": "After finding out that Geoguessr required a subscription fee to play, my friends and I decided to recreate the game ourselves with zero production costs. So, introducing Plonkstars, a geolocating game inspired by Geoguessr. Explore through Google Streetview and find out where you are in the world!",
@@ -21,22 +37,6 @@
         {"name": "Axios", "icon": ""},
         {"name": "Redux", "icon": ""},
         {"name": "JWT", "icon": ""}
-      ]
-    },
-    {
-      "name": "GEOGUESSR AI",
-      "date": "November 2025 - Present",
-      "description": "For the final project of CS4100: Artificial Intelligence, myself and 3 others built an CNN AI model that plays GeoGuessr to predict the location based on visual cues from Google Streetview images.",
-      "linkName": "Paper",
-      "link": "files/GeoGuessrAI_Report.pdf",
-      "thumbnail": "projects/geoguessrai4.png",
-      "languages": [
-        {"name": "Python", "icon": "/logo/python.png"}
-      ],
-      "techstack": [
-        {"name": "PyTorch", "icon": "/logo/pytorch.png"},
-        {"name": "Matplotlib", "icon": "/logo/matplotlib.png"},
-        {"name": "NumPy", "icon": "/logo/numpy.png"}
       ]
     },
     {
