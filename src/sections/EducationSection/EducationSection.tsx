@@ -5,7 +5,7 @@ import tabs from "../../database/Education.json";
 
 export default function EducationSection() {
   return (
-    <div>
+    <div className="education-container">
       <div className="sub-heading">Qualifications</div>
       <div className="section-divider" />
       <div className="education-section">

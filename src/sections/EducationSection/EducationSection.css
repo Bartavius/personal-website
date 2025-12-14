@@ -76,6 +76,9 @@
 }
 
 @media (max-width: 760px) {
+    .education-container {
+        margin-top: 3dvh;
+    }
     .degree-section {
         flex-direction: column;
     }
