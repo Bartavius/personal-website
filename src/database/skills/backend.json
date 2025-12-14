@@ -7,7 +7,6 @@
     { "name": "NumPy", "icon": "/logo/numpy.png" },
     { "name": "Stripe", "icon": "/logo/stripe.png" },
     { "name": "PyTorch", "icon": "/logo/pytorch.png" },
-    { "name": "Matplotlib", "icon": "/logo/matplotlib.png" },
     { "name": "Cypress", "icon": "/logo/cypress.svg" }
 ]
   

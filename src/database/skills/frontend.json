@@ -4,5 +4,6 @@
     { "name": "Bootstrap", "icon": "/logo/bootstrap.png" },
     { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
     { "name": "Figma", "icon": "/logo/figma.png" },
-    { "name": "ViteJS", "icon": "/logo/vite.png" }
+    { "name": "ViteJS", "icon": "/logo/vite.png" },
+    { "name": "Matplotlib", "icon": "/logo/matplotlib.png" }
 ]
