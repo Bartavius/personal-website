@@ -42,7 +42,6 @@
 .project-card-thumbnail .thumbnail {
   width: 100%;
   object-fit: cover;
-  background-color: red;
   aspect-ratio: 16/9;
 }
 
