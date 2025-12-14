@@ -8,7 +8,6 @@ import Skills from "../components/SkillsModal";
 import Contacts from "@/components/Contacts";
 import AboutSection from "@/sections/AboutSection/AboutSection";
 import { motion } from "framer-motion";
-import profileImages from "../database/ProfileImages.json";
 import imageConfig from "../database/images.json";
 
 export default function Home() {
@@ -125,13 +124,13 @@ export default function Home() {
         </div>
 
         <motion.div
-          key="education"
+          key="qualifications"
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           className="education"
-          id="education"
+          id="qualifications"
         >
           <EducationSection />
         </motion.div>

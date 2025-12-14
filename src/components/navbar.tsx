@@ -18,7 +18,7 @@ export default function Navbar({
   contactsModal: boolean;
   isMobile: boolean;
 }) {
-  const tabs = ["home", "skills", "education", "projects", "contacts"];
+  const tabs = ["home", "skills", "qualifications", "projects", "contacts"];
   const [hamburgerOpen, setHamburgerOpen] = useState(!isMobile);
   const router = useRouter();
   useEffect(() => {
