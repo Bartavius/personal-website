@@ -172,7 +172,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 /* Footer */
@@ -262,10 +262,6 @@
 }
 
 @media (max-width: 500px) {
-  .about-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
     
   .about-polaroid {
     width: 200px;
@@ -301,15 +297,7 @@
 }
 
 @media (max-width: 400px) {
-  .about-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (max-width: 320px) { /* this should NEVER be reached but for fun lolz */
-  .about-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
