@@ -20,12 +20,15 @@ function Highlight({
   delay?: number;
   animate?: boolean;
 }) {
+  const [animationDone, setAnimationDone] = useState(false);
+
   return (
     <motion.span className="highlight" whileHover={{ rotate: -3, scale: 1.05 }}>
       {children}
       <span
-        className={`highlight-underline ${animate ? "animate-underline" : ""}`}
-        style={{ animationDelay: `${delay}s` }}
+        className={`highlight-underline ${animate && !animationDone ? "animate-underline" : ""}`}
+        style={animate && !animationDone ? { animationDelay: `${delay}s` } : undefined}
+        onAnimationEnd={() => setAnimationDone(true)}
       />
     </motion.span>
   );

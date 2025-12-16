@@ -134,8 +134,8 @@
 }
 
 .highlight:hover .highlight-underline {
-  transform: scaleX(1) !important;
-  animation: none;
+  animation-play-state: paused;
+  transform: scaleX(1);
 }
 
 .about-text.thanks {
