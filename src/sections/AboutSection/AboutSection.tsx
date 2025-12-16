@@ -7,6 +7,8 @@ import backend from "../../database/skills/backend.json";
 import database from "../../database/skills/database.json";
 import tools from "../../database/skills/tools.json";
 import "./AboutSection.css";
+import { LiaGithub, LiaLinkedin } from "react-icons/lia";
+import { IoIosMail } from "react-icons/io";
 
 function Highlight({
   children,
@@ -98,11 +100,27 @@ export default function AboutSection() {
         <span>Jirath "Bart" Lojanarungsiri</span>
         <span className="footer-divider">•</span>
         <a
-          href="mailto:lojanarungsiri.j@northeastern.edu"
+          href="mailto:jlojanarungsiri@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <u>lojanarungsiri.j@northeastern.edu</u>
+          <IoIosMail />jlojanarungsiri@gmail.com
+        </a>
+        <span className="footer-divider">•</span>
+        <a
+          href="https://www.linkedin.com/in/jlojanarungsiri/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LiaLinkedin />LinkedIn
+        </a>
+        <span className="footer-divider">•</span>
+        <a
+          href="https://www.github.com/Bartavius"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LiaGithub />GitHub
         </a>
         <span className="footer-divider">•</span>
         <a
@@ -110,7 +128,7 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <u>Source</u>
+          <u>Source Code</u>
         </a>
         <span className="footer-divider">•</span>
         <span>Updated {process.env.LAST_COMMIT_DATE}</span>

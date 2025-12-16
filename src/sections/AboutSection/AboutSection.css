@@ -164,16 +164,25 @@
   font-size: 0.95rem;
   font-weight: 300;
   color: var(--color-accent2);
+  flex-wrap: wrap;
 }
 
 .about-footer a {
   color: var(--color-accent2);
   text-decoration: none;
   transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .about-footer a:hover {
   color: var(--color-accent3);
+}
+
+.about-footer a svg {
+  font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
 .footer-divider {
