@@ -1,0 +1,66 @@
+.skill-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: default;
+}
+
+.skill-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent2);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 
+    0 4px 0 var(--color-accent1),
+    0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.skill-icon-wrapper:hover .skill-icon {
+  box-shadow: 
+    0 6px 0 var(--color-accent1),
+    0 12px 28px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+
+.skill-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-icon-fallback {
+  font-family: Outfit, Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--background);
+}
+
+.skill-icon-label {
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent3);
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .skill-icon {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .skill-icon-label {
+    font-size: 0.7rem;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
