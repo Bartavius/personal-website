@@ -95,7 +95,7 @@ export default function AboutSection() {
             —and building things that feel as good as they work.
           </p>
           <p className="about-text">
-            Outside of that, you'll find me watching VTubers, going on long
+            Outside of that, you'll find me watching Hololive, going on long
             runs, playing Plonkstars, or perfecting my omurice.
           </p>
           <p className="about-text thanks">
