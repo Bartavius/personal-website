@@ -378,12 +378,17 @@
 }
 
 @media (max-width: 480px) {
+  .timeline-container{
+    margin-left: -1rem;
+    margin-top: -2rem;
+  }
+
   .timeline-center {
     padding-left: 0rem;
   }
 
   .timeline-content {
-    padding: 0.75rem;
+    padding: 1rem;
     margin-left: 1rem;
     margin-right: -1rem;
     border-width: 0.25rem;
