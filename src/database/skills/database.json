@@ -1,4 +1,5 @@
 [
   { "name": "MongoDB", "icon": "/logo/mongodb.png" },
-  { "name": "MySQL", "icon": "/logo/mysql.svg" }
+  { "name": "MySQL", "icon": "/logo/mysql.svg" },
+  { "name": "PostgreSQL", "icon": "/logo/postgresql.png" }
 ]

@@ -1,0 +1,7 @@
+[
+    { "name": "Docker", "icon": "/logo/docker.png" },
+    { "name": "VSCode", "icon": "/logo/vscode.png" },
+    { "name": "IntelliJ", "icon": "/logo/intellij.png" },
+    { "name": "Photoshop", "icon": "/logo/photoshop.png" }
+]
+  
