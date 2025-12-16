@@ -11,19 +11,6 @@ import "./AboutSection.css";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { IoIosMail } from "react-icons/io";
 
-const underlineVariants = {
-  hidden: { scaleX: 0 },
-  visible: (delay: number) => ({
-    scaleX: [0, 1, 1, 0],
-    transition: {
-      duration: 1.2,
-      delay,
-      times: [0, 0.4, 0.6, 1],
-      ease: "easeInOut",
-    },
-  }),
-};
-
 function Highlight({
   children,
   delay = 0,
@@ -36,12 +23,9 @@ function Highlight({
   return (
     <motion.span className="highlight" whileHover={{ rotate: -3, scale: 1.05 }}>
       {children}
-      <motion.span
-        className="highlight-underline"
-        variants={underlineVariants}
-        initial="hidden"
-        animate={animate ? "visible" : "hidden"}
-        custom={delay}
+      <span
+        className={`highlight-underline ${animate ? "animate-underline" : ""}`}
+        style={{ animationDelay: `${delay}s` }}
       />
     </motion.span>
   );
