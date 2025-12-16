@@ -1,27 +1,27 @@
 [
     {
-        "image": "/profile2.png",
-        "caption": "Tokyo, Japan",
-        "date": "2 Jan 2025",
-        "deg": -2
-    },
-    {
         "image": "/profile3.png",
         "caption": "Boston, USA",
         "date": "10 Nov 2024",
         "deg": 1
     },
     {
-        "image": "/profile4.png",
-        "caption": "NYC, USA",
-        "date": "6 March 2024",
-        "deg": -1
+        "image": "/profile2.png",
+        "caption": "Tokyo, Japan",
+        "date": "2 Jan 2025",
+        "deg": -2
     },
     {
         "image": "/profile5.png",
         "caption": "San Francisco, USA",
         "date": "11 February 2024",
         "deg": -2
+    },
+    {
+        "image": "/profile4.png",
+        "caption": "NYC, USA",
+        "date": "6 March 2024",
+        "deg": -1
     },
     {
         "image": "/profile6.png",
