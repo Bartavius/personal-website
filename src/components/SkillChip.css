@@ -23,8 +23,16 @@
 
 .skill-icon-wrapper:hover .skill-icon {
   transform: translateY(-2px);
+  cursor: pointer;
   box-shadow: 
     0 6px 0 var(--color-accent1),
+    0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.skill-icon-wrapper:active .skill-icon {
+  transform: translateY(4px);
+  box-shadow: 
+    0 0px 0 var(--color-accent1),
     0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
