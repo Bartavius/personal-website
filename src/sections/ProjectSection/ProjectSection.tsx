@@ -4,14 +4,31 @@ import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
 import { motion } from "framer-motion";
 import Tooltip from "../../components/Tooltip";
-import {
-  MdKeyboardDoubleArrowDown,
-  MdOutlineKeyboardDoubleArrowUp,
-} from "react-icons/md";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.25,
+      ease: "easeInOut",
+    },
+  },
+};
 
 export default function ProjectSection() {
   const [activeProject, setActiveProject] = useState<
-    (typeof projects)[0] | null
+    (typeof projects)[number] | null
   >(null);
   const [visibleGroups, setVisibleGroups] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
@@ -35,19 +52,18 @@ export default function ProjectSection() {
     <div className="project-section">
       <div className="sub-heading">Projects</div>
       <div className="section-divider"></div>
-      <div className="project-list">
+      <motion.div
+        className="project-list"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {visibleProjects.map((project, index) => (
           <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{
-              duration: 0.25,
-              delay: +0.1 * (index + 1),
-              ease: "easeInOut",
-            }}
             key={index}
             className="project-card"
+            variants={itemVariants}
             onClick={() => setActiveProject(project)}
           >
             <Tooltip text="Click me!">
@@ -62,7 +78,7 @@ export default function ProjectSection() {
             </Tooltip>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {isMobile && (
         <div className="showmore">
