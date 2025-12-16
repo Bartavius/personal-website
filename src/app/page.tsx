@@ -35,7 +35,7 @@ export default function Home() {
     const timeoutId = setTimeout(() => {
       console.warn('Loading timeout reached - showing site');
       hideInstantLoader();
-    }, 10000);
+    }, 5000);
 
     criticalImages.forEach((imgPath) => {
       const image = new Image();
