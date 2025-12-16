@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Script from "next/script";
+import { SoundProvider } from "@/components/SoundProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Inline critical CSS for instant loading screen */}
-        <style dangerouslySetInnerHTML={{__html: `
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
           @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap");
           
           /* Prevent layout shift */
@@ -162,7 +165,9 @@ export default function RootLayout({
               padding: 0 10%;
             }
           }
-        `}} />
+        `,
+          }}
+        />
 
         {/* Google Analytics Script */}
         <Script
@@ -197,9 +202,8 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        
-        {children}
-        <Analytics/>
+        <SoundProvider>{children}</SoundProvider>
+        <Analytics />
       </body>
     </html>
   );

@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
-import { AnimatePresence, motion } from "framer-motion";
-import Tooltip from "../../components/Tooltip";
+import ProjectCard from "@/components/ProjectCard";
 
 function useInView(threshold = 0.3) {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,23 +58,14 @@ export default function ProjectSection() {
       <div className="section-divider"></div>
       <div className="project-list" ref={ref}>
         {visibleProjects.map((project, index) => (
-          <div
+          <ProjectCard
             key={project.name}
-            className={`project-card ${isVisible ? "animate-project" : ""}`}
-            style={isVisible ? { animationDelay: `${(index % PROJECTS_PER_GROUP) * 0.1}s` } : undefined}
+            project={project}
+            index={index}
+            isVisible={isVisible}
+            groupSize={PROJECTS_PER_GROUP}
             onClick={() => setActiveProject(project)}
-          >
-            <Tooltip text="Click me!">
-              <div className="project-card-thumbnail">
-                <img
-                  src={project.thumbnail}
-                  alt="thumbnail"
-                  className="thumbnail"
-                />
-              </div>
-              <div className="project-title">{project.name}</div>
-            </Tooltip>
-          </div>
+          />
         ))}
       </div>
 
