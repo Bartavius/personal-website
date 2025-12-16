@@ -83,7 +83,7 @@ export default function AboutSection() {
         </div>
         <div className="about-content">
           <p className="about-text">
-            I'm Bart, a <Highlight delay={0} animate={aboutContent.isVisible}>first-gen</Highlight> student from{" "}
+            I'm Bart, a <Highlight delay={0} animate={aboutContent.isVisible}>first-gen</Highlight> junior student from{" "}
             <Highlight delay={0.1} animate={aboutContent.isVisible}>Thailand</Highlight> studying Computer
             Science at Northeastern University based in Boston, USA.
           </p>
