@@ -259,6 +259,16 @@ button:active {
   min-width: 70dvw;
 }
 
+.accent1 {
+  color: var(--color-accent1);
+}
+.accent2 {
+  color: var(--color-accent2);
+}
+.accent3 {
+  color: var(--color-accent3);
+}
+
 @media (max-width: 760px) {
   .btn-primary {
     height: 4rem;
