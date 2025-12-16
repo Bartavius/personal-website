@@ -149,7 +149,7 @@
   flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  padding-top: 6rem;
+  padding-top: 4rem;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
