@@ -1,8 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosPin } from "react-icons/io";
 import "./HeroSection.css";
+import { useRouter } from "next/navigation";
 
 export default function ProfileInformation({setSkills, modal} : {setSkills: (val: boolean) => void, modal: boolean}) {
+  const router = useRouter();
+  
   return (
     <div className="hero-profile">
       <div className="hero-details">
@@ -43,7 +46,8 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
             </a>
           </div>
           <div className="additional-links">
-              <button className="btn-secondary" onClick={() => setSkills(!modal)}>
+              {/* <button className="btn-secondary" onClick={() => setSkills(!modal)}> */}
+              <button className="btn-secondary" onClick={() => router.push('#about-skills')}>
                 <span className="text-secondary">Skills</span>
               </button>
             <a
