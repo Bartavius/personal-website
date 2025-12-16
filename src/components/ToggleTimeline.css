@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
   padding: 2rem 1rem;
 }
 
@@ -108,6 +107,10 @@
 }
 
 @media (max-width: 480px) {
+  .toggled-timeline {
+    margin-left: -1rem;
+  }
+  
   .toggled-tabs {
     flex-direction: row;
     flex-wrap: nowrap;
