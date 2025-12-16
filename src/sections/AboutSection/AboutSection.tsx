@@ -139,7 +139,7 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LiaLinkedin />LinkedIn
+          <LiaLinkedin />jlojanarungsiri
         </a>
         <span className="footer-divider">•</span>
         <a
@@ -147,7 +147,7 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LiaGithub />GitHub
+          <LiaGithub />Bartavius
         </a>
         <span className="footer-divider">•</span>
         <a

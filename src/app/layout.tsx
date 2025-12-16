@@ -191,7 +191,7 @@ export default function RootLayout({
         {/* Instant loading screen - shows immediately */}
         <div id="instant-loading">
           <div id="instant-loading-content">
-            <h2>Loading Portfolio</h2>
+            <h2>Loading Website</h2>
             <div className="instant-loader-bar">
               <div className="instant-loader-fill"></div>
             </div>
