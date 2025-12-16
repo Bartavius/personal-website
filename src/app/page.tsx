@@ -9,6 +9,7 @@ import Contacts from "@/components/Contacts";
 import AboutSection from "@/sections/AboutSection/AboutSection";
 import { motion } from "framer-motion";
 import imageConfig from "../database/images.json";
+import MusicPlayer from "@/components/musicplayer";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
@@ -116,6 +117,14 @@ export default function Home() {
           />
         </motion.div>
 
+        {/* <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
+        >
+          <MusicPlayer />
+        </motion.div> */}
+
         <div key={"home"} className="home" id="home">
           <HeroSection
             setSkills={setIsSkillModalOpen}
@@ -124,13 +133,13 @@ export default function Home() {
         </div>
 
         <motion.div
-          key="qualifications"
+          key="experience"
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="education"
-          id="qualifications"
+          id="experience"
         >
           <EducationSection />
         </motion.div>
@@ -140,7 +149,7 @@ export default function Home() {
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="projects"
           id="projects"
         >
@@ -149,11 +158,12 @@ export default function Home() {
 
         <motion.div
           key="about"
+          id="about"
           className="about-site"
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.5 }}
         >
           <AboutSection />
