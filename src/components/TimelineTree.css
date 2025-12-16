@@ -128,13 +128,19 @@
 
 .timeline-content {
   flex: 1;
-  padding-left: 2rem;
+  margin-left: 2rem;
+  padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 2rem;
+
+  border-color: var(--color-accent1);
+  border-style: solid;
+  border-width: 0.5rem;
+  border-radius: 2rem;
 }
 
 .timeline-list {
@@ -200,6 +206,16 @@
   flex-wrap: wrap;
   gap: 0.6rem;
   width: auto;
+}
+
+.icon-container.small {
+  padding: 2px 8px;
+  height: 1.75rem;
+  background-color: var(--background) !important;
+}
+
+.icon-container.small span {
+  color: var(--color-accent2) !important;
 }
 
 
@@ -345,6 +361,7 @@
 
   .timeline-content {
     padding-left: 0.75rem;
+    border-width: 0.25rem;
   }
 
   .timeline-dot {

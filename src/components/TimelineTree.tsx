@@ -49,6 +49,7 @@ export default function TimelineTree({ tree }: { tree: any }) {
                     name={lang.name}
                     icon={lang.icon}
                     key={idx}
+                    className="small"
                   />
                 ))}
               </div>
