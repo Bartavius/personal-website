@@ -129,6 +129,7 @@
 .timeline-content {
   flex: 1;
   margin-left: 2rem;
+  padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -200,12 +201,34 @@
   display: none;
 }
 
-.languages-container {
+.languages-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-top: 1rem;
-  display: inline-flex;
+}
+
+.languages-container {
+  display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  width: auto;
+  gap: 0.75rem;
+}
+
+.languages-toggle {
+  font-family: Outfit, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent2);
+  background: none;
+  border: none;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: color 0.15s ease;
+}
+
+.languages-toggle:hover {
+  color: var(--color-accent3);
 }
 
 .icon-container.small {
