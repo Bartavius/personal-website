@@ -67,7 +67,7 @@ export default function AboutSection() {
 
   return (
     <div className="about">
-      <div className="sub-heading">A Little More About Me</div>
+      <div className="sub-heading">A Little Bit About Me</div>
       <div className="section-divider" />
       <div className="about-section" ref={aboutContent.ref}>
         <div className="about-image-section">
@@ -76,8 +76,8 @@ export default function AboutSection() {
           <div className="about-polaroid">
             <img src="/about.jpeg" alt="Bart" draggable={false} />
             <span className="scribble-font">
-              me & a friend
-              <span className="scribble-font polaroid-date">Nara, 2025</span>
+              me and a friend
+              <span className="scribble-font polaroid-date">Nara, Japan 2025</span>
             </span>
           </div>
         </div>
