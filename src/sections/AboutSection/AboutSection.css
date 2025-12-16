@@ -1,17 +1,259 @@
-.about-section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    padding-bottom: 30%;
-}
-
 .about {
-    margin-top: 5%;
+  margin-top: 5%;
+  padding-bottom: 10%;
 }
 
-.text-description {
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Polaroid container */
+.about-image-section {
+  flex-shrink: 0;
+  position: relative;
+  transform: rotate(-3deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-image-section:hover {
+  transform: rotate(0deg);
+}
+
+.about-polaroid {
+  width: 280px;
+  border-radius: 4px;
+  border: 12px solid var(--color-accent2);
+  background-color: var(--color-accent2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.about-polaroid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-polaroid .scribble-font {
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  color: var(--background);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.about-polaroid .polaroid-date {
+  font-size: 1rem;
+  display: block;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+/* Tape pieces */
+.about-tape-top {
+  background: rgb(255, 221, 159);
+  opacity: 0.9;
+  width: 70px;
+  height: 28px;
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  rotate: -45deg;
+  z-index: 1;
+}
+
+.about-tape-bottom {
+  background: rgb(255, 221, 159);
+  opacity: 0.9;
+  width: 70px;
+  height: 28px;
+  position: absolute;
+  bottom: -8px;
+  right: -15px;
+  rotate: -45deg;
+  z-index: 1;
+}
+
+/* Text content */
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-text {
+  color: var(--color-accent3);
+  font-family: Roboto, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.about-text .highlight {
+  font-family: Outfit, Roboto, sans-serif;
+  font-weight: 900;
+  color: var(--color-accent3);
+  display: inline-block;
+  position: relative;
+  padding: 0.25rem 0.4rem;
+  margin: -0.25rem -0.4rem;
+}
+
+.highlight-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--color-accent2);
+  transform-origin: left;
+  transition: transform 0.25s ease-in-out;
+}
+
+.highlight:hover .highlight-underline {
+  transform: scaleX(1) !important;
+}
+
+.about-text.thanks {
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Skills section */
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.about-skills-heading {
+  font-family: Outfit, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-accent3);
+  margin: 0;
+}
+
+.about-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+/* Footer */
+.about-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-accent2);
+}
+
+.about-footer a {
+  color: var(--color-accent2);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.about-footer a:hover {
+  color: var(--color-accent3);
+}
+
+.footer-divider {
+  opacity: 1;
+  font-size: large;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .about-skills-grid {
+    gap: 1.4rem;
+  }
+
+  .about-image-section {
+    transform: rotate(0deg);
+  }
+
+  .about-polaroid {
+    width: 300px;
+  }
+
+  .about-polaroid img {
+    height: 300px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .about-footer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .about-skills-grid {
+    gap: 1.5rem;
+  }
+    
+  .about-polaroid {
+    width: 200px;
+    border-width: 10px;
+  }
+
+  .about-polaroid img {
+    height: 200px;
+  }
+
+  .about-polaroid .scribble-font {
     font-size: 1.25rem;
+  }
+
+  .about-tape-top {
+    width: 55px;
+    height: 22px;
+    top: -6px;
+    left: -10px;
+  }
+
+  .about-tape-bottom {
+    width: 55px;
+    height: 22px;
+    bottom: -6px;
+    right: -10px;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
 }
