@@ -1,4 +1,5 @@
 "use client";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import SkillChip from "../../components/SkillChip";
 import languages from "../../database/skills/languages.json";
@@ -10,29 +11,37 @@ import "./AboutSection.css";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { IoIosMail } from "react-icons/io";
 
+const underlineVariants = {
+  hidden: { scaleX: 0 },
+  visible: (delay: number) => ({
+    scaleX: [0, 1, 1, 0],
+    transition: {
+      duration: 1.2,
+      delay,
+      times: [0, 0.4, 0.6, 1],
+      ease: "easeInOut",
+    },
+  }),
+};
+
 function Highlight({
   children,
   delay = 0,
+  animate = false,
 }: {
   children: React.ReactNode;
   delay?: number;
+  animate?: boolean;
 }) {
   return (
     <motion.span className="highlight" whileHover={{ rotate: -3, scale: 1.05 }}>
       {children}
       <motion.span
         className="highlight-underline"
-        initial={{ scaleX: 0 }}
-        whileInView={{
-          scaleX: [0, 1, 1, 0],
-        }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{
-          duration: 1.2,
-          delay,
-          times: [0, 0.4, 0.6, 1],
-          ease: "easeInOut",
-        }}
+        variants={underlineVariants}
+        initial="hidden"
+        animate={animate ? "visible" : "hidden"}
+        custom={delay}
       />
     </motion.span>
   );
@@ -40,12 +49,40 @@ function Highlight({
 
 const allSkills = [...languages, ...frontend, ...backend, ...database, ...tools];
 
+function useInView(threshold = 0.3) {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return { ref, isVisible };
+}
+
 export default function AboutSection() {
+  const aboutContent = useInView(0.3);
+  const skillsContent = useInView(0.2);
+
   return (
     <div className="about">
       <div className="sub-heading">A Little More About Me</div>
       <div className="section-divider" />
-      <div className="about-section">
+      <div className="about-section" ref={aboutContent.ref}>
         <div className="about-image-section">
           <div className="about-tape-top"></div>
           <div className="about-tape-bottom"></div>
@@ -59,15 +96,15 @@ export default function AboutSection() {
         </div>
         <div className="about-content">
           <p className="about-text">
-            I'm Bart, a <Highlight delay={0}>first-gen</Highlight> student from{" "}
-            <Highlight delay={0.1}>Thailand</Highlight> studying Computer
+            I'm Bart, a <Highlight delay={0} animate={aboutContent.isVisible}>first-gen</Highlight> student from{" "}
+            <Highlight delay={0.1} animate={aboutContent.isVisible}>Thailand</Highlight> studying Computer
             Science at Northeastern University based in Boston, USA.
           </p>
           <p className="about-text">
             I love the craft of design—whether that's{" "}
-            <Highlight delay={0.2}>UI/UX</Highlight>,{" "}
-            <Highlight delay={0.3}>systems</Highlight>, or{" "}
-            <Highlight delay={0.4}>infrastructure</Highlight>
+            <Highlight delay={0.2} animate={aboutContent.isVisible}>UI/UX</Highlight>,{" "}
+            <Highlight delay={0.3} animate={aboutContent.isVisible}>systems</Highlight>, or{" "}
+            <Highlight delay={0.4} animate={aboutContent.isVisible}>infrastructure</Highlight>
             —and building things that feel as good as they work.
           </p>
           <p className="about-text">
@@ -80,7 +117,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="about-skills" id="about-skills">
+      <div className="about-skills" id="about-skills" ref={skillsContent.ref}>
         <h3 className="about-skills-heading">Technologies I Work With</h3>
         <div className="about-skills-grid">
           {allSkills.map((tech, index) => (
@@ -89,6 +126,7 @@ export default function AboutSection() {
               icon={tech.icon}
               index={index}
               key={tech.name}
+              animate={skillsContent.isVisible}
             />
           ))}
         </div>

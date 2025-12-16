@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
@@ -19,12 +19,38 @@ const itemVariants = {
   exit: { opacity: 0, y: -20 },
 };
 
+function useInView(threshold = 0.3) {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return { ref, isVisible };
+}
+
 export default function ProjectSection() {
   const [activeProject, setActiveProject] = useState<
     (typeof projects)[0] | null
   >(null);
   const [visibleGroups, setVisibleGroups] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
+  const { ref, isVisible } = useInView(0.1);
 
   const PROJECTS_PER_GROUP = 3;
 
@@ -45,7 +71,7 @@ export default function ProjectSection() {
     <div className="project-section">
       <div className="sub-heading">Projects</div>
       <div className="section-divider"></div>
-      <div className="project-list">
+      <div className="project-list" ref={ref}>
         <AnimatePresence>
           {visibleProjects.map((project, index) => (
             <motion.div
@@ -53,7 +79,7 @@ export default function ProjectSection() {
               className="project-card"
               variants={itemVariants}
               initial="hidden"
-              animate="visible"
+              animate={isVisible ? "visible" : "hidden"}
               exit="exit"
               custom={index % PROJECTS_PER_GROUP}
               onClick={() => setActiveProject(project)}
