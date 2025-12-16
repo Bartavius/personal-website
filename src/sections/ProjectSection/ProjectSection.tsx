@@ -2,33 +2,26 @@ import { useState, useEffect } from "react";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Tooltip from "../../components/Tooltip";
-
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 const itemVariants = {
   hidden: { opacity: 0, y: -50 },
-  visible: { 
-    opacity: 1, 
+  visible: (index: number) => ({
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.25,
+      delay: index * 0.1,
       ease: "easeInOut",
     },
-  },
+  }),
+  exit: { opacity: 0, y: -20 },
 };
 
 export default function ProjectSection() {
   const [activeProject, setActiveProject] = useState<
-    (typeof projects)[number] | null
+    (typeof projects)[0] | null
   >(null);
   const [visibleGroups, setVisibleGroups] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
@@ -52,33 +45,33 @@ export default function ProjectSection() {
     <div className="project-section">
       <div className="sub-heading">Projects</div>
       <div className="section-divider"></div>
-      <motion.div
-        className="project-list"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-      >
-        {visibleProjects.map((project, index) => (
-          <motion.div
-            key={index}
-            className="project-card"
-            variants={itemVariants}
-            onClick={() => setActiveProject(project)}
-          >
-            <Tooltip text="Click me!">
-              <div className="project-card-thumbnail">
-                <img
-                  src={project.thumbnail}
-                  alt="thumbnail"
-                  className="thumbnail"
-                />
-              </div>
-              <div className="project-title">{project.name}</div>
-            </Tooltip>
-          </motion.div>
-        ))}
-      </motion.div>
+      <div className="project-list">
+        <AnimatePresence>
+          {visibleProjects.map((project, index) => (
+            <motion.div
+              key={project.name}
+              className="project-card"
+              variants={itemVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              custom={index % PROJECTS_PER_GROUP}
+              onClick={() => setActiveProject(project)}
+            >
+              <Tooltip text="Click me!">
+                <div className="project-card-thumbnail">
+                  <img
+                    src={project.thumbnail}
+                    alt="thumbnail"
+                    className="thumbnail"
+                  />
+                </div>
+                <div className="project-title">{project.name}</div>
+              </Tooltip>
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </div>
 
       {isMobile && (
         <div className="showmore">
