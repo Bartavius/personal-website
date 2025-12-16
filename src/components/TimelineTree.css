@@ -361,10 +361,20 @@
 
   .timeline-content {
     padding-left: 0.75rem;
+    padding-right: 0.75rem;
     border-width: 0.25rem;
   }
 
   .timeline-dot {
     left: -7px;
+  }
+
+
+  .icon-container.small .icon {
+    font-size: 0.85rem;
+  }
+
+  .icon-container.small .icon img {
+    height: 18px;
   }
 }
