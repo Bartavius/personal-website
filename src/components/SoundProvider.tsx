@@ -54,15 +54,15 @@ export function SoundProvider({ children }: { children: React.ReactNode }) {
       return audio;
     });
 
-    // Preload hover
-    hoverRef.current = new Audio("/sounds/hover.mp3");
-    hoverRef.current.preload = "auto";
-    hoverRef.current.load();
+    // // Preload hover
+    // hoverRef.current = new Audio("/sounds/hover.mp3");
+    // hoverRef.current.preload = "auto";
+    // hoverRef.current.load();
 
-    // Preload success
-    successRef.current = new Audio("/sounds/success.mp3");
-    successRef.current.preload = "auto";
-    successRef.current.load();
+    // // Preload success
+    // successRef.current = new Audio("/sounds/success.mp3");
+    // successRef.current.preload = "auto";
+    // successRef.current.load();
   }, [isMobile]);
 
   const playClick = useCallback(() => {
