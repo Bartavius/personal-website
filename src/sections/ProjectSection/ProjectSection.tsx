@@ -3,6 +3,7 @@ import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
 import ProjectCard from "@/components/ProjectCard";
+import { useAppSound } from "@/components/SoundProvider";
 
 function useInView(threshold = 0.3) {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,6 +37,7 @@ export default function ProjectSection() {
   const [visibleGroups, setVisibleGroups] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
   const { ref, isVisible } = useInView(0.1);
+  const { playClick } = useAppSound();
 
   const PROJECTS_PER_GROUP = 3;
 
@@ -72,14 +74,23 @@ export default function ProjectSection() {
       {isMobile && (
         <div className="showmore">
           {visibleProjects.length < projects.length && (
-            <button className="btn-secondary text-secondary" onClick={showMore}>
+            <button
+              className="btn-secondary text-secondary"
+              onClick={() => {
+                showMore();
+                playClick();
+              }}
+            >
               <span>Show More</span>
             </button>
           )}
           {visibleGroups > 1 && (
             <button
               className="btn-secondary text-secondary"
-              onClick={() => setVisibleGroups(1)}
+              onClick={() => {
+                setVisibleGroups(1);
+                playClick();
+              }}
             >
               <span>Show Less</span>
             </button>

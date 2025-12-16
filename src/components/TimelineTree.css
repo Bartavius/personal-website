@@ -41,17 +41,17 @@
   height: 100px;
   width: 100%;
   flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
 }
 
 .timeline-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.2s ease;
 }
 
-.timeline-logo img:hover {
-  transform: scale(1.05);
+.timeline-logo:hover {
+  transform: rotate(12deg);
 }
 
 .app-logo {

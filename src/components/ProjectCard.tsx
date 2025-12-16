@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tooltip from "./Tooltip";
 import "./ProjectCard.css";
+import { useAppSound } from "./SoundProvider";
 
 function ProjectCard({
   project,
@@ -16,21 +17,27 @@ function ProjectCard({
   onClick: () => void;
 }) {
   const [animationDone, setAnimationDone] = useState(false);
+  const { playClick } = useAppSound();
 
   return (
     <div
-      className={`project-card ${isVisible && !animationDone ? "animate-project" : ""} ${animationDone ? "animation-done" : ""}`}
-      style={isVisible && !animationDone ? { animationDelay: `${(index % groupSize) * 0.1}s` } : undefined}
+      className={`project-card ${
+        isVisible && !animationDone ? "animate-project" : ""
+      } ${animationDone ? "animation-done" : ""}`}
+      style={
+        isVisible && !animationDone
+          ? { animationDelay: `${(index % groupSize) * 0.1}s` }
+          : undefined
+      }
       onAnimationEnd={() => setAnimationDone(true)}
-      onClick={onClick}
+      onClick={() => {
+        playClick();
+        onClick();
+      }}
     >
       <Tooltip text="Click me!">
         <div className="project-card-thumbnail">
-          <img
-            src={project.thumbnail}
-            alt="thumbnail"
-            className="thumbnail"
-          />
+          <img src={project.thumbnail} alt="thumbnail" className="thumbnail" />
         </div>
         <div className="project-title">{project.name}</div>
       </Tooltip>

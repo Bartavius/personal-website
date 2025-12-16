@@ -1,4 +1,5 @@
 import "./SkillChip.css";
+import { useAppSound } from "./SoundProvider";
 
 export default function SkillChip({
   name,
@@ -7,8 +8,9 @@ export default function SkillChip({
   name: string;
   icon: string;
 }) {
+  const { playClick } = useAppSound();
   return (
-    <div className="skill-icon-wrapper">
+    <div className="skill-icon-wrapper" onClick={playClick}>
       <div className="skill-icon">
         {icon ? (
           <img src={icon} alt={name} />

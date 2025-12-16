@@ -2,20 +2,31 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosPin } from "react-icons/io";
 import "./HeroSection.css";
 import { useRouter } from "next/navigation";
+import { useAppSound } from "@/components/SoundProvider";
 
-export default function ProfileInformation({setSkills, modal} : {setSkills: (val: boolean) => void, modal: boolean}) {
+export default function ProfileInformation({
+  setSkills,
+  modal,
+}: {
+  setSkills: (val: boolean) => void;
+  modal: boolean;
+}) {
   const router = useRouter();
-  
+  const { playClick } = useAppSound();
+
   return (
     <div className="hero-profile">
       <div className="hero-details">
         <div className="grid grid-cols-1">
-          <span className="name">
-            Jirath "Bart" Lojanarungsiri
-            </span>
-          <span className="title"><span className="typing">Full-Stack Developer</span></span>
+          <span className="name">Jirath "Bart" Lojanarungsiri</span>
+          <span className="title">
+            <span className="typing">Full-Stack Developer</span>
+          </span>
           <div className="location-based grid grid-cols-1">
-            <span className="location">Boston, USA | Bangkok, Thailand<IoIosPin /></span>
+            <span className="location">
+              Boston, USA | Bangkok, Thailand
+              <IoIosPin />
+            </span>
           </div>
         </div>
         <div className="detail-buttons">
@@ -25,7 +36,7 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn-primary">
+              <button className="btn-primary" onClick={playClick}>
                 <span className="text-primary">
                   <FaLinkedin className="social-icon" />
                   LinkedIn
@@ -37,7 +48,7 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn-primary">
+              <button className="btn-primary" onClick={playClick}>
                 <span className="text-primary">
                   <FaGithub className="social-icon" />
                   GitHub
@@ -46,16 +57,22 @@ export default function ProfileInformation({setSkills, modal} : {setSkills: (val
             </a>
           </div>
           <div className="additional-links">
-              {/* <button className="btn-secondary" onClick={() => setSkills(!modal)}> */}
-              <button className="btn-secondary" onClick={() => router.push('#about-skills')}>
-                <span className="text-secondary">Skills</span>
-              </button>
+            {/* <button className="btn-secondary" onClick={() => setSkills(!modal)}> */}
+            <button
+              className="btn-secondary"
+              onClick={() => {
+                router.push("#about-skills");
+                playClick();
+              }}
+            >
+              <span className="text-secondary">Skills</span>
+            </button>
             <a
               href="files/Jirath-Lojanarungsiri-Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
-              <button className="btn-secondary">
+              <button className="btn-secondary" onClick={playClick}>
                 <span className="text-secondary">Resume</span>
               </button>
             </a>

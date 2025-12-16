@@ -11,6 +11,8 @@ type SoundContextType = {
 
 const SoundContext = createContext<SoundContextType | null>(null);
 
+const clickVariants = ["/sounds/click1.m4a", "/sounds/click2.m4a", "/sounds/click3.m4a", "/sounds/click4.m4a", "/sounds/click5.m4a"];
+
 export function SoundProvider({ children }: { children: React.ReactNode }) {
   const [enabled, setEnabled] = useState(true);
   
@@ -23,14 +25,24 @@ export function SoundProvider({ children }: { children: React.ReactNode }) {
     
     if (!ref.current) {
       ref.current = new Audio(src);
+    } else {
+      ref.current.src = src;
     }
     ref.current.volume = volume;
     ref.current.currentTime = 0;
     ref.current.play().catch(() => {});
   }, [enabled]);
 
-  const playClick = useCallback(() => playSound(clickRef, "/sounds/click.mp3", 0.3), [playSound]);
-  const playHover = useCallback(() => playSound(hoverRef, "/sounds/hover.mp3", 0.15), [playSound]);
+  const playClick = useCallback(() => {
+    const randomSrc = clickVariants[Math.floor(Math.random() * clickVariants.length)];
+    playSound(clickRef, randomSrc, 0.12);
+  }, [playSound]);
+  
+  const playHover = useCallback(() => {
+    const randomSrc = clickVariants[Math.floor(Math.random() * clickVariants.length)];
+    playSound(clickRef, randomSrc, 0.15);
+  }, [playSound]);
+
   const playSuccess = useCallback(() => playSound(successRef, "/sounds/success.mp3", 0.4), [playSound]);
 
   return (

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./navbar.css";
 import { useRouter } from "next/navigation";
 import { FaHamburger } from "react-icons/fa";
+import { useAppSound } from "./SoundProvider";
 
 export default function Navbar({
   setSkills,
@@ -21,6 +22,7 @@ export default function Navbar({
   const tabs = ["home", "experience", "projects", "about","contacts"];
   const [hamburgerOpen, setHamburgerOpen] = useState(!isMobile);
   const router = useRouter();
+  const { playClick } = useAppSound();
   useEffect(() => {
     setHamburgerOpen(!isMobile);
   }, [isMobile]);
@@ -47,7 +49,10 @@ export default function Navbar({
         </div>
         <div
           className="hamburger"
-          onClick={() => setHamburgerOpen(!hamburgerOpen)}
+          onClick={() => {
+            setHamburgerOpen(!hamburgerOpen);
+            playClick();
+          }}
         >
           <FaHamburger />
         </div>
