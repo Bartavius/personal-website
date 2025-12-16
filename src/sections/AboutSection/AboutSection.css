@@ -151,6 +151,14 @@
   gap: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-skills {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-skills-heading {
@@ -172,6 +180,7 @@
 .about-footer {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
   font-family: Roboto, sans-serif;
   font-size: 0.95rem;
@@ -199,8 +208,7 @@
 }
 
 .footer-divider {
-  opacity: 1;
-  font-size: large;
+  opacity: 0.5;
 }
 
 /* Responsive */
@@ -237,12 +245,24 @@
 
   .about-footer {
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .footer-divider {
+    display: none;
   }
 }
 
 @media (max-width: 500px) {
-
   .about-skills-grid {
     gap: 1.5rem;
   }

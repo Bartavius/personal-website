@@ -22,10 +22,10 @@
 }
 
 .skill-icon-wrapper:hover .skill-icon {
+  transform: translateY(-4px);
   box-shadow: 
     0 6px 0 var(--color-accent1),
     0 12px 28px rgba(0, 0, 0, 0.18);
-  transform: translateY(-2px);
 }
 
 .skill-icon img {
@@ -35,14 +35,14 @@
 }
 
 .skill-icon-fallback {
-  font-family: Outfit, Roboto, sans-serif;
+  font-family: Outfit, sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--background);
 }
 
 .skill-icon-label {
-  font-family: Roboto, sans-serif;
+  font-family: Outfit, sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-accent3);
@@ -60,7 +60,5 @@
 
   .skill-icon-label {
     font-size: 0.7rem;
-    opacity: 1;
-    transform: translateY(0);
   }
 }

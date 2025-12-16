@@ -2,22 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import ProjectModal from "@/components/ProjectModal";
 import projects from "../../database/Projects.json";
 import "./ProjectSection.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Tooltip from "../../components/Tooltip";
-
-const itemVariants = {
-  hidden: { opacity: 0, y: -50 },
-  visible: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.25,
-      delay: index * 0.1,
-      ease: "easeInOut",
-    },
-  }),
-  exit: { opacity: 0, y: -20 },
-};
 
 function useInView(threshold = 0.3) {
   const [isVisible, setIsVisible] = useState(false);
@@ -72,31 +58,25 @@ export default function ProjectSection() {
       <div className="sub-heading">Projects</div>
       <div className="section-divider"></div>
       <div className="project-list" ref={ref}>
-        <AnimatePresence>
-          {visibleProjects.map((project, index) => (
-            <motion.div
-              key={project.name}
-              className="project-card"
-              variants={itemVariants}
-              initial="hidden"
-              animate={isVisible ? "visible" : "hidden"}
-              exit="exit"
-              custom={index % PROJECTS_PER_GROUP}
-              onClick={() => setActiveProject(project)}
-            >
-              <Tooltip text="Click me!">
-                <div className="project-card-thumbnail">
-                  <img
-                    src={project.thumbnail}
-                    alt="thumbnail"
-                    className="thumbnail"
-                  />
-                </div>
-                <div className="project-title">{project.name}</div>
-              </Tooltip>
-            </motion.div>
-          ))}
-        </AnimatePresence>
+        {visibleProjects.map((project, index) => (
+          <div
+            key={project.name}
+            className={`project-card ${isVisible ? "animate-project" : ""}`}
+            style={isVisible ? { animationDelay: `${(index % PROJECTS_PER_GROUP) * 0.1}s` } : undefined}
+            onClick={() => setActiveProject(project)}
+          >
+            <Tooltip text="Click me!">
+              <div className="project-card-thumbnail">
+                <img
+                  src={project.thumbnail}
+                  alt="thumbnail"
+                  className="thumbnail"
+                />
+              </div>
+              <div className="project-title">{project.name}</div>
+            </Tooltip>
+          </div>
+        ))}
       </div>
 
       {isMobile && (

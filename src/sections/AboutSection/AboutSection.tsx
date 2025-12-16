@@ -104,16 +104,18 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="about-skills" id="about-skills" ref={skillsContent.ref}>
+      <div 
+        className={`about-skills ${skillsContent.isVisible ? "animate-skills" : ""}`} 
+        id="about-skills" 
+        ref={skillsContent.ref}
+      >
         <h3 className="about-skills-heading">Technologies I Work With</h3>
         <div className="about-skills-grid">
-          {allSkills.map((tech, index) => (
+          {allSkills.map((tech) => (
             <SkillChip
               name={tech.name}
               icon={tech.icon}
-              index={index}
               key={tech.name}
-              animate={skillsContent.isVisible}
             />
           ))}
         </div>
