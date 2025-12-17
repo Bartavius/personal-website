@@ -58,7 +58,15 @@
           "(A) CS 2501: Lab for CS 2500",
           "(A) CS 1800: Discrete Structures",
           "(A) CS 1802: Seminar for CS 1800",
-          "(A) COMM 1112: Public Speaking"
+          "(A) COMM 1112: Public Speaking",
+          "(A) SOCL 1101: Intro to Sociology"
+        ]
+      },
+      {
+        "time": "Summer 2023",
+        "lines": [
+          "(A) MUSC 1001: Music in Everyday Life",
+          "(A-) PHIL 1102: Intro to Contemporary Moral Issues"
         ]
       }
     ]
