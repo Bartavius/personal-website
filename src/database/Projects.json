@@ -5,7 +5,7 @@
     "description": "For the final project of CS4100: Artificial Intelligence, myself and 3 others built an CNN AI model that plays GeoGuessr to predict the location based on visual cues from Google Streetview images.",
     "linkName": "Paper",
     "link": "files/GeoGuessrAI_Report.pdf",
-    "thumbnail": "projects/geoguessrai4.png",
+    "thumbnail": "/projects/geoguessrai4.png",
     "tags": ["AI", "Computer Vision"],
     "languages": [{ "name": "Python", "icon": "/logo/python.png" }],
     "techstack": [
@@ -45,7 +45,7 @@
     "description": "As part of CS4530: Foundations of Software Engineering, I worked with 3 other classmates to build Restacked: a forum-based web application where users can discuss anything programming-related. We practiced Agile methodologies and used Scrum to manage our workflow. Together, we achieved 95% code coverage. My main contributions (main user story) was to gamify the site, allowing users to earn achievements and badges based on their activity and added additional games like Wordle and Speedtyping to keep users engaged via competitions",
     "linkName": "Link",
     "link": "https://fall25-project-109-client.onrender.com/",
-    "thumbnail": "projects/restacked.png",
+    "thumbnail": "/projects/restacked.png",
     "videoLink": "https://www.youtube.com/embed/zpyMunMwh0o",
     "tags": ["Full Stack", "Frontend", "Backend", "Database Design"],
     "languages": [

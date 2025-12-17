@@ -10,7 +10,7 @@ import tools from "../../database/skills/tools.json";
 import "./AboutSection.css";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { IoIosMail } from "react-icons/io";
-import { BsHeartbreak } from "react-icons/bs";
+import Image from "next/image";
 
 function Highlight({
   children,
@@ -27,15 +27,27 @@ function Highlight({
     <motion.span className="highlight" whileHover={{ rotate: -3, scale: 1.05 }}>
       {children}
       <span
-        className={`highlight-underline ${animate && !animationDone ? "animate-underline" : ""}`}
-        style={animate && !animationDone ? { animationDelay: `${delay}s` } : undefined}
+        className={`highlight-underline ${
+          animate && !animationDone ? "animate-underline" : ""
+        }`}
+        style={
+          animate && !animationDone
+            ? { animationDelay: `${delay}s` }
+            : undefined
+        }
         onAnimationEnd={() => setAnimationDone(true)}
       />
     </motion.span>
   );
 }
 
-const allSkills = [...languages, ...frontend, ...backend, ...database, ...tools];
+const allSkills = [
+  ...languages,
+  ...frontend,
+  ...backend,
+  ...database,
+  ...tools,
+];
 
 function useInView(threshold = 0.3) {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,24 +87,51 @@ export default function AboutSection() {
           <div className="about-tape-top"></div>
           <div className="about-tape-bottom"></div>
           <div className="about-polaroid">
-            <img src="/about.jpeg" alt="Bart" draggable={false} />
+            <Image
+              src="/about.jpeg"
+              alt="Bart"
+              draggable={false}
+              width={600}
+              height={600}
+              loading="eager"
+              priority
+            />
             <span className="scribble-font">
               me and a friend
-              <span className="scribble-font polaroid-date">Nara, Japan 2025</span>
+              <span className="scribble-font polaroid-date">
+                Nara, Japan 2025
+              </span>
             </span>
           </div>
         </div>
         <div className="about-content">
           <p className="about-text">
-            I'm Bart, a third-year, <Highlight delay={0} animate={aboutContent.isVisible}>first-gen</Highlight> college student studying Computer{" "}
-            Science at Northeastern University. I'm from <Highlight delay={0.1} animate={aboutContent.isVisible}>Bangkok, Thailand</Highlight> and am currently based in Boston, USA.
+            I'm Bart, a third-year,{" "}
+            <Highlight delay={0} animate={aboutContent.isVisible}>
+              first-gen
+            </Highlight>{" "}
+            college student studying Computer Science at Northeastern
+            University. I'm from{" "}
+            <Highlight delay={0.1} animate={aboutContent.isVisible}>
+              Bangkok, Thailand
+            </Highlight>{" "}
+            and am currently based in Boston, USA.
           </p>
           <p className="about-text">
             I'm quite interested in{" "}
-            <Highlight delay={0.2} animate={aboutContent.isVisible}>Full Stack</Highlight>,{" "}
-            <Highlight delay={0.3} animate={aboutContent.isVisible}>Artificial Intelligence</Highlight>, and{" "}
-            <Highlight delay={0.4} animate={aboutContent.isVisible}>System Infrastructure</Highlight>—building{" "}
-            things that feel as good as they work. Though, debugging distributed systems is the kind of pain I wouldn't wish upon anyone.
+            <Highlight delay={0.2} animate={aboutContent.isVisible}>
+              Full Stack
+            </Highlight>
+            ,{" "}
+            <Highlight delay={0.3} animate={aboutContent.isVisible}>
+              Artificial Intelligence
+            </Highlight>
+            , and{" "}
+            <Highlight delay={0.4} animate={aboutContent.isVisible}>
+              System Infrastructure
+            </Highlight>
+            —building things that feel as good as they work. Though, debugging
+            distributed systems is the kind of pain I wouldn't wish upon anyone.
           </p>
           <p className="about-text">
             Outside of that, you'll find me watching Hololive, going on long
@@ -104,19 +143,17 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div 
-        className={`about-skills ${skillsContent.isVisible ? "animate-skills" : ""}`} 
-        id="about-skills" 
+      <div
+        className={`about-skills ${
+          skillsContent.isVisible ? "animate-skills" : ""
+        }`}
+        id="about-skills"
         ref={skillsContent.ref}
       >
         <h3 className="about-skills-heading">Technologies I Work With</h3>
         <div className="about-skills-grid">
           {allSkills.map((tech) => (
-            <SkillChip
-              name={tech.name}
-              icon={tech.icon}
-              key={tech.name}
-            />
+            <SkillChip name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>
       </div>
@@ -131,7 +168,8 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoIosMail />jlojanarungsiri@gmail.com
+          <IoIosMail />
+          jlojanarungsiri@gmail.com
         </a>
         <span className="footer-divider">•</span>
         <a
@@ -139,7 +177,8 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LiaLinkedin />jlojanarungsiri
+          <LiaLinkedin />
+          jlojanarungsiri
         </a>
         <span className="footer-divider">•</span>
         <a
@@ -147,7 +186,8 @@ export default function AboutSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LiaGithub />Bartavius
+          <LiaGithub />
+          Bartavius
         </a>
         <span className="footer-divider">•</span>
         <a

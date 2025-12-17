@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Script from "next/script";
 import { SoundProvider } from "@/components/SoundProvider";
+import imageConfig from "../database/images.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const criticalImages = imageConfig.critical;
+
   return (
     <html lang="en">
       <head>
+        {/* Preload critical images immediately - before React hydrates */}
+        {criticalImages.map((src) => (
+          <link
+            key={src}
+            rel="preload"
+            as="image"
+            href={src}
+          />
+        ))}
+
         {/* Inline critical CSS for instant loading screen */}
         <style
           dangerouslySetInnerHTML={{

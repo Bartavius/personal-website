@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./SkillsModal.css";
 
 export default function IconContainer({
@@ -13,7 +14,18 @@ export default function IconContainer({
     <div key={name} className="tech">
       <div className={`icon-container ${className}`}>
         <span className="icon">
-          {icon !== "" && <img src={icon} alt="" draggable={false} />} {name}
+          {icon !== "" && (
+            <Image
+              src={icon}
+              alt=""
+              draggable={false}
+              width={40}
+              height={40}
+              loading="eager"
+              priority
+            />
+          )}{" "}
+          {name}
         </span>
       </div>
     </div>

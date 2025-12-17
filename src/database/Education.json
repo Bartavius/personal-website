@@ -102,7 +102,7 @@
           { "name": "JavaScript", "icon": "/logo/javascript.png" },
           { "name": "Supabase", "icon": "/logo/supabase.png" },
           { "name": "Firebase", "icon": "/logo/firebase.png" },
-          { "name": "Flutter", "icon": "logo/flutter.png" },
+          { "name": "Flutter", "icon": "/logo/flutter.png" },
           { "name": "PostgreSQL", "icon": "/logo/postgresql.png" },
           { "name": "React Native", "icon": "/logo/react.png" },
           { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },

@@ -2,6 +2,7 @@
 import "./EducationSection.css";
 import ToggleTimeline from "../../components/ToggleTimeline";
 import tabs from "../../database/Education.json";
+import Image from "next/image";
 
 export default function EducationSection() {
   return (

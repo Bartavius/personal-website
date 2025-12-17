@@ -2,6 +2,7 @@ import { useState } from "react";
 import Tooltip from "./Tooltip";
 import "./ProjectCard.css";
 import { useAppSound } from "./SoundProvider";
+import Image from "next/image";
 
 function ProjectCard({
   project,
@@ -37,7 +38,17 @@ function ProjectCard({
     >
       <Tooltip text="Click me!">
         <div className="project-card-thumbnail">
-          <img src={project.thumbnail} alt="thumbnail" className="thumbnail" draggable={false} />
+          <Image
+            key={project.thumbnail}
+            src={project.thumbnail}
+            alt="thumbnail"
+            className="thumbnail"
+            draggable={false}
+            width={400}
+            height={200}
+            loading="eager"
+            priority
+          />
         </div>
         <div className="project-title">{project.name}</div>
       </Tooltip>

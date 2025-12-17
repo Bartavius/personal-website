@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import images from "../../database/ProfileImages.json";
 
 export default function ImageSection() {
@@ -30,7 +31,20 @@ export default function ImageSection() {
       <div className="tape-top"></div>
       <div className="tape-bottom"></div>
       <div className="circles">
-        <img src={profile.image} alt="" draggable={false} style={{ opacity }} />
+
+        <Image
+          key={profile.image}
+          src={profile.image}
+          alt=""
+          width={400}
+          height={400}
+          draggable={false}
+          priority
+          loading="eager"
+          style={{ opacity, transition: "opacity 1s ease" }}
+        />
+
+
         <span className="scribble-font" style={{ opacity }}>
           {profile.caption}
           <span className="scribble-font polaroid-date" style={{ opacity }}>

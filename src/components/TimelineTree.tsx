@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import IconContainer from "./iconContainer";
 import "./TimelineTree.css";
+import Image from "next/image";
 
 function LanguagesContainer({ languages }: { languages: any[] }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,9 +17,8 @@ function LanguagesContainer({ languages }: { languages: any[] }) {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const visibleLanguages = isMobile && !showAll 
-    ? languages.slice(0, MOBILE_LIMIT) 
-    : languages;
+  const visibleLanguages =
+    isMobile && !showAll ? languages.slice(0, MOBILE_LIMIT) : languages;
 
   const hasMore = languages.length > MOBILE_LIMIT;
 
@@ -35,7 +35,7 @@ function LanguagesContainer({ languages }: { languages: any[] }) {
         ))}
       </div>
       {isMobile && hasMore && (
-        <button 
+        <button
           className="languages-toggle"
           onClick={() => setShowAll(!showAll)}
         >
@@ -55,7 +55,15 @@ export default function TimelineTree({ tree }: { tree: any }) {
             <div className="timeline-left">
               {entry.logo && (
                 <div className={`timeline-logo ${entry.app ? "app-logo" : ""}`}>
-                  <img src={entry.logo} alt="logo" draggable={false} />
+                  <Image
+                    src={entry.logo}
+                    alt="logo"
+                    draggable={false}
+                    width={40}
+                    height={40}
+                    loading="eager"
+                    priority
+                  />
                 </div>
               )}
               <div className="timeline-time">{entry.time}</div>
@@ -76,7 +84,15 @@ export default function TimelineTree({ tree }: { tree: any }) {
                     entry.app ? "app-logo" : ""
                   }`}
                 >
-                  <img src={entry.logo} alt="logo" />
+                  <Image
+                    src={entry.logo}
+                    alt="logo"
+                    width={40}
+                    height={40}
+                    draggable={false}
+                    loading="eager"
+                    priority
+                  />
                 </div>
               )}
               <h2 className="timeline-company">{entry.company}</h2>
