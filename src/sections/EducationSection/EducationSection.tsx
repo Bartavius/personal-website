@@ -15,6 +15,7 @@ export default function EducationSection() {
               src="/logo/NortheasternLogo.png"
               alt="NEU logo"
               className="logo"
+              draggable={false}
             />
           </div>
           <div className="degree-description">

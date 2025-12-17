@@ -6,7 +6,7 @@
     "linkName": "Paper",
     "link": "files/GeoGuessrAI_Report.pdf",
     "thumbnail": "projects/geoguessrai4.png",
-    "tags": ["AI", "Computer Vision", "Collaborated Project"],
+    "tags": ["AI", "Computer Vision"],
     "languages": [{ "name": "Python", "icon": "/logo/python.png" }],
     "techstack": [
       { "name": "PyTorch", "icon": "/logo/pytorch.png" },
@@ -21,7 +21,7 @@
     "linkName": "Play",
     "link": "https://plonkstars.vercel.app",
     "thumbnail": "/projects/plonkstars.gif",
-    "tags": ["Full Stack", "Frontend", "Backend", "Database Design", "Collaborated Project"],
+    "tags": ["Full Stack", "Frontend", "Backend", "Database Design"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "Python", "icon": "/logo/python.png" },
@@ -47,7 +47,7 @@
     "link": "https://fall25-project-109-client.onrender.com/",
     "thumbnail": "projects/restacked.png",
     "videoLink": "https://www.youtube.com/embed/zpyMunMwh0o",
-    "tags": ["Full Stack", "Frontend", "Backend", "Database Design", "Collaborated Project"],
+    "tags": ["Full Stack", "Frontend", "Backend", "Database Design"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "JavaScript", "icon": "/logo/javascript.png" },
@@ -74,7 +74,7 @@
     "link": "https://devpost.com/software/j-a-z-a-just-a-zip-away",
     "thumbnail": "/projects/JAZA.png",
     "videoLink": "https://www.youtube.com/embed/UiUuOPtWXCM",
-    "tags": ["Frontend", "Database Design", "Collaborated Project"],
+    "tags": ["Frontend", "Database Design"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "Python", "icon": "/logo/python.png" },
@@ -98,7 +98,7 @@
     "link": "https://devpost.com/software/high-card",
     "thumbnail": "/projects/HighCard.png",
     "videoLink": "https://www.youtube.com/embed/2RDkPCOkaNE",
-    "tags": ["Full Stack", "Frontend", "Backend", "Collaborated Project"],
+    "tags": ["Full Stack", "Frontend", "Backend"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "JavaScript", "icon": "/logo/javascript.png" },
@@ -125,8 +125,7 @@
       "Full Stack",
       "Frontend",
       "Backend",
-      "Database Design",
-      "Individual Project"
+      "Database Design"
     ],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
@@ -151,7 +150,7 @@
     "linkName": "Unavailable",
     "link": "",
     "thumbnail": "/projects/stocks.png",
-    "tags": ["Backend", "Collaborated Project"],
+    "tags": ["Backend"],
     "languages": [{ "name": "Java", "icon": "/logo/java.png" }],
     "techstack": [
       { "name": "JUnit", "icon": "" },

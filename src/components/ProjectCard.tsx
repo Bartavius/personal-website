@@ -37,7 +37,7 @@ function ProjectCard({
     >
       <Tooltip text="Click me!">
         <div className="project-card-thumbnail">
-          <img src={project.thumbnail} alt="thumbnail" className="thumbnail" />
+          <img src={project.thumbnail} alt="thumbnail" className="thumbnail" draggable={false} />
         </div>
         <div className="project-title">{project.name}</div>
       </Tooltip>

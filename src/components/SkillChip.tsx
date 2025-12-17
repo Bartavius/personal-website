@@ -11,7 +11,7 @@ export default function SkillChip({
   const { playClick } = useAppSound();
   return (
     <div className="skill-icon-wrapper" onClick={playClick}>
-      <div className="skill-icon">
+      <div className="skill-icon" draggable={false}>
         {icon ? (
           <img src={icon} alt={name} />
         ) : (

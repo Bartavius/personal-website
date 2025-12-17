@@ -13,7 +13,7 @@ export default function IconContainer({
     <div key={name} className="tech">
       <div className={`icon-container ${className}`}>
         <span className="icon">
-          {icon !== "" && <img src={icon} alt="" />} {name}
+          {icon !== "" && <img src={icon} alt="" draggable={false} />} {name}
         </span>
       </div>
     </div>

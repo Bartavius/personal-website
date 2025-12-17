@@ -55,7 +55,7 @@ export default function TimelineTree({ tree }: { tree: any }) {
             <div className="timeline-left">
               {entry.logo && (
                 <div className={`timeline-logo ${entry.app ? "app-logo" : ""}`}>
-                  <img src={entry.logo} alt="logo" />
+                  <img src={entry.logo} alt="logo" draggable={false} />
                 </div>
               )}
               <div className="timeline-time">{entry.time}</div>
