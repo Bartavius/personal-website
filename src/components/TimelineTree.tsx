@@ -59,8 +59,8 @@ export default function TimelineTree({ tree }: { tree: any }) {
                     src={entry.logo}
                     alt="logo"
                     draggable={false}
-                    width={40}
-                    height={40}
+                    width={100}
+                    height={100}
                     loading="eager"
                     priority
                   />
@@ -87,8 +87,8 @@ export default function TimelineTree({ tree }: { tree: any }) {
                   <Image
                     src={entry.logo}
                     alt="logo"
-                    width={40}
-                    height={40}
+                    width={100}
+                    height={100}
                     draggable={false}
                     loading="eager"
                     priority
