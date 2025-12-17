@@ -90,10 +90,9 @@ export default function AboutSection() {
           <p className="about-text">
             I'm quite interested in{" "}
             <Highlight delay={0.2} animate={aboutContent.isVisible}>Full Stack</Highlight>,{" "}
-            <Highlight delay={0.3} animate={aboutContent.isVisible}>Artificial Intelligence</Highlight>, and {" "}
-            <Highlight delay={0.4} animate={aboutContent.isVisible}>System Infrastructure</Highlight>—and {" "}
-            building things that feel as good as they work. Though, I'll say that debugging distributed systems is a pain that
-            I wouldn't wish upon anyone.
+            <Highlight delay={0.3} animate={aboutContent.isVisible}>Artificial Intelligence</Highlight>, and{" "}
+            <Highlight delay={0.4} animate={aboutContent.isVisible}>System Infrastructure</Highlight>—building{" "}
+            things that feel as good as they work. Though, debugging distributed systems is the kind of pain I wouldn't wish upon anyone.
           </p>
           <p className="about-text">
             Outside of that, you'll find me watching Hololive, going on long
