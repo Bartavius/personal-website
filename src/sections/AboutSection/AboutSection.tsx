@@ -10,6 +10,7 @@ import tools from "../../database/skills/tools.json";
 import "./AboutSection.css";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { IoIosMail } from "react-icons/io";
+import { BsHeartbreak } from "react-icons/bs";
 
 function Highlight({
   children,
@@ -83,16 +84,16 @@ export default function AboutSection() {
         </div>
         <div className="about-content">
           <p className="about-text">
-            I'm Bart, a <Highlight delay={0} animate={aboutContent.isVisible}>first-gen</Highlight> junior student from{" "}
-            <Highlight delay={0.1} animate={aboutContent.isVisible}>Thailand</Highlight> studying Computer
-            Science at Northeastern University based in Boston, USA.
+            I'm Bart, a third-year, <Highlight delay={0} animate={aboutContent.isVisible}>first-gen</Highlight> college student studying Computer{" "}
+            Science at Northeastern University. I'm from <Highlight delay={0.1} animate={aboutContent.isVisible}>Bangkok, Thailand</Highlight> and am currently based in Boston, USA.
           </p>
           <p className="about-text">
-            I love the craft of design—whether that's{" "}
-            <Highlight delay={0.2} animate={aboutContent.isVisible}>UI/UX</Highlight>,{" "}
-            <Highlight delay={0.3} animate={aboutContent.isVisible}>systems</Highlight>, or{" "}
-            <Highlight delay={0.4} animate={aboutContent.isVisible}>infrastructure</Highlight>
-            —and building things that feel as good as they work.
+            I'm quite interested in{" "}
+            <Highlight delay={0.2} animate={aboutContent.isVisible}>Full Stack</Highlight>,{" "}
+            <Highlight delay={0.3} animate={aboutContent.isVisible}>Artificial Intelligence</Highlight>, and {" "}
+            <Highlight delay={0.4} animate={aboutContent.isVisible}>System Infrastructure</Highlight>—and {" "}
+            building things that feel as good as they work. Though, I'll say that debugging distributed systems is a pain that
+            I wouldn't wish upon anyone.
           </p>
           <p className="about-text">
             Outside of that, you'll find me watching Hololive, going on long
