@@ -67,6 +67,13 @@
   }
 
   .skill-icon-label {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-icon {
+    width: 45px;
+    height: 45px;
   }
 }
