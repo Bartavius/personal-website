@@ -39,7 +39,6 @@ function ProjectCard({
       <Tooltip text="Click me!">
         <div className="project-card-thumbnail">
           <Image
-            key={project.thumbnail}
             src={project.thumbnail}
             alt="thumbnail"
             className="thumbnail"
