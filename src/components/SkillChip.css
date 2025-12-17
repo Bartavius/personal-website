@@ -18,7 +18,7 @@
   box-shadow: 
     0 4px 0 var(--color-accent1),
     0 8px 20px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .skill-icon-wrapper:hover .skill-icon {
