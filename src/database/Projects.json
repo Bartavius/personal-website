@@ -1,152 +1,161 @@
 [
-    {
-      "name": "GEOGUESSR AI",
-      "date": "November 2025 - Present",
-      "description": "For the final project of CS4100: Artificial Intelligence, myself and 3 others built an CNN AI model that plays GeoGuessr to predict the location based on visual cues from Google Streetview images.",
-      "linkName": "Paper",
-      "link": "files/GeoGuessrAI_Report.pdf",
-      "thumbnail": "projects/geoguessrai4.png",
-      "languages": [
-        {"name": "Python", "icon": "/logo/python.png"}
-      ],
-      "techstack": [
-        {"name": "PyTorch", "icon": "/logo/pytorch.png"},
-        {"name": "Matplotlib", "icon": "/logo/matplotlib.png"},
-        {"name": "NumPy", "icon": "/logo/numpy.png"}
-      ]
-    },
-    {
-      "name": "PLONKSTARS",
-      "date": "February 2025 - May 2025",
-      "description": "After finding out that Geoguessr required a subscription fee to play, my friends and I decided to recreate the game ourselves with zero production costs. So, introducing Plonkstars, a geolocating game inspired by Geoguessr. Explore through Google Streetview and find out where you are in the world!",
-      "linkName": "Play",
-      "link": "https://plonkstars.vercel.app",
-      "thumbnail": "/projects/plonkstars.gif",
-      "languages": [
-        {"name": "TypeScript", "icon": "/logo/typescript.png"},
-        {"name": "Python", "icon": "/logo/python.png"},
-        {"name": "HTML", "icon": "/logo/html5.png"},
-        {"name": "CSS", "icon": "/logo/css.png"}
-      ],
-      "techstack": [
-        {"name": "React", "icon": "/logo/react.png"},
-        {"name": "NextJS", "icon": "/logo/next.png"},
-        {"name": "Flask", "icon": "/logo/flask.png"},
-        {"name": "PostgreSQL", "icon": "/logo/postgresql.png"},
-        {"name": "TailwindCSS", "icon": "/logo/tailwind.png"},
-        {"name": "Axios", "icon": ""},
-        {"name": "Redux", "icon": ""},
-        {"name": "JWT", "icon": ""}
-      ]
-    },
-    {
-      "name": "RESTACKED",
-      "date": "OCTOBER 2025 - DECEMBER 2025",
-      "description": "As part of CS4530: Foundations of Software Engineering, I worked with 3 other classmates to build Restacked: a forum-based web application where users can discuss anything programming-related. We practiced Agile methodologies and used Scrum to manage our workflow. Together, we achieved 95% code coverage. My main contributions (main user story) was to gamify the site, allowing users to earn achievements and badges based on their activity and added additional games like Wordle and Speedtyping to keep users engaged via competitions",
-      "linkName": "Link",
-      "link": "https://fall25-project-109-client.onrender.com/",
-      "thumbnail": "projects/restacked.png",
-      "videoLink": "https://www.youtube.com/embed/zpyMunMwh0o",
-      "languages": [
-        {"name": "TypeScript", "icon": "/logo/typescript.png"},
-        {"name": "JavaScript", "icon": "/logo/javascript.png"},
-        {"name": "HTML", "icon": "/logo/html5.png"},
-        {"name": "CSS", "icon": "/logo/css.png"}
-      ],
-      "techstack": [
-        {"name": "React", "icon": "/logo/react.png"},
-        {"name": "Vite", "icon": "/logo/vite.png"},
-        {"name": "NodeJS", "icon": "/logo/nodejs.png"},
-        {"name": "ExpressJS", "icon": "/logo/express.png"},
-        {"name": "MongoDB", "icon": "/logo/mongodb.png"},
-        {"name": "Cloudinary", "icon": "/logo/cloudinary.png"},
-        {"name": "Jest", "icon": "/logo/jest.png"},
-        {"name": "Cypress", "icon": "/logo/cypress.svg"},
-        {"name": "Axios", "icon": ""}
-      ]
-    },
-    {
-      "name": "JAZA", 
-      "date": "February 2025",
-      "description": "J.A.Z.A. - Just A Zip Away is a web application where companies are able to place vehicle relocation bounties for roadtrip enthusiasts to take. Companies with their own vehicles will sometimes require to pay their workers or independent contractors to relocate their vehicles from one hub to another (especially car rental and trucking companies). These workers are paid large sums of more than 50$ / hr, and so we thought: if the companies could place relocation bounties that just covers for food and shelter, the companies would be able to save up on costs, and roadtrip enthusiasts would be able to take a vacation for free and not worry about the ride back.",
-      "linkName": "Devpost",
-      "link": "https://devpost.com/software/j-a-z-a-just-a-zip-away",
-      "thumbnail": "/projects/JAZA.png",
-      "videoLink": "https://www.youtube.com/embed/UiUuOPtWXCM",
-      "languages": [
-        {"name": "TypeScript", "icon": "/logo/typescript.png"},
-        {"name": "Python", "icon": "/logo/python.png"},
-        {"name": "HTML", "icon": "/logo/html5.png"},
-        {"name": "CSS", "icon": "/logo/css.png"}
-      ],
-      "techstack": [
-        {"name": "React", "icon": "/logo/react.png"},
-        {"name": "NextJS", "icon": "/logo/next.png"},
-        {"name": "Django", "icon": "/logo/django.png"},
-        {"name": "TailwindCSS", "icon": "/logo/tailwind.png"},
-        {"name": "Axios", "icon": ""},
-        {"name": "Redux", "icon": ""}
-      ]
-    },
-    {
-      "name": "HIGH CARD", 
-      "date": "January 2025",
-      "description": "High Card is a credit card management platform that guarantees the user the best cashback reward per dollar spent for every purchasing category. Not only that, but it can also recommend the next card to get depending on the user's current rewards catalog and notify them of the cashback rewards they could've been missing out on. This project won Best Startup Potential at FinHacks 2025.",
-      "linkName": "Devpost",
-      "link": "https://devpost.com/software/high-card",
-      "thumbnail": "/projects/HighCard.png",
-      "videoLink": "https://www.youtube.com/embed/2RDkPCOkaNE",
-      "languages": [
-        {"name": "TypeScript", "icon": "/logo/typescript.png"},
-        {"name": "JavaScript", "icon": "/logo/javascript.png"},
-        {"name": "Python", "icon": "/logo/python.png"},
-        {"name": "HTML", "icon": "/logo/html5.png"},
-        {"name": "CSS", "icon": "/logo/css.png"}
-      ],
-      "techstack": [
-        {"name": "React", "icon": "/logo/react.png"},
-        {"name": "NextJS", "icon": "/logo/next.png"},
-        {"name": "NodeJS", "icon": "/logo/nodejs.png"},
-        {"name": "MongoDB", "icon": "/logo/mongodb.png"},
-        {"name": "TailwindCSS", "icon": "/logo/tailwind.png"}
-      ]
-    },
-    {
-      "name": "KANBAS",
-      "date": "October 2024 - December 2024",
-      "description": "Kanbas is a recreation of the educational platform, Canvas. It supports course customizations, including the CRUD operations on courses, assignments, modules, and quizzes.",
-      "linkName": "Check it out!",
-      "link": "https://kanbas-mern.netlify.app",
-      "thumbnail": "/projects/kanbas.png",
-      "languages": [
-        {"name": "TypeScript", "icon": "/logo/typescript.png"},
-        {"name": "JavaScript", "icon": "/logo/javascript.png"},
-        {"name": "HTML", "icon": "/logo/html5.png"},
-        {"name": "CSS", "icon": "/logo/css.png"}
-      ],
-      "techstack": [
-        {"name": "React", "icon": "/logo/react.png"},
-        {"name": "NodeJS", "icon": "/logo/nodejs.png"},
-        {"name": "MongoDB", "icon": "/logo/mongodb.png"},
-        {"name": "ExpressJS", "icon": "/logo/express.png"},
-        {"name": "BootstrapCSS", "icon": "/logo/bootstrap.png"},
-        {"name": "Axios", "icon": ""},
-        {"name": "Redux", "icon": ""}
-      ]
-    },
-    {
-      "name": "STOCK PORTFOLIO", 
-      "date": "May 2024 - June 2024",
-      "description": "Written in pure Java, this project simulates stock market trades and allows the user to create (and maintain) stock portfolios with fixed percentages. It adopts an MVC architecture and has a 100% test coverage. The code is available upon request.",
-      "linkName": "Unavailable",
-      "link": "",
-      "thumbnail": "/projects/stocks.png",
-      "languages": [
-        {"name": "Java", "icon": "/logo/java.png"}
-      ],
-      "techstack": [
-        {"name": "JUnit", "icon": ""},
-        {"name": "JavaSwing", "icon": ""}
-      ]
-    }
+  {
+    "name": "GEOGUESSR AI",
+    "date": "November 2025 - Present",
+    "description": "For the final project of CS4100: Artificial Intelligence, myself and 3 others built an CNN AI model that plays GeoGuessr to predict the location based on visual cues from Google Streetview images.",
+    "linkName": "Paper",
+    "link": "files/GeoGuessrAI_Report.pdf",
+    "thumbnail": "projects/geoguessrai4.png",
+    "tags": ["AI", "Computer Vision", "Collaborated Project"],
+    "languages": [{ "name": "Python", "icon": "/logo/python.png" }],
+    "techstack": [
+      { "name": "PyTorch", "icon": "/logo/pytorch.png" },
+      { "name": "Matplotlib", "icon": "/logo/matplotlib.png" },
+      { "name": "NumPy", "icon": "/logo/numpy.png" }
+    ]
+  },
+  {
+    "name": "PLONKSTARS",
+    "date": "February 2025 - May 2025",
+    "description": "After finding out that Geoguessr required a subscription fee to play, my friends and I decided to recreate the game ourselves with zero production costs. So, introducing Plonkstars, a geolocating game inspired by Geoguessr. Explore through Google Streetview and find out where you are in the world!",
+    "linkName": "Play",
+    "link": "https://plonkstars.vercel.app",
+    "thumbnail": "/projects/plonkstars.gif",
+    "tags": ["Full Stack", "Frontend", "Backend", "Database Design", "Collaborated Project"],
+    "languages": [
+      { "name": "TypeScript", "icon": "/logo/typescript.png" },
+      { "name": "Python", "icon": "/logo/python.png" },
+      { "name": "HTML", "icon": "/logo/html5.png" },
+      { "name": "CSS", "icon": "/logo/css.png" }
+    ],
+    "techstack": [
+      { "name": "React", "icon": "/logo/react.png" },
+      { "name": "NextJS", "icon": "/logo/next.png" },
+      { "name": "Flask", "icon": "/logo/flask.png" },
+      { "name": "PostgreSQL", "icon": "/logo/postgresql.png" },
+      { "name": "TailwindCSS", "icon": "/logo/tailwind.png" },
+      { "name": "Axios", "icon": "" },
+      { "name": "Redux", "icon": "" },
+      { "name": "JWT", "icon": "" }
+    ]
+  },
+  {
+    "name": "RESTACKED",
+    "date": "OCTOBER 2025 - DECEMBER 2025",
+    "description": "As part of CS4530: Foundations of Software Engineering, I worked with 3 other classmates to build Restacked: a forum-based web application where users can discuss anything programming-related. We practiced Agile methodologies and used Scrum to manage our workflow. Together, we achieved 95% code coverage. My main contributions (main user story) was to gamify the site, allowing users to earn achievements and badges based on their activity and added additional games like Wordle and Speedtyping to keep users engaged via competitions",
+    "linkName": "Link",
+    "link": "https://fall25-project-109-client.onrender.com/",
+    "thumbnail": "projects/restacked.png",
+    "videoLink": "https://www.youtube.com/embed/zpyMunMwh0o",
+    "tags": ["Full Stack", "Frontend", "Backend", "Database Design", "Collaborated Project"],
+    "languages": [
+      { "name": "TypeScript", "icon": "/logo/typescript.png" },
+      { "name": "JavaScript", "icon": "/logo/javascript.png" },
+      { "name": "HTML", "icon": "/logo/html5.png" },
+      { "name": "CSS", "icon": "/logo/css.png" }
+    ],
+    "techstack": [
+      { "name": "React", "icon": "/logo/react.png" },
+      { "name": "Vite", "icon": "/logo/vite.png" },
+      { "name": "NodeJS", "icon": "/logo/nodejs.png" },
+      { "name": "ExpressJS", "icon": "/logo/express.png" },
+      { "name": "MongoDB", "icon": "/logo/mongodb.png" },
+      { "name": "Cloudinary", "icon": "/logo/cloudinary.png" },
+      { "name": "Jest", "icon": "/logo/jest.png" },
+      { "name": "Cypress", "icon": "/logo/cypress.svg" },
+      { "name": "Axios", "icon": "" }
+    ]
+  },
+  {
+    "name": "JAZA",
+    "date": "February 2025",
+    "description": "J.A.Z.A. - Just A Zip Away is a web application where companies are able to place vehicle relocation bounties for roadtrip enthusiasts to take. Companies with their own vehicles will sometimes require to pay their workers or independent contractors to relocate their vehicles from one hub to another (especially car rental and trucking companies). These workers are paid large sums of more than 50$ / hr, and so we thought: if the companies could place relocation bounties that just covers for food and shelter, the companies would be able to save up on costs, and roadtrip enthusiasts would be able to take a vacation for free and not worry about the ride back.",
+    "linkName": "Devpost",
+    "link": "https://devpost.com/software/j-a-z-a-just-a-zip-away",
+    "thumbnail": "/projects/JAZA.png",
+    "videoLink": "https://www.youtube.com/embed/UiUuOPtWXCM",
+    "tags": ["Frontend", "Database Design", "Collaborated Project"],
+    "languages": [
+      { "name": "TypeScript", "icon": "/logo/typescript.png" },
+      { "name": "Python", "icon": "/logo/python.png" },
+      { "name": "HTML", "icon": "/logo/html5.png" },
+      { "name": "CSS", "icon": "/logo/css.png" }
+    ],
+    "techstack": [
+      { "name": "React", "icon": "/logo/react.png" },
+      { "name": "NextJS", "icon": "/logo/next.png" },
+      { "name": "Django", "icon": "/logo/django.png" },
+      { "name": "TailwindCSS", "icon": "/logo/tailwind.png" },
+      { "name": "Axios", "icon": "" },
+      { "name": "Redux", "icon": "" }
+    ]
+  },
+  {
+    "name": "HIGH CARD",
+    "date": "January 2025",
+    "description": "High Card is a credit card management platform that guarantees the user the best cashback reward per dollar spent for every purchasing category. Not only that, but it can also recommend the next card to get depending on the user's current rewards catalog and notify them of the cashback rewards they could've been missing out on. This project won Best Startup Potential at FinHacks 2025.",
+    "linkName": "Devpost",
+    "link": "https://devpost.com/software/high-card",
+    "thumbnail": "/projects/HighCard.png",
+    "videoLink": "https://www.youtube.com/embed/2RDkPCOkaNE",
+    "tags": ["Full Stack", "Frontend", "Backend", "Collaborated Project"],
+    "languages": [
+      { "name": "TypeScript", "icon": "/logo/typescript.png" },
+      { "name": "JavaScript", "icon": "/logo/javascript.png" },
+      { "name": "Python", "icon": "/logo/python.png" },
+      { "name": "HTML", "icon": "/logo/html5.png" },
+      { "name": "CSS", "icon": "/logo/css.png" }
+    ],
+    "techstack": [
+      { "name": "React", "icon": "/logo/react.png" },
+      { "name": "NextJS", "icon": "/logo/next.png" },
+      { "name": "NodeJS", "icon": "/logo/nodejs.png" },
+      { "name": "MongoDB", "icon": "/logo/mongodb.png" },
+      { "name": "TailwindCSS", "icon": "/logo/tailwind.png" }
+    ]
+  },
+  {
+    "name": "KANBAS",
+    "date": "October 2024 - December 2024",
+    "description": "Kanbas is a recreation of the educational platform, Canvas. It supports course customizations, including the CRUD operations on courses, assignments, modules, and quizzes.",
+    "linkName": "Check it out!",
+    "link": "https://kanbas-mern.netlify.app",
+    "thumbnail": "/projects/kanbas.png",
+    "tags": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database Design",
+      "Individual Project"
+    ],
+    "languages": [
+      { "name": "TypeScript", "icon": "/logo/typescript.png" },
+      { "name": "JavaScript", "icon": "/logo/javascript.png" },
+      { "name": "HTML", "icon": "/logo/html5.png" },
+      { "name": "CSS", "icon": "/logo/css.png" }
+    ],
+    "techstack": [
+      { "name": "React", "icon": "/logo/react.png" },
+      { "name": "NodeJS", "icon": "/logo/nodejs.png" },
+      { "name": "MongoDB", "icon": "/logo/mongodb.png" },
+      { "name": "ExpressJS", "icon": "/logo/express.png" },
+      { "name": "BootstrapCSS", "icon": "/logo/bootstrap.png" },
+      { "name": "Axios", "icon": "" },
+      { "name": "Redux", "icon": "" }
+    ]
+  },
+  {
+    "name": "STOCK PORTFOLIO",
+    "date": "May 2024 - June 2024",
+    "description": "Written in pure Java, this project simulates stock market trades and allows the user to create (and maintain) stock portfolios with fixed percentages. It adopts an MVC architecture and has a 100% test coverage. The code is available upon request.",
+    "linkName": "Unavailable",
+    "link": "",
+    "thumbnail": "/projects/stocks.png",
+    "tags": ["Backend", "Collaborated Project"],
+    "languages": [{ "name": "Java", "icon": "/logo/java.png" }],
+    "techstack": [
+      { "name": "JUnit", "icon": "" },
+      { "name": "JavaSwing", "icon": "" }
+    ]
+  }
 ]
