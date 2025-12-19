@@ -85,6 +85,7 @@
           { "name": "TypeScript", "icon": "/logo/typescript.png" },
           { "name": "JavaScript", "icon": "/logo/javascript.png" },
           { "name": "React Native", "icon": "/logo/react.png" },
+          { "name": "React", "icon": "/logo/react.png" },
           { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
           { "name": "Ruby on Rails", "icon": "/logo/rails.png" }
         ],
