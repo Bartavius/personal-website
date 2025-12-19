@@ -10,6 +10,7 @@ import AboutSection from "@/sections/AboutSection/AboutSection";
 import { motion } from "framer-motion";
 import imageConfig from "../database/images.json";
 import MusicPlayer from "@/components/musicplayer";
+import { IoPhonePortraitOutline } from "react-icons/io5";
 
 export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
@@ -124,19 +125,7 @@ export default function Home() {
             animate={{ rotate: [0, -90, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-              <line x1="12" y1="18" x2="12" y2="18.01" />
-            </svg>
+            <IoPhonePortraitOutline size={84} />
           </motion.div>
           <h2 className="rotate-title">Rotate Your Device</h2>
           <p className="rotate-message">
