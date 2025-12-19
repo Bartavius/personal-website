@@ -259,6 +259,11 @@
   .footer-divider {
     display: none;
   }
+
+  .about-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 500px) {
@@ -293,6 +298,12 @@
   .about-text {
     font-size: 1.1rem;
     line-height: 1.7;
+  }
+
+  .about-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1.2rem
   }
 }
 

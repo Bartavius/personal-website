@@ -76,4 +76,8 @@
     width: 45px;
     height: 45px;
   }
+
+  .skill-icon-label {
+    font-size: 0.75rem;
+  }
 }

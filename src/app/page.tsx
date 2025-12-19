@@ -15,6 +15,7 @@ export default function Home() {
   const [isSkillModalOpen, setIsSkillModalOpen] = useState(false);
   const [isContactsModalOpen, setIsContactsModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isLandscape, setIsLandscape] = useState(false);
   const [allLoaded, setAllLoaded] = useState(false);
 
   // Get images from config
@@ -93,12 +94,58 @@ export default function Home() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 760);
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      setIsMobile(width < 760);
+      // Mobile landscape: small height and width > height
+      setIsLandscape(height < 500 && width > height);
     };
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
+    window.addEventListener("orientationchange", checkScreenSize);
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+      window.removeEventListener("orientationchange", checkScreenSize);
+    };
   }, []);
+
+  // Show rotate screen message for mobile landscape
+  if (isLandscape) {
+    return (
+      <div className="rotate-screen-overlay">
+        <motion.div
+          className="rotate-screen-content"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
+          <motion.div
+            className="rotate-icon"
+            animate={{ rotate: [0, -90, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+              <line x1="12" y1="18" x2="12" y2="18.01" />
+            </svg>
+          </motion.div>
+          <h2 className="rotate-title">Rotate Your Device</h2>
+          <p className="rotate-message">
+            Please rotate your device to portrait mode for the best experience.
+          </p>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -116,14 +163,6 @@ export default function Home() {
             isMobile={isMobile}
           />
         </motion.div>
-
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        >
-          <MusicPlayer />
-        </motion.div> */}
 
         <div key={"home"} className="home" id="home">
           <HeroSection

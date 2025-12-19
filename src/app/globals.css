@@ -269,6 +269,47 @@ button:active {
   color: var(--color-accent3);
 }
 
+.rotate-screen-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.rotate-screen-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.rotate-icon {
+  color: var(--color-accent2);
+}
+
+.rotate-title {
+  font-family: Outfit;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-accent3);
+  margin: 0;
+}
+
+.rotate-message {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--color-accent2);
+  margin: 0;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
 @media (max-width: 760px) {
   .btn-primary {
     height: 4rem;
