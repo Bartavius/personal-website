@@ -23,7 +23,7 @@
     "linkName": "Play",
     "link": "https://plonkstars.vercel.app",
     "thumbnail": "/projects/plonkstars.gif",
-    "tags": ["Full Stack", "Frontend", "Backend", "Database Design"],
+    "tags": ["Full Stack", "Frontend", "Backend", "Database"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "Python", "icon": "/logo/python.png" },
@@ -50,7 +50,7 @@
     "link": "https://fall25-project-109-client.onrender.com/",
     "thumbnail": "/projects/restacked.png",
     "videoLink": "https://www.youtube.com/embed/zpyMunMwh0o",
-    "tags": ["Full Stack", "Frontend", "Backend", "Database Design"],
+    "tags": ["Full Stack", "Frontend", "Backend", "Database"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "JavaScript", "icon": "/logo/javascript.png" },
@@ -78,7 +78,7 @@
     "link": "https://devpost.com/software/j-a-z-a-just-a-zip-away",
     "thumbnail": "/projects/JAZA.png",
     "videoLink": "https://www.youtube.com/embed/UiUuOPtWXCM",
-    "tags": ["Frontend", "Database Design"],
+    "tags": ["Frontend", "Database"],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },
       { "name": "Python", "icon": "/logo/python.png" },
@@ -131,7 +131,7 @@
       "Full Stack",
       "Frontend",
       "Backend",
-      "Database Design"
+      "Database"
     ],
     "languages": [
       { "name": "TypeScript", "icon": "/logo/typescript.png" },

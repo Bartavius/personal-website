@@ -20,9 +20,84 @@
   gap: 2rem;
 }
 
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.filter-pill {
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-family: Outfit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid var(--color-accent2);
+  color: var(--color-accent2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  background: rgba(166, 177, 225, 0.15);
+}
+
+.filter-pill.active {
+  background: var(--color-accent2);
+  color: var(--background);
+}
+
+.filter-pill.active:hover {
+  box-shadow: 0 0 12px rgba(166, 177, 225, 0.4);
+}
+
+.filter-pill.clear {
+  border-color: var(--color-accent1);
+  color: var(--color-accent1);
+}
+
+.filter-pill.clear:hover {
+  background: rgba(166, 177, 225, 0.1);
+}
+
+.no-projects {
+  font-family: Roboto;
+  font-size: 1.1rem;
+  color: var(--color-accent1);
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.project-section .section-divider {
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 760px) {
   .showmore button {
     height: 3.75rem;
     width: 100%;
   }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-pill {
+    flex-shrink: 0;
+  }
+
+  .project-section .section-divider {
+    margin-bottom: 0;
+  }
+
 }

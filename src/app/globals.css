@@ -108,6 +108,7 @@ button:active {
 .btn-primary:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px var(--color-accent1);
+  cursor: pointer;
 }
 
 .btn-primary:active {
@@ -152,6 +153,7 @@ button:active {
 .btn-secondary:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px var(--color-accent1);
+  cursor: pointer;
 }
 
 .btn-secondary:active {
