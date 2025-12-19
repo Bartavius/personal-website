@@ -46,7 +46,7 @@ function ProjectCard({
             height={200}
             loading="eager"
             priority
-            unoptimized
+            unoptimized={project.thumbnail.endsWith('.gif')}
           />
         </div>
         <div className="project-title">{project.name}</div>
