@@ -47,7 +47,8 @@ const allSkills = [
   ...backend,
   ...database,
   ...tools,
-];
+]
+// ].sort((s1: any, s2: any) => s1.name.localeCompare(s2.name));
 
 function useInView(threshold = 0.3) {
   const [isVisible, setIsVisible] = useState(false);
@@ -150,7 +151,7 @@ export default function AboutSection() {
         id="about-skills"
         ref={skillsContent.ref}
       >
-        <h3 className="about-skills-heading">Technologies I Work With</h3>
+        <h3 className="about-skills-heading">Technologies I Work With (Alphabetically)</h3>
         <div className="about-skills-grid">
           {allSkills.map((tech) => (
             <SkillChip name={tech.name} icon={tech.icon} key={tech.name} />
