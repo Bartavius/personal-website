@@ -7,6 +7,8 @@ import frontend from "../../database/skills/frontend.json";
 import backend from "../../database/skills/backend.json";
 import database from "../../database/skills/database.json";
 import tools from "../../database/skills/tools.json";
+import familiar from "../../database/skills/proficiency/familiar.json";
+import specialize from "../../database/skills/proficiency/specialize.json";
 import "./AboutSection.css";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { IoIosMail } from "react-icons/io";
@@ -151,9 +153,15 @@ export default function AboutSection() {
         id="about-skills"
         ref={skillsContent.ref}
       >
-        <h3 className="about-skills-heading">Technologies I Work With</h3>
+        <h3 className="about-skills-heading">Skills I Specialize in</h3>
         <div className="about-skills-grid">
-          {allSkills.map((tech) => (
+          {specialize.map((tech) => (
+            <SkillChip name={tech.name} icon={tech.icon} key={tech.name} />
+          ))}
+        </div>
+        <h3 className="about-skills-heading">Things I'm Familiar With</h3>
+        <div className="about-skills-grid">
+          {familiar.map((tech) => (
             <SkillChip name={tech.name} icon={tech.icon} key={tech.name} />
           ))}
         </div>

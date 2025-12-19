@@ -1,0 +1,19 @@
+[
+  { "name": "Java", "icon": "/logo/java.png" },
+  { "name": "Kotlin", "icon": "/logo/kotlin.png" },
+  { "name": "Dr. Racket", "icon": "/logo/racket.png" },
+  { "name": "C++", "icon": "/logo/cplusplus.png" },
+  { "name": "Docker", "icon": "/logo/docker.png" },
+  { "name": "Django", "icon": "/logo/django.png" },
+  { "name": "Flask", "icon": "/logo/flask.png" },
+  { "name": "Jest", "icon": "/logo/jest.png" },
+  { "name": "NumPy", "icon": "/logo/numpy.png" },
+  { "name": "Stripe", "icon": "/logo/stripe.png" },
+  { "name": "PyTorch", "icon": "/logo/pytorch.png" },
+  { "name": "Cypress", "icon": "/logo/cypress.svg" },
+  { "name": "Bootstrap", "icon": "/logo/bootstrap.png" },
+  { "name": "Figma", "icon": "/logo/figma.png" },
+  { "name": "ViteJS", "icon": "/logo/vite.png" },
+  { "name": "Matplotlib", "icon": "/logo/matplotlib.png" },
+  { "name": "Photoshop", "icon": "/logo/photoshop.png" }
+]

@@ -1,0 +1,16 @@
+[
+  { "name": "Python", "icon": "/logo/python.png" },
+  { "name": "TypeScript", "icon": "/logo/typescript.png" },
+  { "name": "JavaScript", "icon": "/logo/javascript.png" },
+  { "name": "HTML5", "icon": "/logo/html5.png" },
+  { "name": "CSS", "icon": "/logo/css.png" },
+  { "name": "React", "icon": "/logo/react.png" },
+  { "name": "React Native", "icon": "/logo/react.png" },
+  { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" },
+  { "name": "Next.js", "icon": "/logo/next.png" },
+  { "name": "Node.js", "icon": "/logo/nodejs.png" },
+  { "name": "Express.js", "icon": "/logo/express.png" },
+  { "name": "MongoDB", "icon": "/logo/mongodb.png" },
+  { "name": "MySQL", "icon": "/logo/mysql.svg" },
+  { "name": "PostgreSQL", "icon": "/logo/postgresql.png" }
+]
