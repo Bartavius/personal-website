@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Tooltip from "./Tooltip";
 import "./ProjectCard.css";
 import { useAppSound } from "./SoundProvider";
@@ -10,27 +9,27 @@ function ProjectCard({
   isVisible,
   groupSize,
   onClick,
+  hasAnimated,
+  onAnimationDone,
 }: {
   project: any;
   index: number;
   isVisible: boolean;
   groupSize: number;
   onClick: () => void;
+  hasAnimated: boolean;
+  onAnimationDone: () => void;
 }) {
-  const [animationDone, setAnimationDone] = useState(false);
   const { playClick } = useAppSound();
+  const shouldAnimate = isVisible && !hasAnimated;
 
   return (
     <div
-      className={`project-card ${
-        isVisible && !animationDone ? "animate-project" : ""
-      } ${animationDone ? "animation-done" : ""}`}
-      style={
-        isVisible && !animationDone
-          ? { animationDelay: `${(index % groupSize) * 0.1}s` }
-          : undefined
-      }
-      onAnimationEnd={() => setAnimationDone(true)}
+      className={`project-card ${shouldAnimate ? "animate-project" : ""} ${
+        hasAnimated ? "animation-done" : ""
+      }`}
+      style={shouldAnimate ? { animationDelay: `${(index % groupSize) * 0.1}s` } : undefined}
+      onAnimationEnd={onAnimationDone}
       onClick={() => {
         playClick();
         onClick();
@@ -47,6 +46,7 @@ function ProjectCard({
             height={200}
             loading="eager"
             priority
+            unoptimized
           />
         </div>
         <div className="project-title">{project.name}</div>

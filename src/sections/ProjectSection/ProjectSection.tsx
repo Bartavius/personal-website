@@ -33,11 +33,20 @@ function useInView(threshold = 0.3) {
 export default function ProjectSection() {
   const PROJECTS_PER_GROUP = 3;
   const { playClick } = useAppSound();
-  const [activeProject, setActiveProject] = useState<(typeof projects)[0] | null>(null);
+  const [animatedProjects, setAnimatedProjects] = useState<Set<string>>(new Set());
+  const [activeProject, setActiveProject] = useState<
+    (typeof projects)[0] | null
+  >(null);
   const [visibleGroups, setVisibleGroups] = useState(1);
   const [isMobile, setIsMobile] = useState(false);
   const { ref, isVisible } = useInView(0.1);
-  const filters: string[] = ["Full Stack", "Frontend", "Backend", "Database", "AI"];
+  const filters: string[] = [
+    "Full Stack",
+    "Frontend",
+    "Backend",
+    "Database",
+    "AI",
+  ];
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
 
   useEffect(() => {
@@ -78,12 +87,14 @@ export default function ProjectSection() {
     <div className="project-section">
       <div className="sub-heading">Projects</div>
       <div className="section-divider"></div>
-      
+
       <div className="filters">
         {filters.map((filter) => (
           <button
             key={filter}
-            className={`filter-pill ${activeFilters.includes(filter) ? "active" : ""}`}
+            className={`filter-pill ${
+              activeFilters.includes(filter) ? "active" : ""
+            }`}
             onClick={() => toggleFilter(filter)}
           >
             {filter}
@@ -112,10 +123,16 @@ export default function ProjectSection() {
               isVisible={isVisible}
               groupSize={PROJECTS_PER_GROUP}
               onClick={() => setActiveProject(project)}
+              hasAnimated={animatedProjects.has(project.name)}
+              onAnimationDone={() =>
+                setAnimatedProjects((prev) => new Set(prev).add(project.name))
+              }
             />
           ))
         ) : (
-          <div className="no-projects">No projects match the selected filters</div>
+          <div className="no-projects">
+            No projects match the selected filters
+          </div>
         )}
       </div>
 
