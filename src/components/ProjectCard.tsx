@@ -50,6 +50,7 @@ function ProjectCard({
           />
         </div>
         <div className="project-title">{project.name}</div>
+        <div className="project-short-description">{project.shortDescription}</div>
       </Tooltip>
     </div>
   );
