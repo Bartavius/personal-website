@@ -151,7 +151,7 @@ export default function AboutSection() {
         id="about-skills"
         ref={skillsContent.ref}
       >
-        <h3 className="about-skills-heading">Technologies I Work With (Alphabetically)</h3>
+        <h3 className="about-skills-heading">Technologies I Work With</h3>
         <div className="about-skills-grid">
           {allSkills.map((tech) => (
             <SkillChip name={tech.name} icon={tech.icon} key={tech.name} />
