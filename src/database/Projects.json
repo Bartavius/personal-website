@@ -18,7 +18,7 @@
   {
     "name": "PLONKSTARS",
     "date": "February 2025 - May 2025",
-    "shortDescription": "A free-to-play geolocating game inspired by GeoGuessr.",
+    "shortDescription": "A free, alternative geolocating game to GeoGuessr.",
     "description": "After finding out that GeoGuessr required a subscription fee to play, my friends and I decided to recreate the game ourselves with zero production costs. So, introducing Plonkstars, a geolocating game inspired by GeoGuessr. Explore through Google Streetview and find out where you are in the world!",
     "linkName": "Play",
     "link": "https://plonkstars.vercel.app",

@@ -5,9 +5,9 @@
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .showmore {
@@ -75,6 +75,20 @@
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 2000px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 760px) {
   .showmore button {
     height: 3.75rem;
@@ -100,4 +114,8 @@
     margin-bottom: 0;
   }
 
+  .project-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }

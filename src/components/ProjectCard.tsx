@@ -37,16 +37,12 @@ function ProjectCard({
     >
       <Tooltip text="Click me!">
         <div className="project-card-thumbnail">
-          <Image
+          <img
             src={project.thumbnail}
             alt="thumbnail"
             className="thumbnail"
             draggable={false}
-            width={400}
-            height={200}
             loading="eager"
-            priority
-            unoptimized={project.thumbnail.endsWith('.gif')}
           />
         </div>
         <div className="project-title">{project.name}</div>
