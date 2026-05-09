@@ -1,12 +1,12 @@
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   position: fixed;
   gap: 20px;
   width: 100%;
   z-index: 100;
-  top: 1rem;
+  top: clamp(0.5rem, 0.7vw + 0.4rem, 2rem);
   right: 0;
 }
 
@@ -15,7 +15,8 @@
   justify-content: center;
   align-items: center;
   width: 75%;
-  padding: 10px 20px;
+  max-width: 1400px;
+  padding: clamp(10px, 0.4vw + 4px, 18px) clamp(20px, 0.7vw + 12px, 32px);
   background: var(--color-accent2);
   border-radius: 50px;
   z-index: 4;
@@ -27,7 +28,7 @@
 
 .nav-text {
   font-family: Outfit;
-  font-size: clamp(1rem, 3dvw, 1.7rem);
+  font-size: clamp(1rem, 1.5dvw + 0.4rem, 2rem);
   font-weight: 800;
   color: var(--background);
   flex: 1;
@@ -42,12 +43,16 @@
 
 .hamburger {
     background-color: var(--color-accent2);
-    padding: 12px 16px;
+    padding: clamp(10px, 0.3vw + 8px, 16px) clamp(14px, 0.7vw + 0.4rem, 26px);
     color: var(--background);
     border-radius: 50px;
     width: auto;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 5px var(--color-accent1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 0.7vw + 0.6rem, 1.75rem);
 }
 
 .hamburger:hover {
@@ -109,6 +114,8 @@
 
   .hamburger {
     z-index: 101; /* Keep it above the menu */
+    padding: 12px 20px;
+    font-size: 1.5rem;
   }
 
 }

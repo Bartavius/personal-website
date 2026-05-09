@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoIosPin } from "react-icons/io";
 import "./HeroSection.css";
 import { useRouter } from "next/navigation";
 import { useAppSound } from "@/components/SoundProvider";
@@ -17,15 +16,12 @@ export default function ProfileInformation({
   return (
     <div className="hero-profile">
       <div className="hero-details">
-        <div className="grid grid-cols-1">
+        <div className="title-plate">
           <span className="name">Jirath "Bart" Lojanarungsiri</span>
-          <span className="title">
-            <span className="typing">Full-Stack Developer</span>
-          </span>
-          <div className="location-based grid grid-cols-1">
+          <span className="title">Full-Stack Developer</span>
+          <div className="location-based">
             <span className="location">
               Boston, USA | Bangkok, Thailand
-              <IoIosPin />
             </span>
           </div>
         </div>

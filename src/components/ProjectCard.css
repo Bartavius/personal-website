@@ -9,6 +9,7 @@
   flex-direction: column;
   opacity: 0;
   transform: translateY(-50px);
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
 
 .animate-project {
@@ -82,6 +83,16 @@
   opacity: 0.5;
   padding: 0 5%;
   margin-bottom: 2%;
+}
+
+@media (min-width: 1800px) {
+  .project-title {
+    font-size: clamp(2.5rem, 2.45dvw, 3rem);
+  }
+
+  .project-short-description {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 1024px) {

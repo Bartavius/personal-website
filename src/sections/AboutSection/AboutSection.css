@@ -210,6 +210,30 @@
   opacity: 0.5;
 }
 
+@media (min-width: 1800px) {
+  .about-polaroid {
+    width: 350px;
+  }
+
+  .about-section {
+    gap: 6rem;
+    margin-top: 4rem;
+  }
+
+  .about-text {
+    font-size: 2rem;
+    line-height: 140%;
+  }
+
+  .about-skills-heading {
+    font-size: 2rem;
+  }
+
+  .about-section .scribble-font {
+    font-size: 2rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .about-section {

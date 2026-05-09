@@ -60,12 +60,17 @@
 }
 
 .app-logo img {
-  border-radius: 16px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.timeline-logo:not(.app-logo) img {
+  border-radius: 1rem;
 }
 
 .timeline-time {
   font-family: Roboto, system-ui, -apple-system, sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 0.6vw + 0.95rem, 1.75rem);
   font-weight: 800;
   color: var(--color-accent2);
   text-align: right;
@@ -149,7 +154,7 @@
   padding: 0;
   margin: 0;
   font-family: Roboto, system-ui, -apple-system, sans-serif;
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 0.5vw + 1rem, 1.6rem);
   font-weight: 500;
   color: var(--color-accent3);
   line-height: 1.8;
@@ -182,7 +187,7 @@
 
 .timeline-company {
   font-family: Outfit, Roboto, system-ui, -apple-system, sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 0.85vw + 1.15rem, 2.2rem);
   font-weight: 800;
   color: var(--color-accent3);
   margin: 0;
@@ -190,7 +195,7 @@
 
 .timeline-role {
   font-family: Outfit, Roboto, system-ui, -apple-system, sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 0.6vw + 0.95rem, 1.75rem);
   font-weight: 600;
   color: var(--color-accent2);
   margin-top: 0.25rem;
@@ -235,12 +240,28 @@
   padding: 2px 8px;
   height: 1.75rem;
   background-color: var(--background) !important;
+  border-width: 2px;
 }
 
 .icon-container.small span {
   color: var(--color-accent2) !important;
 }
 
+
+@media (min-width: 1800px) {
+  .timeline {
+    max-width: 1300px;
+  }
+
+  .timeline-logo {
+    height: 120px;
+  }
+
+  .app-logo {
+    width: 130px;
+    height: 130px;
+  }
+}
 
 @media (max-width: 1024px) {
   .timeline {
@@ -335,7 +356,7 @@
   }
 
   .timeline-logo-mobile.app-logo img {
-    border-radius: 16px;
+    border-radius: 50%;
   }
 
   .timeline-company {

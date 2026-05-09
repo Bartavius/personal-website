@@ -124,7 +124,7 @@
     "date": "October 2024 - December 2024",
     "shortDescription": "A recreation of the educational platform, Canvas.",
     "description": "Kanbas is a recreation of the educational platform, Canvas. It supports course customizations, including the CRUD operations on courses, assignments, modules, and quizzes.",
-    "linkName": "Check it out!",
+    "linkName": "View",
     "link": "https://kanbas-mern.netlify.app",
     "thumbnail": "/projects/kanbas.png",
     "tags": [

@@ -92,6 +92,22 @@
         "lines": ["Incoming Co-op for January 2026"]
       },
       {
+        "time": "Jan - Apr 2026",
+        "company": "Generate",
+        "role": "Software Engineer",
+        "location": "Boston, MA, USA",
+        "logo": "/logo/generate.png",
+        "app": true,
+        "languages": [
+          { "name": "TypeScript", "icon": "/logo/typescript.png" },
+          { "name": "Go", "icon": "/logo/go.png" },
+          { "name": "React Native", "icon": "/logo/react.png" },
+          { "name": "React", "icon": "/logo/react.png" },
+          { "name": "Tailwind CSS", "icon": "/logo/tailwind.png" }
+        ],
+        "lines": ["Software Engineer for the Toggo platform"]
+      },
+      {
         "time": "Jun - Aug 2025",
         "company": "What's the Word?",
         "role": "Software Developer",
@@ -139,10 +155,13 @@
       {
         "time": "Fall 2025",
         "lines": [
-          "Finished my first official 10k road race with sis",
-          "Finished my first official 5k road race with sis",
+          "Did my first project showcase with Generate! Love you Toggo team <3"
+        ]
+      },
+      {
+        "time": "Fall 2025",
+        "lines": [
           "Took my first solo trip to NYC",
-          "Went to ANYC and cosplayed for the first time",
           "Hit 500+ connections on LinkedIn"
         ]
       },
@@ -151,8 +170,6 @@
         "lines": [
           "Won Best Startup Potential @ FinHacks 2025",
           "Developed JAZA @ HackBeanpot 2025",
-          "Participated in Big CTF — 11th",
-          "Took my second solo trip to Japan",
           "Got featured in Khoury News for FinHacks win",
           "Completed my first perfect omurice"
         ]

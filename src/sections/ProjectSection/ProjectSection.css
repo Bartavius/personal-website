@@ -75,6 +75,29 @@
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 1800px) {
+  .filters {
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .filter-pill {
+    padding: 0.75rem 1.75rem;
+    font-size: 1.25rem;
+    border-radius: 60px;
+  }
+
+  .no-projects {
+    font-size: 1.4rem;
+    padding: 4rem;
+  }
+
+  .showmore {
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+}
+
 @media (min-width: 2000px) {
   .project-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;

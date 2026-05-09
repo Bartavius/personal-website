@@ -94,8 +94,8 @@ export default function AboutSection() {
               src="/about.jpeg"
               alt="Bart"
               draggable={false}
-              width={600}
-              height={600}
+              width={1200}
+              height={1200}
               loading="eager"
               priority
             />

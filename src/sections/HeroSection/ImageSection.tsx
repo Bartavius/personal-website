@@ -30,7 +30,7 @@ export default function ImageSection() {
     <div className="image-section">
       <div className="tape-top"></div>
       <div className="tape-bottom"></div>
-      <div className="circles">
+      <div className="polaroid">
 
         <Image
           key={profile.image}

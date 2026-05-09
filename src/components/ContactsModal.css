@@ -10,11 +10,14 @@
 .contacts-subheading {
   color: white;
   font-family: Outfit;
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 0.5vw + 1.4rem, 2.5rem);
   font-weight: 800;
   text-align: left;
   margin: 2% 5%;
   overflow: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .contacts-subheading a {

@@ -58,6 +58,19 @@
   white-space: nowrap;
 }
 
+@media (min-width: 1800px) {
+  .skill-icon {
+    width: 64px;
+    height: 64px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .skill-icon-label {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .skill-icon {
     width: 48px;
