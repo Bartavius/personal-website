@@ -165,7 +165,7 @@ export default function Home() {
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
           className="education"
           id="experience"
         >
@@ -177,7 +177,7 @@ export default function Home() {
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
           className="projects"
           id="projects"
         >
@@ -191,7 +191,7 @@ export default function Home() {
           variants={fadeInUpVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05 }}
           transition={{ duration: 0.5 }}
         >
           <AboutSection />
