@@ -123,7 +123,7 @@ export default function AboutSection() {
           <p className="about-text">
             I'm quite interested in{" "}
             <Highlight delay={0.2} animate={aboutContent.isVisible}>
-              Full Stack
+              Full Stack Development
             </Highlight>
             ,{" "}
             <Highlight delay={0.3} animate={aboutContent.isVisible}>
