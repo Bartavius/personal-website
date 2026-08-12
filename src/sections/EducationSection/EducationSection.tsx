@@ -1,4 +1,5 @@
 "use client";
+// @ts-ignore: CSS side-effect import is handled by Next.js at build time.
 import "./EducationSection.css";
 import ToggleTimeline from "../../components/ToggleTimeline";
 import tabs from "../../database/Education.json";
@@ -28,7 +29,7 @@ export default function EducationSection() {
             </span>
             <span className="degree-body">
               <span>
-                <b>GPA:</b> 3.82 / 4.00
+                <b>GPA:</b> 3.83 / 4.00
               </span>
               <span>
                 <b>Awards:</b> Dean's List Fall 2023, Spring 2024, Fall 2024,
