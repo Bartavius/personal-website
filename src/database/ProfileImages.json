@@ -6,10 +6,10 @@
         "deg": 1
     },
     {
-        "image": "/profile2.png",
-        "caption": "Tokyo, Japan",
-        "date": "2 Jan 2025",
-        "deg": -2
+        "image": "/profile10.png",
+        "caption": "Sendai, Japan",
+        "date": "4 July 2026",
+        "deg": 3
     },
     {
         "image": "/profile5.png",
@@ -18,16 +18,16 @@
         "deg": -2
     },
     {
-        "image": "/profile4.png",
-        "caption": "NYC, USA",
-        "date": "6 March 2024",
-        "deg": -1
-    },
-    {
         "image": "/profile6.png",
         "caption": "Tabor Academy",
         "date": "2 March 2023",
         "deg": -3
+    },
+    {
+        "image": "/profile2.png",
+        "caption": "Tokyo, Japan",
+        "date": "2 Jan 2025",
+        "deg": -2
     },
     {
         "image": "/profile7.png",
