@@ -1,6 +1,5 @@
 "use client";
-// @ts-ignore: CSS side-effect import is handled by Next.js at build time.
-import "./EducationSection.css";
+import "./EducationSection";
 import ToggleTimeline from "../../components/ToggleTimeline";
 import tabs from "../../database/Education.json";
 import Image from "next/image";
