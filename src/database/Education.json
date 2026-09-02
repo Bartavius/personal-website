@@ -75,6 +75,26 @@
     "name": "Experience",
     "timeline": [
       {
+        "time": "Sep - Dec 2026",
+        "company": "Generate",
+        "role": "Software Tech Lead (Boutline team)",
+        "location": "Boston, MA, USA",
+        "logo": "/logo/generate.png",
+        "app": true,
+        "languages": [],
+        "lines": ["Coming soon 👀 but we just finished recruiting!"]
+      },
+      {
+        "time": "Sep - Dec 2026",
+        "company": "Northeastern University",
+        "role": "Algorithms and Data Structures Teaching Assistant",
+        "location": "Boston, MA, USA",
+        "logo": "/logo/NEU.png",
+        "app": true,
+        "languages": [],
+        "lines": ["Coming soon 👀"]
+      },
+      {
         "time": "Jan - Sep 2026",
         "company": "Flexcar",
         "role": "Full Stack Engineer Co-op",
