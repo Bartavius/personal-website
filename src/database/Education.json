@@ -110,12 +110,17 @@
           { "name": "Ruby on Rails", "icon": "/logo/rails.png" }
         ],
         "lines": [
-          "Built an internal workflow and tool that runs our risk checks in-house and cut customer manual review time by 67%",
-          "Strengthened our payment flow for adding secondary drivers by formalizing a state machine to eliminate ambiguous account states",
+          "Built an internal React/Rails manual review dashboard that cut review time by 67% and flagged 10,000+ orders in 6 months; thousands were rejected to prevent fraud/high-risk approvals",
+          "Strengthened Stripe payment flow for adding secondary drivers (10,000+ enrolled) by formalizing a state machine to eliminate ambiguous account states",
           "Discovered and resolved 2 legacy bugs that silently skewed ~4% of our customers to be incorrectly approved for orders",
           "Coordinated with Apple, AWS, marketing, and company leadership to restore signups for 3000+ Apple email users that couldn't signed up",
-          "Designed and built coupon creation tool for marketing team to manage",
-          "Did lots of tech debt refactoring and migrated ERB files into React inertia"
+          "Designed and implemented email validation on signup and email change, hardening entry points for 100,000+ accounts",
+          "Designed and built a coupon management tool for our marketing team to utilize and distribute",
+          "Decommissioned Zendesk and integrated Kustomer for our customer service flow",
+          "Converted our incident management page from a .erb file (Ruby) into inertia (React) for improved maintenance and standardized UI/UX",
+          "Built the family plan inspection tool and discovered edge cases that were not accounted for in the original design",
+          "Worked on a few miscellaneous blocking production issues reported by our operations team",
+          "Created a new onboarding doc and mentored new co-ops to get up to speed with our codebase and processes"
         ]
       },
       {
