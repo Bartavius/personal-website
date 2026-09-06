@@ -64,7 +64,7 @@ export default function ProfileInformation({
               <span className="text-secondary">Skills</span>
             </button>
             <a
-              href="files/Jirath-Lojanarungsiri-Resume.pdf"
+              href="files/Jirath_Lojanarungsiri_SWE_Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
