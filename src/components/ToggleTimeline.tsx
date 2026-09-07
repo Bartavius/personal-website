@@ -24,7 +24,7 @@ export default function ToggleTimeline({ tree }: { tree: any[] }) {
       className="toggled-timeline"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: "some" }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
