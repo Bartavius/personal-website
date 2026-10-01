@@ -113,7 +113,7 @@
           "Built an internal React/Rails manual review dashboard that cut review time by 67% and flagged 10,000+ orders in 6 months; thousands were rejected to prevent fraud/high-risk approvals",
           "Strengthened Stripe payment flow for adding secondary drivers (10,000+ enrolled) by formalizing a state machine to eliminate ambiguous account states",
           "Discovered and resolved 2 legacy bugs that silently skewed ~4% of our customers to be incorrectly approved for orders",
-          "Coordinated with Apple, AWS, marketing, and company leadership to restore signups for 3000+ Apple email users that couldn't signed up",
+          "Coordinated with Apple, AWS, marketing, and company leadership to restore signups for 5000+ Apple email users that couldn't signed up",
           "Designed and implemented email validation on signup and email change, hardening entry points for 100,000+ accounts",
           "Designed and built a coupon management tool for our marketing team to utilize and distribute",
           "Decommissioned Zendesk and integrated Kustomer for our customer service flow",
